@@ -1,0 +1,84 @@
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;        
+        }
+        .hide{
+            display: none;
+        }
+        .car{
+            width: 50px;
+            height: 70px;
+            background-color: red;
+            position: absolute;
+            bottom: 120px;
+            background-image: url(Images/car.jpg);
+            background-size: cover;
+        }
+        .GameArea{
+            width: 400px;
+            height: 100vh;
+            background-color: rgb(29, 26, 26);
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border-left: 10px dashed white;
+            border-right:10px dashed white;
+        }
+        .lines{
+            width: 10px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            margin-left: 195px;
+        }
+        .CarGame{
+            background-image: url(Natural-Selection-No-1-Lawn-Grass-Carpet-Rolls-Mexican-Grass.jpg);
+            background-size: cover;
+
+        }
+        .other{
+            width: 50px;
+            height: 70px;
+            background-color:blue;
+            background-image: url(Images/car4.jpg);
+             background-size: cover;
+            position: absolute;
+            bottom: 120px;
+        }
+        .Score{
+            position: absolute;
+            top: 15px;
+            left: 50px;
+            text-align: center;
+            padding-top: 23px;
+            font-size: 30px;
+            line-height: 20px;
+            background-color: rgba(34, 119, 8, 0.952);
+            color: white;
+            width: 300px;
+            height: 100px;
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        }
+        .StartScreen{
+            position: absolute;
+            background-color: rgba(34, 119, 8, 0.952);
+            color: white;
+            z-index: 1;
+            margin-top: 210px;
+            margin-left:360px;
+            text-align: center;
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+            font-size: 30px;
+            width: 50%;
+            height: 200px;
+            cursor: pointer;
+            border-radius: 23px;
+
+        }
+        button{
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
