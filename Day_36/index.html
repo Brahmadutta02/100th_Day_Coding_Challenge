@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Change Background Color With JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+        <input type="color" name="color" id="box" class="box" value="#ff0000">
+        <div class="content">
+            <h2>homepage</h2>
+            <p>Color Change</p>
+        </div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function () {
+            $("#box").on("input change", function () {
+            
+            $("body").css("background-color", $(this).val());
+            if ($("#box").val() <= "#8d8d8d") {
+                $("h2, p").css("color", "white");
+            } else {
+                $("h2, p").css("color", "black");
+            }
+            });
+        });
+</script>
+</body>
+</html>
