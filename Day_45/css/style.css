@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #17181c;
+}
+
+#container {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+#header {
+    height: 400px;
+    width: 100%;
+    background: #83aa0e;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#header h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #17181c;
+    margin: 45px 0;
+}
+
+#time {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 90px;
+    /* display: none; */
+}
+
+#time h2 {
+    color: #e2e2e2;
+    font-size: 35px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#time h2:first-child {
+    letter-spacing: 2px;
+}
+
+#time h3 {
+    font-size: 120px;
+    line-height: 70px;
+}
+
+#textarea {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 400px;
+}
+
+#typingText,
+#userInput {
+    height: 350px;
+    width: 100%;
+    font-size: 25px;
+    color: #35393c;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    position: absolute;
+    top: 0;
+    padding: 40px;
+}
+
+#userInput {
+    top: 350px;
+    color: #17181c;
+    background: #e2e2e2;
+}
+
+#userInput::placeholder {
+    color: #17181c;
+}
+
+#result {
+    height: 200px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    display: none;
+}
+
+#result .showResult {
+    height: 200px;
+    width: 250px;
+    display: grid;
+    place-items: center;
+    margin: 70px 120px;
+}
+
+#result .showResult h2 {
+    font-size: 40px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #e2e2e2;
+}
+
+#result .showResult h1 {
+    line-height: 50px;
+    font-size: 60px;
+}
+
+/* Correct Class For Correct Characters */
+.correct {
+    color: #83aa0e;
+}
+
+/* Incorrect Class For Incorrect Characters */
+.incorrect {
+    color: #dc1414;
+}

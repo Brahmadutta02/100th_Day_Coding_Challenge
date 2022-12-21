@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <div id="header">
+            <h2>TEST YOUR TYPING SPEED</h2>
+            <!-- Counter Section -->
+            <div id="time">
+                <h2>TIME</h2>
+                <h3 id="counter">00</h3>
+                <h2 id="start">Click Here To Start CountDown.</h2>
+            </div>
+            <!-- Main Section -->
+            <div id="textarea">
+                <div id="typingText"></div>
+                <textarea id="userInput" placeholder="Start Typing Here."></textarea>
+            </div>
+            <!-- Result Section -->
+            <div id="result">
+                <!-- Words Per Minute -->
+                <div class="showResult">
+                    <h2>WPM</h2>
+                    <h1 id="words">00</h1>
+                </div>
+
+                <!-- Characters Per Minute -->
+                <div class="showResult">
+                    <h2>CPM</h2>
+                    <h1 id="characters">00</h1>
+                </div>
+
+                <!-- Total Errors -->
+                <div class="showResult">
+                    <h2>ERRORS</h2>
+                    <h1 id="error">00</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
