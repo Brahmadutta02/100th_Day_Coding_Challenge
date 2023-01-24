@@ -1,0 +1,3603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/eventrra/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventrra</title>
+    <meta name="description" content="Event management is the process of planning, organizing, and executing events such as conferences, conventions, trade shows, and ceremonies." />
+    <link rel="icon" href="26387fa4f5b1e3f7b6217b27d79bf264.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="2d0b56e7e51cf11036ad8734bdb67e2d.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
+    <style>
+        :root {
+            --ffsd: 0px;
+            --1vw: calc((100vw - var(--sbw, 0px)) / 100);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animated {
+                animation: none !important;
+            }
+        }
+
+        @media not all and (min-resolution:.001dpcm) {
+            @media {
+                :root {
+                    --ffsd: 0.5px;
+                }
+            }
+        }
+
+        html {
+            zoom: var(--rzf, 1);
+            font-size: max(calc(min(var(--1vw, 1vw), 13.66px) * var(--rfso, 1)), var(--minfs, 0px));
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: calc(1rem * var(--bfso, 1));
+        }
+
+        body,
+        html,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+            font-synthesis: none;
+            font-kerning: none;
+            font-variant-ligatures: none;
+            font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+            font-family: unset;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: geometricprecision;
+            white-space: normal;
+        }
+
+        li {
+            text-align: unset;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEl46n1V_s-0;
+            font-display: swap;
+            src: url(fonts/e2de09eac0386e92b44a70cb071e6ef7.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/0dea118f10dc9404c6756d2bf941fc5c.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEVg3xZg-0;
+            font-display: swap;
+            src: url(fonts/6981208c59b75ea3eae3b8d3eeb44265.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        #verticalMenu {
+            border: 12px solid #ffffff;
+            padding: 0;
+            margin: 0 0 0 auto;
+            z-index: 2;
+            font-size: 1.5rem;
+            right: 0px;
+            box-sizing: border-box;
+            transition: all 0.35s;
+            background-color: #ffffff;
+            transform: translateX(400px);
+            overflow: auto;
+            max-width: 80vw;
+            top: 0px;
+            width: 400px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            position: fixed;
+            height: 100%;
+        }
+
+        #menuToggle:checked~#verticalMenu {
+            transform: translateX(0px);
+        }
+
+        #menuButton {
+            z-index: 3;
+            color: #0e1318;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menuButton:hover {
+            cursor: pointer;
+            text-decoration-line: none;
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLinkContent:hover {
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLink {
+            color: hsla(210, 26%, 7%, 0.7);
+            list-style-type: none;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+
+        #horizontalMenu>.navMenuLink {
+            max-width: 148px;
+        }
+
+        .navMenuLinkContent {
+            padding: 10px 16px;
+            text-decoration-line: none;
+            overflow: hidden;
+            color: hsla(210, 26%, 7%, 0.7);
+            white-space: nowrap;
+            font-weight: 700;
+            display: inline-block;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-overflow: ellipsis;
+            margin-right: auto;
+        }
+
+        #menuToggle:checked~#menuButton {
+            background-color: rgba(30, 41, 51, 45);
+            z-index: 2;
+            top: 0px;
+            width: 100vw;
+            position: fixed;
+            opacity: 0.55;
+            height: 100vh;
+        }
+
+        #menuToggle:checked~#menuButton>#menuButtonIcon {
+            display: none;
+        }
+
+        #horizontalMenu {
+            display: flex;
+        }
+
+        @media (max-width: 0px) {
+            #horizontalMenu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1px) {
+            #menuButton,
+            #verticalMenu {
+                display: none;
+            }
+        }
+
+        html {
+            scroll-padding-top: 50px;
+        }
+
+        @media (max-width: 375px) {
+            #adfHG01j4DRjjE6E {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #eAu4wS1kpnDxEipj {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #BkI9pdEDEyfjGDVu {
+                font-size: max(0px, calc(8.70819912em - var(--ffsd)));
+            }
+            #JhUob2HsGmXd4ZdW {
+                font-size: max(0px, calc(7.41149341em - var(--ffsd)));
+            }
+            #jUtRFdIyou8Ivy5F {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 8.70819912em) * -0.1);
+                margin-bottom: calc(max(0px, 7.41149341em) * 0.1);
+            }
+            #i3pkf2trUL2YcEGa {
+                min-width: 45.92507204rem;
+            }
+            #wYXmLuUJ9sYha6lh {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #b8esFOcaswG5mDIm {
+                font-size: max(0px, calc(1.66758419em - var(--ffsd)));
+            }
+            #jM3GEp8APsbRLfOT {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #gRRe8gSYLtZUvCve {
+                min-width: 45.92507204rem;
+            }
+            #wm3NLqtbcc8h1VTe {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #fXQxFBzd4OfRLSvk {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #T1n9HxzXPeNycbk9 {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #kOJ4F8Vi8O0KV9Jz {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #da0nvk2jwJRiuApV {
+                min-width: 12.10714019rem;
+            }
+            #os1qjG8WT0UuR2Rc {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #MDCywDmKbbd65axB {
+                grid-template-columns: 5.62225476rem 0 0 2.0734076rem 11.97380686rem 2.0734076rem 29.67111665rem 0 48.58600654rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(17.64418009rem, max-content) minmax(1.3556544rem, max-content) minmax(13.83601757rem, max-content) minmax(7.31158145rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #ah6AJYHU5LTI8hk0 {
+                min-height: 20vh;
+            }
+            #YpCSkB0V0r8iKS3B {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #VcPVZxO6udVQS3i0 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #AMYKKm9sPoP7g7kD {
+                grid-area: 2 / 2 / 11 / 3;
+            }
+            #XnsbSVmOT0u2vOyr {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #XgTY4uJLn9SSN60W {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #DbTUoeoPmMzgQwYB {
+                min-width: 34.54886219rem;
+            }
+            #exMle1b6UjGEKlyZ {
+                grid-area: 3 / 5 / 4 / 10;
+            }
+            #QXS6nsDgAHqpNwSe {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hTgAkrwo72YHESBP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #ipI119ILWUnh2NUm {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #aQcTytL0HipAPwNc {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #b0NPEQ3dmUVbtKMQ {
+                min-width: 34.70796826rem;
+            }
+            #fQg6yXcTJ1WRJxjG {
+                grid-area: 5 / 6 / 6 / 11;
+            }
+            #YgUT27OmRJmMDk5a {
+                grid-area: 7 / 4 / 10 / 9;
+            }
+            #j0QnwaWcKefB5lPN {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #IvppEkzKMDVmpkBp {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #uVMDxlky4zHeQ1uR {
+                min-width: 13.75489641rem;
+            }
+            #uzvzP2sXuIPyaSi0 {
+                grid-area: 8 / 7 / 9 / 8;
+            }
+            #TXrNYIfUCtnd8usG {
+                grid-template-columns: 7.89150372rem 39.47305557rem 9.07098637rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 16.07649327rem 0.15910607rem 8.98981941rem;
+                grid-template-rows: minmax(8.37482495rem, max-content) minmax(1.92189752rem, max-content) minmax(9.87595118rem, max-content) minmax(1.85195224rem, max-content) minmax(12.04490044rem, max-content) minmax(6.35856032rem, max-content) minmax(1.4784636rem, max-content) minmax(1.81063836rem, max-content) minmax(1.4784636rem, max-content) minmax(2.65207042rem, max-content) minmax(8.37482495rem, max-content);
+            }
+            #O2bFWLDoDs2d9maP {
+                min-height: 20vh;
+            }
+            #J4q97Tkln3ONoo8R {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #BPAwXiDryP10oho9 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #jpZxzS0qYWcu5QQ1 {
+                font-size: max(0px, calc(4.48999268em - var(--ffsd)));
+            }
+            #qf5Yn8KGesIk3enw {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48999268em) * 0.1);
+            }
+            #tQRuEO2cBR4MNNJj {
+                min-width: 28.10652758rem;
+            }
+            #sDCy3Lj9mcg5PrbQ {
+                grid-area: 9 / 2 / 16 / 3;
+            }
+            #pz77GshXtE3gXtRb {
+                grid-area: 2 / 4 / 23 / 23;
+            }
+            #kOs5h9VRdcAlwD2Q {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #XyauvxDRnSZR57nj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #kf8EYAcALYVb0TgK {
+                min-width: 5.64080296rem;
+            }
+            #WebvtxDcEI0HWpk1 {
+                grid-area: 3 / 5 / 7 / 8;
+            }
+            #x8gtgumDVEmeOiON {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #nit0uWUCfh3bDC7V {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #VOTf2ghxpTKSWO5o {
+                min-width: 25.73652509rem;
+            }
+            #HahdVnau5iM1WL5t {
+                grid-area: 4 / 14 / 5 / 20;
+            }
+            #L4iueB3VyYMtD4y8 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Pk2qFStgGc0f8p4D {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PqMnQjlNKeXfN03C {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #FEHKM3MlGMBc8cpo {
+                min-width: 25.73652509rem;
+            }
+            #b9fp83ZzBd8Qn4oE {
+                grid-area: 6 / 13 / 8 / 19;
+            }
+            #P5glo3W9pww3B2kW {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #lmkMFFR4EFJL22wV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EyZALoxQ8bCGj2tf {
+                min-width: 5.64080296rem;
+            }
+            #uAAVTcnPsIt4A49D {
+                grid-area: 10 / 6 / 14 / 9;
+            }
+            #yxgN6v4kjqgFwAOl {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #ch9K24fRGyNUedhY {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #u7nfgsDOMfNcqxwX {
+                min-width: 25.73652509rem;
+            }
+            #KUqpbn8QQ2iyh0M2 {
+                grid-area: 11 / 16 / 12 / 22;
+            }
+            #Xtu2F9ZlY1Gzu7qy {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PWt2V6JoXDjkl5Uk {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hxsecay4azEzgYd0 {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #YEm5318IJqjHweS6 {
+                min-width: 25.73652509rem;
+            }
+            #uWS8mfWv6qggQxKg {
+                grid-area: 13 / 15 / 15 / 21;
+            }
+            #uJ8yozW7FZ41MECR {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #DbckR6XVDaXihhZb {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EOOHm6owhVsJufIi {
+                min-width: 5.64080296rem;
+            }
+            #xAqik7WQcrWWn6M9 {
+                grid-area: 17 / 7 / 21 / 10;
+            }
+            #hzAC1keVb0hkzEsG {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #H8NXyo2u2FtQfND6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #izDKdcYQFnCNwWMh {
+                min-width: 25.88293846rem;
+            }
+            #Np25QdokZ5uOb2Jl {
+                grid-area: 18 / 12 / 19 / 18;
+            }
+            #JoVbH3xVMT8xeWdP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Z8ccGVyoWD3BltS1 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #SZKzlrLbUdfVz4pX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #rz8duk0WP1uDqwYI {
+                min-width: 25.88293846rem;
+            }
+            #D7avblUbKSHFcIZi {
+                grid-area: 20 / 11 / 22 / 17;
+            }
+            #T7kkbGy1VFX3Vgz8 {
+                grid-template-columns: 8.98981941rem 27.97319425rem 9.67808049rem 4.37079699rem 0 0 5.50746963rem 0 0 3.00282633rem 0 0.14641337rem 0 0 0 25.60319176rem 0 0 0 0 0 3.76055769rem 10.96765009rem;
+                grid-template-rows: minmax(7.91602456rem, max-content) minmax(6.0302729rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(2.60371402rem, max-content) minmax(1.49439561rem, max-content) minmax(0.073207rem, max-content) minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.1314564rem, max-content) minmax(2.12867097rem, max-content) minmax(1.68506844rem, max-content) minmax(2.81906337rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(5.81492356rem, max-content) minmax(7.91602456rem, max-content);
+            }
+            #VheN4LItNQruaMFZ {
+                min-height: 20vh;
+            }
+            #sh62YNMy8XfSVEHI {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uCDohMjiEsEcCgXc {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #wsUMq2kyZVD84RsN {
+                grid-area: 2 / 2 / 7 / 4;
+            }
+            #lYQ2OMNrOQDc4lwb {
+                grid-area: 6 / 3 / 13 / 5;
+            }
+            #b6DwJ2iJ9WNiMOiZ {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #TWxqExTgQ2vmLcrH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #c2PlvB1hmt2MK3yV {
+                min-width: 31.94984016rem;
+            }
+            #JA8mjSjt4VBYCcrl {
+                grid-area: 3 / 7 / 4 / 12;
+            }
+            #GmW40dwP977Xzpw3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #engDm0e63sI0UQCj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #MHkKabsUQ7XSQp5Z {
+                min-width: 32.09693071rem;
+            }
+            #hIGPVbynjuRnUGVE {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #DAcaLWvzdMPsm3l0 {
+                grid-area: 9 / 6 / 12 / 11;
+            }
+            #genbkXzW2I3L0UeR {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #SPmyMToHQv8nY0LZ {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #d2xA0LXx7JJmhkqN {
+                min-width: 13.75489641rem;
+            }
+            #ULPAUYQ8Mo1FodBQ {
+                grid-area: 10 / 9 / 11 / 10;
+            }
+            #F6T8sDyIajwN5n74 {
+                grid-template-columns: 5.90048971rem 20.47580468rem 3.14790092rem 20.47580468rem 6.72138796rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 13.47747123rem 0.14709056rem 11.31501466rem;
+                grid-template-rows: minmax(6.80000577rem, max-content) minmax(6.556027rem, max-content) minmax(9.82918009rem, max-content) minmax(1.85195224rem, max-content) minmax(0.76176561rem, max-content) minmax(4.62468617rem, max-content) minmax(3.23731868rem, max-content) minmax(4.46240247rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(6.46859924rem, max-content) minmax(6.80000577rem, max-content);
+            }
+            #fNMelVhGI7jdxY9F {
+                min-height: 20vh;
+            }
+            #o9TEAzDBRXAKCyE7 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #Ih4PJoKaStYGYuaL {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #MgacBCdEuSIvKbY1 {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #sQDQwYbXWlz2dEve {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #VxkmMUwlYonciUrg {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 5.0497511em) * 0.1);
+            }
+            #ophlFh9tm8jcq73U {
+                min-width: 31.22112431rem;
+            }
+            #LirgdDK4lK8WVd2S {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fyuLpLgTPGFHbucI {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #i4bCiFka7c9KTpwJ {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #V1T2bJdxJVU7rDYr {
+                min-width: 41.11922732rem;
+            }
+            #xgfzZo0tcts2xdT3 {
+                grid-area: 4 / 5 / 5 / 13;
+            }
+            #mkDdYQbn5SthqzUR {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #l9EaKIowI0OR1GT6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #PbNayCwiy7xgRZQv {
+                min-width: 41.02323169rem;
+            }
+            #Esz0yJiG1NQbSpqx {
+                grid-area: 6 / 4 / 7 / 10;
+            }
+            #AzAce1tqtzshnVZk {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #uUkMfjANmVUKKJh0 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #UxtN9TfQbi50MsjN {
+                min-width: 41.11922732rem;
+            }
+            #tOFWMcE1HwuUQE3X {
+                grid-area: 8 / 7 / 9 / 14;
+            }
+            #tOApwUcERihzLu2n {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #EsuirE9sZA5Rbi2O {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #N1poGIFiYswsBVsh {
+                min-width: 41.02323169rem;
+            }
+            #Lfw8lZHPYFumYdep {
+                grid-area: 10 / 6 / 11 / 11;
+            }
+            #axHNOQpzGXwZi7ej {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #biIZQJn280gPVySj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #uWle7GK74PFpFHAy {
+                min-width: 41.11922732rem;
+            }
+            #bsHw06F3esTJu2id {
+                grid-area: 12 / 9 / 13 / 15;
+            }
+            #CYiEzj81MLHx9SM2 {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #UjrlMHDYQQt32hER {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #nCsXvaDMSuNbIXjc {
+                min-width: 41.02323169rem;
+            }
+            #PTfj9ookx0ezZZAb {
+                grid-area: 14 / 8 / 15 / 12;
+            }
+            #IzMzh9bXTPpXUN92 {
+                grid-template-columns: 5.62225476rem 31.08779098rem 16.68180552rem 0 0 0 0 0 40.88989835rem 0 0 0.09599563rem 0 0 5.62225476rem;
+                grid-template-rows: minmax(5.66655018rem, max-content) minmax(10.96602635rem, max-content) minmax(12.73472432rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(3.97270482rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(4.15535209rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #vOrp6DCPAkxnpIMK {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 375.05px) and (max-width: 480px) {
+            #adfHG01j4DRjjE6E {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #eAu4wS1kpnDxEipj {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #BkI9pdEDEyfjGDVu {
+                font-size: max(0px, calc(8.70819912em - var(--ffsd)));
+            }
+            #JhUob2HsGmXd4ZdW {
+                font-size: max(0px, calc(7.41149341em - var(--ffsd)));
+            }
+            #jUtRFdIyou8Ivy5F {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 8.70819912em) * -0.1);
+                margin-bottom: calc(max(0px, 7.41149341em) * 0.1);
+            }
+            #i3pkf2trUL2YcEGa {
+                min-width: 45.89590537rem;
+            }
+            #wYXmLuUJ9sYha6lh {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #b8esFOcaswG5mDIm {
+                font-size: max(0px, calc(1.66758419em - var(--ffsd)));
+            }
+            #jM3GEp8APsbRLfOT {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #gRRe8gSYLtZUvCve {
+                min-width: 45.89590537rem;
+            }
+            #wm3NLqtbcc8h1VTe {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #fXQxFBzd4OfRLSvk {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #T1n9HxzXPeNycbk9 {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #kOJ4F8Vi8O0KV9Jz {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #da0nvk2jwJRiuApV {
+                min-width: 12.07797353rem;
+            }
+            #os1qjG8WT0UuR2Rc {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #MDCywDmKbbd65axB {
+                grid-template-columns: 5.62225476rem 0 0 2.0734076rem 11.97380686rem 2.0734076rem 29.67111665rem 0 48.58600654rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(17.64418009rem, max-content) minmax(1.3556544rem, max-content) minmax(13.83601757rem, max-content) minmax(7.31158145rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #ah6AJYHU5LTI8hk0 {
+                min-height: 20vh;
+            }
+            #YpCSkB0V0r8iKS3B {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #VcPVZxO6udVQS3i0 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #AMYKKm9sPoP7g7kD {
+                grid-area: 2 / 2 / 11 / 3;
+            }
+            #XnsbSVmOT0u2vOyr {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #XgTY4uJLn9SSN60W {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #DbTUoeoPmMzgQwYB {
+                min-width: 34.51969552rem;
+            }
+            #exMle1b6UjGEKlyZ {
+                grid-area: 3 / 5 / 4 / 10;
+            }
+            #QXS6nsDgAHqpNwSe {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hTgAkrwo72YHESBP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #ipI119ILWUnh2NUm {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #aQcTytL0HipAPwNc {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #b0NPEQ3dmUVbtKMQ {
+                min-width: 34.67880159rem;
+            }
+            #fQg6yXcTJ1WRJxjG {
+                grid-area: 5 / 6 / 6 / 11;
+            }
+            #YgUT27OmRJmMDk5a {
+                grid-area: 7 / 4 / 10 / 9;
+            }
+            #j0QnwaWcKefB5lPN {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #IvppEkzKMDVmpkBp {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #uVMDxlky4zHeQ1uR {
+                min-width: 13.72572975rem;
+            }
+            #uzvzP2sXuIPyaSi0 {
+                grid-area: 8 / 7 / 9 / 8;
+            }
+            #TXrNYIfUCtnd8usG {
+                grid-template-columns: 7.89150372rem 39.47305557rem 9.07098637rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 16.07649327rem 0.15910607rem 8.98981941rem;
+                grid-template-rows: minmax(8.37482495rem, max-content) minmax(1.92189752rem, max-content) minmax(9.87595118rem, max-content) minmax(1.85195224rem, max-content) minmax(12.04490044rem, max-content) minmax(6.35856032rem, max-content) minmax(1.4784636rem, max-content) minmax(1.81063836rem, max-content) minmax(1.4784636rem, max-content) minmax(2.65207042rem, max-content) minmax(8.37482495rem, max-content);
+            }
+            #O2bFWLDoDs2d9maP {
+                min-height: 20vh;
+            }
+            #J4q97Tkln3ONoo8R {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #BPAwXiDryP10oho9 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #jpZxzS0qYWcu5QQ1 {
+                font-size: max(0px, calc(4.48999268em - var(--ffsd)));
+            }
+            #qf5Yn8KGesIk3enw {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48999268em) * 0.1);
+            }
+            #tQRuEO2cBR4MNNJj {
+                min-width: 28.07736091rem;
+            }
+            #sDCy3Lj9mcg5PrbQ {
+                grid-area: 9 / 2 / 16 / 3;
+            }
+            #pz77GshXtE3gXtRb {
+                grid-area: 2 / 4 / 23 / 23;
+            }
+            #kOs5h9VRdcAlwD2Q {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #XyauvxDRnSZR57nj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #kf8EYAcALYVb0TgK {
+                min-width: 5.6116363rem;
+            }
+            #WebvtxDcEI0HWpk1 {
+                grid-area: 3 / 5 / 7 / 8;
+            }
+            #x8gtgumDVEmeOiON {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #nit0uWUCfh3bDC7V {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #VOTf2ghxpTKSWO5o {
+                min-width: 25.70735842rem;
+            }
+            #HahdVnau5iM1WL5t {
+                grid-area: 4 / 14 / 5 / 20;
+            }
+            #L4iueB3VyYMtD4y8 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Pk2qFStgGc0f8p4D {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PqMnQjlNKeXfN03C {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #FEHKM3MlGMBc8cpo {
+                min-width: 25.70735842rem;
+            }
+            #b9fp83ZzBd8Qn4oE {
+                grid-area: 6 / 13 / 8 / 19;
+            }
+            #P5glo3W9pww3B2kW {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #lmkMFFR4EFJL22wV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EyZALoxQ8bCGj2tf {
+                min-width: 5.6116363rem;
+            }
+            #uAAVTcnPsIt4A49D {
+                grid-area: 10 / 6 / 14 / 9;
+            }
+            #yxgN6v4kjqgFwAOl {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #ch9K24fRGyNUedhY {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #u7nfgsDOMfNcqxwX {
+                min-width: 25.70735842rem;
+            }
+            #KUqpbn8QQ2iyh0M2 {
+                grid-area: 11 / 16 / 12 / 22;
+            }
+            #Xtu2F9ZlY1Gzu7qy {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PWt2V6JoXDjkl5Uk {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hxsecay4azEzgYd0 {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #YEm5318IJqjHweS6 {
+                min-width: 25.70735842rem;
+            }
+            #uWS8mfWv6qggQxKg {
+                grid-area: 13 / 15 / 15 / 21;
+            }
+            #uJ8yozW7FZ41MECR {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #DbckR6XVDaXihhZb {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EOOHm6owhVsJufIi {
+                min-width: 5.6116363rem;
+            }
+            #xAqik7WQcrWWn6M9 {
+                grid-area: 17 / 7 / 21 / 10;
+            }
+            #hzAC1keVb0hkzEsG {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #H8NXyo2u2FtQfND6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #izDKdcYQFnCNwWMh {
+                min-width: 25.8537718rem;
+            }
+            #Np25QdokZ5uOb2Jl {
+                grid-area: 18 / 12 / 19 / 18;
+            }
+            #JoVbH3xVMT8xeWdP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Z8ccGVyoWD3BltS1 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #SZKzlrLbUdfVz4pX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #rz8duk0WP1uDqwYI {
+                min-width: 25.8537718rem;
+            }
+            #D7avblUbKSHFcIZi {
+                grid-area: 20 / 11 / 22 / 17;
+            }
+            #T7kkbGy1VFX3Vgz8 {
+                grid-template-columns: 8.98981941rem 27.97319425rem 9.67808049rem 4.37079699rem 0 0 5.50746963rem 0 0 3.00282633rem 0 0.14641337rem 0 0 0 25.60319176rem 0 0 0 0 0 3.76055769rem 10.96765009rem;
+                grid-template-rows: minmax(7.91602456rem, max-content) minmax(6.0302729rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(2.60371402rem, max-content) minmax(1.49439561rem, max-content) minmax(0.073207rem, max-content) minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.1314564rem, max-content) minmax(2.12867097rem, max-content) minmax(1.68506844rem, max-content) minmax(2.81906337rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(5.81492356rem, max-content) minmax(7.91602456rem, max-content);
+            }
+            #VheN4LItNQruaMFZ {
+                min-height: 20vh;
+            }
+            #sh62YNMy8XfSVEHI {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uCDohMjiEsEcCgXc {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #wsUMq2kyZVD84RsN {
+                grid-area: 2 / 2 / 7 / 4;
+            }
+            #lYQ2OMNrOQDc4lwb {
+                grid-area: 6 / 3 / 13 / 5;
+            }
+            #b6DwJ2iJ9WNiMOiZ {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #TWxqExTgQ2vmLcrH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #c2PlvB1hmt2MK3yV {
+                min-width: 31.92067349rem;
+            }
+            #JA8mjSjt4VBYCcrl {
+                grid-area: 3 / 7 / 4 / 12;
+            }
+            #GmW40dwP977Xzpw3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #engDm0e63sI0UQCj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #MHkKabsUQ7XSQp5Z {
+                min-width: 32.06776405rem;
+            }
+            #hIGPVbynjuRnUGVE {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #DAcaLWvzdMPsm3l0 {
+                grid-area: 9 / 6 / 12 / 11;
+            }
+            #genbkXzW2I3L0UeR {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #SPmyMToHQv8nY0LZ {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #d2xA0LXx7JJmhkqN {
+                min-width: 13.72572975rem;
+            }
+            #ULPAUYQ8Mo1FodBQ {
+                grid-area: 10 / 9 / 11 / 10;
+            }
+            #F6T8sDyIajwN5n74 {
+                grid-template-columns: 5.90048971rem 20.47580468rem 3.14790092rem 20.47580468rem 6.72138796rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 13.47747123rem 0.14709056rem 11.31501466rem;
+                grid-template-rows: minmax(6.80000577rem, max-content) minmax(6.556027rem, max-content) minmax(9.82918009rem, max-content) minmax(1.85195224rem, max-content) minmax(0.76176561rem, max-content) minmax(4.62468617rem, max-content) minmax(3.23731868rem, max-content) minmax(4.46240247rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(6.46859924rem, max-content) minmax(6.80000577rem, max-content);
+            }
+            #fNMelVhGI7jdxY9F {
+                min-height: 20vh;
+            }
+            #o9TEAzDBRXAKCyE7 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #Ih4PJoKaStYGYuaL {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #MgacBCdEuSIvKbY1 {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #sQDQwYbXWlz2dEve {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #VxkmMUwlYonciUrg {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 5.0497511em) * 0.1);
+            }
+            #ophlFh9tm8jcq73U {
+                min-width: 31.19195764rem;
+            }
+            #LirgdDK4lK8WVd2S {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fyuLpLgTPGFHbucI {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #i4bCiFka7c9KTpwJ {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #V1T2bJdxJVU7rDYr {
+                min-width: 41.09006065rem;
+            }
+            #xgfzZo0tcts2xdT3 {
+                grid-area: 4 / 5 / 5 / 13;
+            }
+            #mkDdYQbn5SthqzUR {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #l9EaKIowI0OR1GT6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #PbNayCwiy7xgRZQv {
+                min-width: 40.99406502rem;
+            }
+            #Esz0yJiG1NQbSpqx {
+                grid-area: 6 / 4 / 7 / 10;
+            }
+            #AzAce1tqtzshnVZk {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #uUkMfjANmVUKKJh0 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #UxtN9TfQbi50MsjN {
+                min-width: 41.09006065rem;
+            }
+            #tOFWMcE1HwuUQE3X {
+                grid-area: 8 / 7 / 9 / 14;
+            }
+            #tOApwUcERihzLu2n {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #EsuirE9sZA5Rbi2O {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #N1poGIFiYswsBVsh {
+                min-width: 40.99406502rem;
+            }
+            #Lfw8lZHPYFumYdep {
+                grid-area: 10 / 6 / 11 / 11;
+            }
+            #axHNOQpzGXwZi7ej {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #biIZQJn280gPVySj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #uWle7GK74PFpFHAy {
+                min-width: 41.09006065rem;
+            }
+            #bsHw06F3esTJu2id {
+                grid-area: 12 / 9 / 13 / 15;
+            }
+            #CYiEzj81MLHx9SM2 {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #UjrlMHDYQQt32hER {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #nCsXvaDMSuNbIXjc {
+                min-width: 40.99406502rem;
+            }
+            #PTfj9ookx0ezZZAb {
+                grid-area: 14 / 8 / 15 / 12;
+            }
+            #IzMzh9bXTPpXUN92 {
+                grid-template-columns: 5.62225476rem 31.08779098rem 16.68180552rem 0 0 0 0 0 40.88989835rem 0 0 0.09599563rem 0 0 5.62225476rem;
+                grid-template-rows: minmax(5.66655018rem, max-content) minmax(10.96602635rem, max-content) minmax(12.73472432rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(3.97270482rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(4.15535209rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #vOrp6DCPAkxnpIMK {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 480.05px) and (max-width: 768px) {
+            #adfHG01j4DRjjE6E {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #eAu4wS1kpnDxEipj {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #BkI9pdEDEyfjGDVu {
+                font-size: max(0px, calc(8.70819912em - var(--ffsd)));
+            }
+            #JhUob2HsGmXd4ZdW {
+                font-size: max(0px, calc(7.41149341em - var(--ffsd)));
+            }
+            #jUtRFdIyou8Ivy5F {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 8.70819912em) * -0.1);
+                margin-bottom: calc(max(0px, 7.41149341em) * 0.1);
+            }
+            #i3pkf2trUL2YcEGa {
+                min-width: 45.85684287rem;
+            }
+            #wYXmLuUJ9sYha6lh {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #b8esFOcaswG5mDIm {
+                font-size: max(0px, calc(1.66758419em - var(--ffsd)));
+            }
+            #jM3GEp8APsbRLfOT {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #gRRe8gSYLtZUvCve {
+                min-width: 45.85684287rem;
+            }
+            #wm3NLqtbcc8h1VTe {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #fXQxFBzd4OfRLSvk {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #T1n9HxzXPeNycbk9 {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #kOJ4F8Vi8O0KV9Jz {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #da0nvk2jwJRiuApV {
+                min-width: 12.03891103rem;
+            }
+            #os1qjG8WT0UuR2Rc {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #MDCywDmKbbd65axB {
+                grid-template-columns: 5.62225476rem 0 0 2.0734076rem 11.97380686rem 2.0734076rem 29.67111665rem 0 48.58600654rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(17.64418009rem, max-content) minmax(1.3556544rem, max-content) minmax(13.83601757rem, max-content) minmax(7.31158145rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #ah6AJYHU5LTI8hk0 {
+                min-height: 20vh;
+            }
+            #YpCSkB0V0r8iKS3B {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #VcPVZxO6udVQS3i0 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #AMYKKm9sPoP7g7kD {
+                grid-area: 2 / 2 / 11 / 3;
+            }
+            #XnsbSVmOT0u2vOyr {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #XgTY4uJLn9SSN60W {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #DbTUoeoPmMzgQwYB {
+                min-width: 34.48063302rem;
+            }
+            #exMle1b6UjGEKlyZ {
+                grid-area: 3 / 5 / 4 / 10;
+            }
+            #QXS6nsDgAHqpNwSe {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hTgAkrwo72YHESBP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #ipI119ILWUnh2NUm {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #aQcTytL0HipAPwNc {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #b0NPEQ3dmUVbtKMQ {
+                min-width: 34.63973909rem;
+            }
+            #fQg6yXcTJ1WRJxjG {
+                grid-area: 5 / 6 / 6 / 11;
+            }
+            #YgUT27OmRJmMDk5a {
+                grid-area: 7 / 4 / 10 / 9;
+            }
+            #j0QnwaWcKefB5lPN {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #IvppEkzKMDVmpkBp {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #uVMDxlky4zHeQ1uR {
+                min-width: 13.68666725rem;
+            }
+            #uzvzP2sXuIPyaSi0 {
+                grid-area: 8 / 7 / 9 / 8;
+            }
+            #TXrNYIfUCtnd8usG {
+                grid-template-columns: 7.89150372rem 39.47305557rem 9.07098637rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 16.07649327rem 0.15910607rem 8.98981941rem;
+                grid-template-rows: minmax(8.37482495rem, max-content) minmax(1.92189752rem, max-content) minmax(9.87595118rem, max-content) minmax(1.85195224rem, max-content) minmax(12.04490044rem, max-content) minmax(6.35856032rem, max-content) minmax(1.4784636rem, max-content) minmax(1.81063836rem, max-content) minmax(1.4784636rem, max-content) minmax(2.65207042rem, max-content) minmax(8.37482495rem, max-content);
+            }
+            #O2bFWLDoDs2d9maP {
+                min-height: 20vh;
+            }
+            #J4q97Tkln3ONoo8R {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #BPAwXiDryP10oho9 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #jpZxzS0qYWcu5QQ1 {
+                font-size: max(0px, calc(4.48999268em - var(--ffsd)));
+            }
+            #qf5Yn8KGesIk3enw {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48999268em) * 0.1);
+            }
+            #tQRuEO2cBR4MNNJj {
+                min-width: 28.03829841rem;
+            }
+            #sDCy3Lj9mcg5PrbQ {
+                grid-area: 9 / 2 / 16 / 3;
+            }
+            #pz77GshXtE3gXtRb {
+                grid-area: 2 / 4 / 23 / 23;
+            }
+            #kOs5h9VRdcAlwD2Q {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #XyauvxDRnSZR57nj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #kf8EYAcALYVb0TgK {
+                min-width: 5.5725738rem;
+            }
+            #WebvtxDcEI0HWpk1 {
+                grid-area: 3 / 5 / 7 / 8;
+            }
+            #x8gtgumDVEmeOiON {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #nit0uWUCfh3bDC7V {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #VOTf2ghxpTKSWO5o {
+                min-width: 25.66829592rem;
+            }
+            #HahdVnau5iM1WL5t {
+                grid-area: 4 / 14 / 5 / 20;
+            }
+            #L4iueB3VyYMtD4y8 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Pk2qFStgGc0f8p4D {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PqMnQjlNKeXfN03C {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #FEHKM3MlGMBc8cpo {
+                min-width: 25.66829592rem;
+            }
+            #b9fp83ZzBd8Qn4oE {
+                grid-area: 6 / 13 / 8 / 19;
+            }
+            #P5glo3W9pww3B2kW {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #lmkMFFR4EFJL22wV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EyZALoxQ8bCGj2tf {
+                min-width: 5.5725738rem;
+            }
+            #uAAVTcnPsIt4A49D {
+                grid-area: 10 / 6 / 14 / 9;
+            }
+            #yxgN6v4kjqgFwAOl {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #ch9K24fRGyNUedhY {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #u7nfgsDOMfNcqxwX {
+                min-width: 25.66829592rem;
+            }
+            #KUqpbn8QQ2iyh0M2 {
+                grid-area: 11 / 16 / 12 / 22;
+            }
+            #Xtu2F9ZlY1Gzu7qy {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PWt2V6JoXDjkl5Uk {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hxsecay4azEzgYd0 {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #YEm5318IJqjHweS6 {
+                min-width: 25.66829592rem;
+            }
+            #uWS8mfWv6qggQxKg {
+                grid-area: 13 / 15 / 15 / 21;
+            }
+            #uJ8yozW7FZ41MECR {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #DbckR6XVDaXihhZb {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EOOHm6owhVsJufIi {
+                min-width: 5.5725738rem;
+            }
+            #xAqik7WQcrWWn6M9 {
+                grid-area: 17 / 7 / 21 / 10;
+            }
+            #hzAC1keVb0hkzEsG {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #H8NXyo2u2FtQfND6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #izDKdcYQFnCNwWMh {
+                min-width: 25.8147093rem;
+            }
+            #Np25QdokZ5uOb2Jl {
+                grid-area: 18 / 12 / 19 / 18;
+            }
+            #JoVbH3xVMT8xeWdP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Z8ccGVyoWD3BltS1 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #SZKzlrLbUdfVz4pX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #rz8duk0WP1uDqwYI {
+                min-width: 25.8147093rem;
+            }
+            #D7avblUbKSHFcIZi {
+                grid-area: 20 / 11 / 22 / 17;
+            }
+            #T7kkbGy1VFX3Vgz8 {
+                grid-template-columns: 8.98981941rem 27.97319425rem 9.67808049rem 4.37079699rem 0 0 5.50746963rem 0 0 3.00282633rem 0 0.14641337rem 0 0 0 25.60319176rem 0 0 0 0 0 3.76055769rem 10.96765009rem;
+                grid-template-rows: minmax(7.91602456rem, max-content) minmax(6.0302729rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(2.60371402rem, max-content) minmax(1.49439561rem, max-content) minmax(0.073207rem, max-content) minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.1314564rem, max-content) minmax(2.12867097rem, max-content) minmax(1.68506844rem, max-content) minmax(2.81906337rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(5.81492356rem, max-content) minmax(7.91602456rem, max-content);
+            }
+            #VheN4LItNQruaMFZ {
+                min-height: 20vh;
+            }
+            #sh62YNMy8XfSVEHI {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uCDohMjiEsEcCgXc {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #wsUMq2kyZVD84RsN {
+                grid-area: 2 / 2 / 7 / 4;
+            }
+            #lYQ2OMNrOQDc4lwb {
+                grid-area: 6 / 3 / 13 / 5;
+            }
+            #b6DwJ2iJ9WNiMOiZ {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #TWxqExTgQ2vmLcrH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #c2PlvB1hmt2MK3yV {
+                min-width: 31.88161099rem;
+            }
+            #JA8mjSjt4VBYCcrl {
+                grid-area: 3 / 7 / 4 / 12;
+            }
+            #GmW40dwP977Xzpw3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #engDm0e63sI0UQCj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #MHkKabsUQ7XSQp5Z {
+                min-width: 32.02870155rem;
+            }
+            #hIGPVbynjuRnUGVE {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #DAcaLWvzdMPsm3l0 {
+                grid-area: 9 / 6 / 12 / 11;
+            }
+            #genbkXzW2I3L0UeR {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #SPmyMToHQv8nY0LZ {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #d2xA0LXx7JJmhkqN {
+                min-width: 13.68666725rem;
+            }
+            #ULPAUYQ8Mo1FodBQ {
+                grid-area: 10 / 9 / 11 / 10;
+            }
+            #F6T8sDyIajwN5n74 {
+                grid-template-columns: 5.90048971rem 20.47580468rem 3.14790092rem 20.47580468rem 6.72138796rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 13.47747123rem 0.14709056rem 11.31501466rem;
+                grid-template-rows: minmax(6.80000577rem, max-content) minmax(6.556027rem, max-content) minmax(9.82918009rem, max-content) minmax(1.85195224rem, max-content) minmax(0.76176561rem, max-content) minmax(4.62468617rem, max-content) minmax(3.23731868rem, max-content) minmax(4.46240247rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(6.46859924rem, max-content) minmax(6.80000577rem, max-content);
+            }
+            #fNMelVhGI7jdxY9F {
+                min-height: 20vh;
+            }
+            #o9TEAzDBRXAKCyE7 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #Ih4PJoKaStYGYuaL {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #MgacBCdEuSIvKbY1 {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #sQDQwYbXWlz2dEve {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #VxkmMUwlYonciUrg {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 5.0497511em) * 0.1);
+            }
+            #ophlFh9tm8jcq73U {
+                min-width: 31.15289514rem;
+            }
+            #LirgdDK4lK8WVd2S {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fyuLpLgTPGFHbucI {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #i4bCiFka7c9KTpwJ {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #V1T2bJdxJVU7rDYr {
+                min-width: 41.05099815rem;
+            }
+            #xgfzZo0tcts2xdT3 {
+                grid-area: 4 / 5 / 5 / 13;
+            }
+            #mkDdYQbn5SthqzUR {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #l9EaKIowI0OR1GT6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #PbNayCwiy7xgRZQv {
+                min-width: 40.95500252rem;
+            }
+            #Esz0yJiG1NQbSpqx {
+                grid-area: 6 / 4 / 7 / 10;
+            }
+            #AzAce1tqtzshnVZk {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #uUkMfjANmVUKKJh0 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #UxtN9TfQbi50MsjN {
+                min-width: 41.05099815rem;
+            }
+            #tOFWMcE1HwuUQE3X {
+                grid-area: 8 / 7 / 9 / 14;
+            }
+            #tOApwUcERihzLu2n {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #EsuirE9sZA5Rbi2O {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #N1poGIFiYswsBVsh {
+                min-width: 40.95500252rem;
+            }
+            #Lfw8lZHPYFumYdep {
+                grid-area: 10 / 6 / 11 / 11;
+            }
+            #axHNOQpzGXwZi7ej {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #biIZQJn280gPVySj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #uWle7GK74PFpFHAy {
+                min-width: 41.05099815rem;
+            }
+            #bsHw06F3esTJu2id {
+                grid-area: 12 / 9 / 13 / 15;
+            }
+            #CYiEzj81MLHx9SM2 {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #UjrlMHDYQQt32hER {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #nCsXvaDMSuNbIXjc {
+                min-width: 40.95500252rem;
+            }
+            #PTfj9ookx0ezZZAb {
+                grid-area: 14 / 8 / 15 / 12;
+            }
+            #IzMzh9bXTPpXUN92 {
+                grid-template-columns: 5.62225476rem 31.08779098rem 16.68180552rem 0 0 0 0 0 40.88989835rem 0 0 0.09599563rem 0 0 5.62225476rem;
+                grid-template-rows: minmax(5.66655018rem, max-content) minmax(10.96602635rem, max-content) minmax(12.73472432rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(3.97270482rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(4.15535209rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #vOrp6DCPAkxnpIMK {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 768.05px) and (max-width: 1024px) {
+            #adfHG01j4DRjjE6E {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #eAu4wS1kpnDxEipj {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #BkI9pdEDEyfjGDVu {
+                font-size: max(0px, calc(8.70819912em - var(--ffsd)));
+            }
+            #JhUob2HsGmXd4ZdW {
+                font-size: max(0px, calc(7.41149341em - var(--ffsd)));
+            }
+            #jUtRFdIyou8Ivy5F {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 8.70819912em) * -0.1);
+                margin-bottom: calc(max(0px, 7.41149341em) * 0.1);
+            }
+            #i3pkf2trUL2YcEGa {
+                min-width: 45.84056683rem;
+            }
+            #wYXmLuUJ9sYha6lh {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #b8esFOcaswG5mDIm {
+                font-size: max(0px, calc(1.66758419em - var(--ffsd)));
+            }
+            #jM3GEp8APsbRLfOT {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #gRRe8gSYLtZUvCve {
+                min-width: 45.84056683rem;
+            }
+            #wm3NLqtbcc8h1VTe {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #fXQxFBzd4OfRLSvk {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #T1n9HxzXPeNycbk9 {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #kOJ4F8Vi8O0KV9Jz {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #da0nvk2jwJRiuApV {
+                min-width: 12.02263499rem;
+            }
+            #os1qjG8WT0UuR2Rc {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #MDCywDmKbbd65axB {
+                grid-template-columns: 5.62225476rem 0 0 2.0734076rem 11.97380686rem 2.0734076rem 29.67111665rem 0 48.58600654rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(17.64418009rem, max-content) minmax(1.3556544rem, max-content) minmax(13.83601757rem, max-content) minmax(7.31158145rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #ah6AJYHU5LTI8hk0 {
+                min-height: 20vh;
+            }
+            #YpCSkB0V0r8iKS3B {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #VcPVZxO6udVQS3i0 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #AMYKKm9sPoP7g7kD {
+                grid-area: 2 / 2 / 11 / 3;
+            }
+            #XnsbSVmOT0u2vOyr {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #XgTY4uJLn9SSN60W {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #DbTUoeoPmMzgQwYB {
+                min-width: 34.46435698rem;
+            }
+            #exMle1b6UjGEKlyZ {
+                grid-area: 3 / 5 / 4 / 10;
+            }
+            #QXS6nsDgAHqpNwSe {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hTgAkrwo72YHESBP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #ipI119ILWUnh2NUm {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #aQcTytL0HipAPwNc {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #b0NPEQ3dmUVbtKMQ {
+                min-width: 34.62346305rem;
+            }
+            #fQg6yXcTJ1WRJxjG {
+                grid-area: 5 / 6 / 6 / 11;
+            }
+            #YgUT27OmRJmMDk5a {
+                grid-area: 7 / 4 / 10 / 9;
+            }
+            #j0QnwaWcKefB5lPN {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #IvppEkzKMDVmpkBp {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #uVMDxlky4zHeQ1uR {
+                min-width: 13.6703912rem;
+            }
+            #uzvzP2sXuIPyaSi0 {
+                grid-area: 8 / 7 / 9 / 8;
+            }
+            #TXrNYIfUCtnd8usG {
+                grid-template-columns: 7.89150372rem 39.47305557rem 9.07098637rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 16.07649327rem 0.15910607rem 8.98981941rem;
+                grid-template-rows: minmax(8.37482495rem, max-content) minmax(1.92189752rem, max-content) minmax(9.87595118rem, max-content) minmax(1.85195224rem, max-content) minmax(12.04490044rem, max-content) minmax(6.35856032rem, max-content) minmax(1.4784636rem, max-content) minmax(1.81063836rem, max-content) minmax(1.4784636rem, max-content) minmax(2.65207042rem, max-content) minmax(8.37482495rem, max-content);
+            }
+            #O2bFWLDoDs2d9maP {
+                min-height: 20vh;
+            }
+            #J4q97Tkln3ONoo8R {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #BPAwXiDryP10oho9 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #jpZxzS0qYWcu5QQ1 {
+                font-size: max(0px, calc(4.48999268em - var(--ffsd)));
+            }
+            #qf5Yn8KGesIk3enw {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48999268em) * 0.1);
+            }
+            #tQRuEO2cBR4MNNJj {
+                min-width: 28.02202237rem;
+            }
+            #sDCy3Lj9mcg5PrbQ {
+                grid-area: 9 / 2 / 16 / 3;
+            }
+            #pz77GshXtE3gXtRb {
+                grid-area: 2 / 4 / 23 / 23;
+            }
+            #kOs5h9VRdcAlwD2Q {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #XyauvxDRnSZR57nj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #kf8EYAcALYVb0TgK {
+                min-width: 5.55629776rem;
+            }
+            #WebvtxDcEI0HWpk1 {
+                grid-area: 3 / 5 / 7 / 8;
+            }
+            #x8gtgumDVEmeOiON {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #nit0uWUCfh3bDC7V {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #VOTf2ghxpTKSWO5o {
+                min-width: 25.65201988rem;
+            }
+            #HahdVnau5iM1WL5t {
+                grid-area: 4 / 14 / 5 / 20;
+            }
+            #L4iueB3VyYMtD4y8 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Pk2qFStgGc0f8p4D {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PqMnQjlNKeXfN03C {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #FEHKM3MlGMBc8cpo {
+                min-width: 25.65201988rem;
+            }
+            #b9fp83ZzBd8Qn4oE {
+                grid-area: 6 / 13 / 8 / 19;
+            }
+            #P5glo3W9pww3B2kW {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #lmkMFFR4EFJL22wV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EyZALoxQ8bCGj2tf {
+                min-width: 5.55629776rem;
+            }
+            #uAAVTcnPsIt4A49D {
+                grid-area: 10 / 6 / 14 / 9;
+            }
+            #yxgN6v4kjqgFwAOl {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #ch9K24fRGyNUedhY {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #u7nfgsDOMfNcqxwX {
+                min-width: 25.65201988rem;
+            }
+            #KUqpbn8QQ2iyh0M2 {
+                grid-area: 11 / 16 / 12 / 22;
+            }
+            #Xtu2F9ZlY1Gzu7qy {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PWt2V6JoXDjkl5Uk {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hxsecay4azEzgYd0 {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #YEm5318IJqjHweS6 {
+                min-width: 25.65201988rem;
+            }
+            #uWS8mfWv6qggQxKg {
+                grid-area: 13 / 15 / 15 / 21;
+            }
+            #uJ8yozW7FZ41MECR {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #DbckR6XVDaXihhZb {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EOOHm6owhVsJufIi {
+                min-width: 5.55629776rem;
+            }
+            #xAqik7WQcrWWn6M9 {
+                grid-area: 17 / 7 / 21 / 10;
+            }
+            #hzAC1keVb0hkzEsG {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #H8NXyo2u2FtQfND6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #izDKdcYQFnCNwWMh {
+                min-width: 25.79843325rem;
+            }
+            #Np25QdokZ5uOb2Jl {
+                grid-area: 18 / 12 / 19 / 18;
+            }
+            #JoVbH3xVMT8xeWdP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Z8ccGVyoWD3BltS1 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #SZKzlrLbUdfVz4pX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #rz8duk0WP1uDqwYI {
+                min-width: 25.79843325rem;
+            }
+            #D7avblUbKSHFcIZi {
+                grid-area: 20 / 11 / 22 / 17;
+            }
+            #T7kkbGy1VFX3Vgz8 {
+                grid-template-columns: 8.98981941rem 27.97319425rem 9.67808049rem 4.37079699rem 0 0 5.50746963rem 0 0 3.00282633rem 0 0.14641337rem 0 0 0 25.60319176rem 0 0 0 0 0 3.76055769rem 10.96765009rem;
+                grid-template-rows: minmax(7.91602456rem, max-content) minmax(6.0302729rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(2.60371402rem, max-content) minmax(1.49439561rem, max-content) minmax(0.073207rem, max-content) minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.1314564rem, max-content) minmax(2.12867097rem, max-content) minmax(1.68506844rem, max-content) minmax(2.81906337rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(5.81492356rem, max-content) minmax(7.91602456rem, max-content);
+            }
+            #VheN4LItNQruaMFZ {
+                min-height: 20vh;
+            }
+            #sh62YNMy8XfSVEHI {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uCDohMjiEsEcCgXc {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #wsUMq2kyZVD84RsN {
+                grid-area: 2 / 2 / 7 / 4;
+            }
+            #lYQ2OMNrOQDc4lwb {
+                grid-area: 6 / 3 / 13 / 5;
+            }
+            #b6DwJ2iJ9WNiMOiZ {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #TWxqExTgQ2vmLcrH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #c2PlvB1hmt2MK3yV {
+                min-width: 31.86533495rem;
+            }
+            #JA8mjSjt4VBYCcrl {
+                grid-area: 3 / 7 / 4 / 12;
+            }
+            #GmW40dwP977Xzpw3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #engDm0e63sI0UQCj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #MHkKabsUQ7XSQp5Z {
+                min-width: 32.0124255rem;
+            }
+            #hIGPVbynjuRnUGVE {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #DAcaLWvzdMPsm3l0 {
+                grid-area: 9 / 6 / 12 / 11;
+            }
+            #genbkXzW2I3L0UeR {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #SPmyMToHQv8nY0LZ {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #d2xA0LXx7JJmhkqN {
+                min-width: 13.6703912rem;
+            }
+            #ULPAUYQ8Mo1FodBQ {
+                grid-area: 10 / 9 / 11 / 10;
+            }
+            #F6T8sDyIajwN5n74 {
+                grid-template-columns: 5.90048971rem 20.47580468rem 3.14790092rem 20.47580468rem 6.72138796rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 13.47747123rem 0.14709056rem 11.31501466rem;
+                grid-template-rows: minmax(6.80000577rem, max-content) minmax(6.556027rem, max-content) minmax(9.82918009rem, max-content) minmax(1.85195224rem, max-content) minmax(0.76176561rem, max-content) minmax(4.62468617rem, max-content) minmax(3.23731868rem, max-content) minmax(4.46240247rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(6.46859924rem, max-content) minmax(6.80000577rem, max-content);
+            }
+            #fNMelVhGI7jdxY9F {
+                min-height: 20vh;
+            }
+            #o9TEAzDBRXAKCyE7 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #Ih4PJoKaStYGYuaL {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #MgacBCdEuSIvKbY1 {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #sQDQwYbXWlz2dEve {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #VxkmMUwlYonciUrg {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 5.0497511em) * 0.1);
+            }
+            #ophlFh9tm8jcq73U {
+                min-width: 31.1366191rem;
+            }
+            #LirgdDK4lK8WVd2S {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fyuLpLgTPGFHbucI {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #i4bCiFka7c9KTpwJ {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #V1T2bJdxJVU7rDYr {
+                min-width: 41.03472211rem;
+            }
+            #xgfzZo0tcts2xdT3 {
+                grid-area: 4 / 5 / 5 / 13;
+            }
+            #mkDdYQbn5SthqzUR {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #l9EaKIowI0OR1GT6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #PbNayCwiy7xgRZQv {
+                min-width: 40.93872648rem;
+            }
+            #Esz0yJiG1NQbSpqx {
+                grid-area: 6 / 4 / 7 / 10;
+            }
+            #AzAce1tqtzshnVZk {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #uUkMfjANmVUKKJh0 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #UxtN9TfQbi50MsjN {
+                min-width: 41.03472211rem;
+            }
+            #tOFWMcE1HwuUQE3X {
+                grid-area: 8 / 7 / 9 / 14;
+            }
+            #tOApwUcERihzLu2n {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #EsuirE9sZA5Rbi2O {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #N1poGIFiYswsBVsh {
+                min-width: 40.93872648rem;
+            }
+            #Lfw8lZHPYFumYdep {
+                grid-area: 10 / 6 / 11 / 11;
+            }
+            #axHNOQpzGXwZi7ej {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #biIZQJn280gPVySj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #uWle7GK74PFpFHAy {
+                min-width: 41.03472211rem;
+            }
+            #bsHw06F3esTJu2id {
+                grid-area: 12 / 9 / 13 / 15;
+            }
+            #CYiEzj81MLHx9SM2 {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #UjrlMHDYQQt32hER {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #nCsXvaDMSuNbIXjc {
+                min-width: 40.93872648rem;
+            }
+            #PTfj9ookx0ezZZAb {
+                grid-area: 14 / 8 / 15 / 12;
+            }
+            #IzMzh9bXTPpXUN92 {
+                grid-template-columns: 5.62225476rem 31.08779098rem 16.68180552rem 0 0 0 0 0 40.88989835rem 0 0 0.09599563rem 0 0 5.62225476rem;
+                grid-template-rows: minmax(5.66655018rem, max-content) minmax(10.96602635rem, max-content) minmax(12.73472432rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(3.97270482rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(4.15535209rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #vOrp6DCPAkxnpIMK {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 1024.05px) {
+            #adfHG01j4DRjjE6E {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #eAu4wS1kpnDxEipj {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #BkI9pdEDEyfjGDVu {
+                font-size: max(0px, calc(8.70819912em - var(--ffsd)));
+            }
+            #JhUob2HsGmXd4ZdW {
+                font-size: max(0px, calc(7.41149341em - var(--ffsd)));
+            }
+            #jUtRFdIyou8Ivy5F {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 8.70819912em) * -0.1);
+                margin-bottom: calc(max(0px, 7.41149341em) * 0.1);
+            }
+            #i3pkf2trUL2YcEGa {
+                min-width: 45.82834192rem;
+            }
+            #wYXmLuUJ9sYha6lh {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #b8esFOcaswG5mDIm {
+                font-size: max(0px, calc(1.66758419em - var(--ffsd)));
+            }
+            #jM3GEp8APsbRLfOT {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #gRRe8gSYLtZUvCve {
+                min-width: 45.82834192rem;
+            }
+            #wm3NLqtbcc8h1VTe {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #fXQxFBzd4OfRLSvk {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #T1n9HxzXPeNycbk9 {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #kOJ4F8Vi8O0KV9Jz {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #da0nvk2jwJRiuApV {
+                min-width: 12.01041008rem;
+            }
+            #os1qjG8WT0UuR2Rc {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #MDCywDmKbbd65axB {
+                grid-template-columns: 5.62225476rem 0 0 2.0734076rem 11.97380686rem 2.0734076rem 29.67111665rem 0 48.58600654rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(17.64418009rem, max-content) minmax(1.3556544rem, max-content) minmax(13.83601757rem, max-content) minmax(7.31158145rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #ah6AJYHU5LTI8hk0 {
+                min-height: 20vh;
+            }
+            #YpCSkB0V0r8iKS3B {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #VcPVZxO6udVQS3i0 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #AMYKKm9sPoP7g7kD {
+                grid-area: 2 / 2 / 11 / 3;
+            }
+            #XnsbSVmOT0u2vOyr {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #XgTY4uJLn9SSN60W {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #DbTUoeoPmMzgQwYB {
+                min-width: 34.45213208rem;
+            }
+            #exMle1b6UjGEKlyZ {
+                grid-area: 3 / 5 / 4 / 10;
+            }
+            #QXS6nsDgAHqpNwSe {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hTgAkrwo72YHESBP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #ipI119ILWUnh2NUm {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #aQcTytL0HipAPwNc {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #b0NPEQ3dmUVbtKMQ {
+                min-width: 34.61123815rem;
+            }
+            #fQg6yXcTJ1WRJxjG {
+                grid-area: 5 / 6 / 6 / 11;
+            }
+            #YgUT27OmRJmMDk5a {
+                grid-area: 7 / 4 / 10 / 9;
+            }
+            #j0QnwaWcKefB5lPN {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #IvppEkzKMDVmpkBp {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #uVMDxlky4zHeQ1uR {
+                min-width: 13.6581663rem;
+            }
+            #uzvzP2sXuIPyaSi0 {
+                grid-area: 8 / 7 / 9 / 8;
+            }
+            #TXrNYIfUCtnd8usG {
+                grid-template-columns: 7.89150372rem 39.47305557rem 9.07098637rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 16.07649327rem 0.15910607rem 8.98981941rem;
+                grid-template-rows: minmax(8.37482495rem, max-content) minmax(1.92189752rem, max-content) minmax(9.87595118rem, max-content) minmax(1.85195224rem, max-content) minmax(12.04490044rem, max-content) minmax(6.35856032rem, max-content) minmax(1.4784636rem, max-content) minmax(1.81063836rem, max-content) minmax(1.4784636rem, max-content) minmax(2.65207042rem, max-content) minmax(8.37482495rem, max-content);
+            }
+            #O2bFWLDoDs2d9maP {
+                min-height: 20vh;
+            }
+            #J4q97Tkln3ONoo8R {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #BPAwXiDryP10oho9 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #jpZxzS0qYWcu5QQ1 {
+                font-size: max(0px, calc(4.48999268em - var(--ffsd)));
+            }
+            #qf5Yn8KGesIk3enw {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48999268em) * 0.1);
+            }
+            #tQRuEO2cBR4MNNJj {
+                min-width: 28.00979747rem;
+            }
+            #sDCy3Lj9mcg5PrbQ {
+                grid-area: 9 / 2 / 16 / 3;
+            }
+            #pz77GshXtE3gXtRb {
+                grid-area: 2 / 4 / 23 / 23;
+            }
+            #kOs5h9VRdcAlwD2Q {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #XyauvxDRnSZR57nj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #kf8EYAcALYVb0TgK {
+                min-width: 5.54407285rem;
+            }
+            #WebvtxDcEI0HWpk1 {
+                grid-area: 3 / 5 / 7 / 8;
+            }
+            #x8gtgumDVEmeOiON {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #nit0uWUCfh3bDC7V {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #VOTf2ghxpTKSWO5o {
+                min-width: 25.63979498rem;
+            }
+            #HahdVnau5iM1WL5t {
+                grid-area: 4 / 14 / 5 / 20;
+            }
+            #L4iueB3VyYMtD4y8 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Pk2qFStgGc0f8p4D {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PqMnQjlNKeXfN03C {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #FEHKM3MlGMBc8cpo {
+                min-width: 25.63979498rem;
+            }
+            #b9fp83ZzBd8Qn4oE {
+                grid-area: 6 / 13 / 8 / 19;
+            }
+            #P5glo3W9pww3B2kW {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #lmkMFFR4EFJL22wV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EyZALoxQ8bCGj2tf {
+                min-width: 5.54407285rem;
+            }
+            #uAAVTcnPsIt4A49D {
+                grid-area: 10 / 6 / 14 / 9;
+            }
+            #yxgN6v4kjqgFwAOl {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #ch9K24fRGyNUedhY {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #u7nfgsDOMfNcqxwX {
+                min-width: 25.63979498rem;
+            }
+            #KUqpbn8QQ2iyh0M2 {
+                grid-area: 11 / 16 / 12 / 22;
+            }
+            #Xtu2F9ZlY1Gzu7qy {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #PWt2V6JoXDjkl5Uk {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #hxsecay4azEzgYd0 {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #YEm5318IJqjHweS6 {
+                min-width: 25.63979498rem;
+            }
+            #uWS8mfWv6qggQxKg {
+                grid-area: 13 / 15 / 15 / 21;
+            }
+            #uJ8yozW7FZ41MECR {
+                font-size: max(0px, calc(3.80669839em - var(--ffsd)));
+            }
+            #DbckR6XVDaXihhZb {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.80669839em) * 0.1);
+            }
+            #EOOHm6owhVsJufIi {
+                min-width: 5.54407285rem;
+            }
+            #xAqik7WQcrWWn6M9 {
+                grid-area: 17 / 7 / 21 / 10;
+            }
+            #hzAC1keVb0hkzEsG {
+                font-size: max(0px, calc(1.62316984em - var(--ffsd)));
+            }
+            #H8NXyo2u2FtQfND6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #izDKdcYQFnCNwWMh {
+                min-width: 25.78620835rem;
+            }
+            #Np25QdokZ5uOb2Jl {
+                grid-area: 18 / 12 / 19 / 18;
+            }
+            #JoVbH3xVMT8xeWdP {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #Z8ccGVyoWD3BltS1 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #SZKzlrLbUdfVz4pX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.1);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #rz8duk0WP1uDqwYI {
+                min-width: 25.78620835rem;
+            }
+            #D7avblUbKSHFcIZi {
+                grid-area: 20 / 11 / 22 / 17;
+            }
+            #T7kkbGy1VFX3Vgz8 {
+                grid-template-columns: 8.98981941rem 27.97319425rem 9.67808049rem 4.37079699rem 0 0 5.50746963rem 0 0 3.00282633rem 0 0.14641337rem 0 0 0 25.60319176rem 0 0 0 0 0 3.76055769rem 10.96765009rem;
+                grid-template-rows: minmax(7.91602456rem, max-content) minmax(6.0302729rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(2.60371402rem, max-content) minmax(1.49439561rem, max-content) minmax(0.073207rem, max-content) minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.1314564rem, max-content) minmax(2.12867097rem, max-content) minmax(1.68506844rem, max-content) minmax(2.81906337rem, max-content) 0 minmax(1.94708809rem, max-content) minmax(1.41606905rem, max-content) minmax(1.2046634rem, max-content) minmax(2.05546398rem, max-content) minmax(5.81492356rem, max-content) minmax(7.91602456rem, max-content);
+            }
+            #VheN4LItNQruaMFZ {
+                min-height: 20vh;
+            }
+            #sh62YNMy8XfSVEHI {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uCDohMjiEsEcCgXc {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #wsUMq2kyZVD84RsN {
+                grid-area: 2 / 2 / 7 / 4;
+            }
+            #lYQ2OMNrOQDc4lwb {
+                grid-area: 6 / 3 / 13 / 5;
+            }
+            #b6DwJ2iJ9WNiMOiZ {
+                font-size: max(0px, calc(4.48997072em - var(--ffsd)));
+            }
+            #TWxqExTgQ2vmLcrH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 4.48997072em) * 0.1);
+            }
+            #c2PlvB1hmt2MK3yV {
+                min-width: 31.85311004rem;
+            }
+            #JA8mjSjt4VBYCcrl {
+                grid-area: 3 / 7 / 4 / 12;
+            }
+            #GmW40dwP977Xzpw3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #engDm0e63sI0UQCj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.1);
+            }
+            #MHkKabsUQ7XSQp5Z {
+                min-width: 32.0002006rem;
+            }
+            #hIGPVbynjuRnUGVE {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #DAcaLWvzdMPsm3l0 {
+                grid-area: 9 / 6 / 12 / 11;
+            }
+            #genbkXzW2I3L0UeR {
+                font-size: max(0px, calc(1.56174231em - var(--ffsd)));
+            }
+            #SPmyMToHQv8nY0LZ {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.56174231em) * -0.1);
+                margin-bottom: calc(max(0px, 1.56174231em) * -0.1);
+            }
+            #d2xA0LXx7JJmhkqN {
+                min-width: 13.6581663rem;
+            }
+            #ULPAUYQ8Mo1FodBQ {
+                grid-area: 10 / 9 / 11 / 10;
+            }
+            #F6T8sDyIajwN5n74 {
+                grid-template-columns: 5.90048971rem 20.47580468rem 3.14790092rem 20.47580468rem 6.72138796rem 0 0 2.35873626rem 13.62156308rem 2.35873626rem 13.47747123rem 0.14709056rem 11.31501466rem;
+                grid-template-rows: minmax(6.80000577rem, max-content) minmax(6.556027rem, max-content) minmax(9.82918009rem, max-content) minmax(1.85195224rem, max-content) minmax(0.76176561rem, max-content) minmax(4.62468617rem, max-content) minmax(3.23731868rem, max-content) minmax(4.46240247rem, max-content) minmax(1.4784636rem, max-content) minmax(1.87367735rem, max-content) minmax(1.4784636rem, max-content) minmax(6.46859924rem, max-content) minmax(6.80000577rem, max-content);
+            }
+            #fNMelVhGI7jdxY9F {
+                min-height: 20vh;
+            }
+            #o9TEAzDBRXAKCyE7 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #Ih4PJoKaStYGYuaL {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #MgacBCdEuSIvKbY1 {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #sQDQwYbXWlz2dEve {
+                font-size: max(0px, calc(5.0497511em - var(--ffsd)));
+            }
+            #VxkmMUwlYonciUrg {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 5.0497511em) * 0.1);
+            }
+            #ophlFh9tm8jcq73U {
+                min-width: 31.1243942rem;
+            }
+            #LirgdDK4lK8WVd2S {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fyuLpLgTPGFHbucI {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #i4bCiFka7c9KTpwJ {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #V1T2bJdxJVU7rDYr {
+                min-width: 41.02249721rem;
+            }
+            #xgfzZo0tcts2xdT3 {
+                grid-area: 4 / 5 / 5 / 13;
+            }
+            #mkDdYQbn5SthqzUR {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #l9EaKIowI0OR1GT6 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #PbNayCwiy7xgRZQv {
+                min-width: 40.92650157rem;
+            }
+            #Esz0yJiG1NQbSpqx {
+                grid-area: 6 / 4 / 7 / 10;
+            }
+            #AzAce1tqtzshnVZk {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #uUkMfjANmVUKKJh0 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #UxtN9TfQbi50MsjN {
+                min-width: 41.02249721rem;
+            }
+            #tOFWMcE1HwuUQE3X {
+                grid-area: 8 / 7 / 9 / 14;
+            }
+            #tOApwUcERihzLu2n {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #EsuirE9sZA5Rbi2O {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #N1poGIFiYswsBVsh {
+                min-width: 40.92650157rem;
+            }
+            #Lfw8lZHPYFumYdep {
+                grid-area: 10 / 6 / 11 / 11;
+            }
+            #axHNOQpzGXwZi7ej {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #biIZQJn280gPVySj {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #uWle7GK74PFpFHAy {
+                min-width: 41.02249721rem;
+            }
+            #bsHw06F3esTJu2id {
+                grid-area: 12 / 9 / 13 / 15;
+            }
+            #CYiEzj81MLHx9SM2 {
+                font-size: max(0px, calc(1.58289163em - var(--ffsd)));
+            }
+            #UjrlMHDYQQt32hER {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.58289163em) * -0.1);
+            }
+            #nCsXvaDMSuNbIXjc {
+                min-width: 40.92650157rem;
+            }
+            #PTfj9ookx0ezZZAb {
+                grid-area: 14 / 8 / 15 / 12;
+            }
+            #IzMzh9bXTPpXUN92 {
+                grid-template-columns: 5.62225476rem 31.08779098rem 16.68180552rem 0 0 0 0 0 40.88989835rem 0 0 0.09599563rem 0 0 5.62225476rem;
+                grid-template-rows: minmax(5.66655018rem, max-content) minmax(10.96602635rem, max-content) minmax(12.73472432rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(3.97270482rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(4.15535209rem, max-content) minmax(1.89934691rem, max-content) minmax(0.59384279rem, max-content) minmax(1.87512199rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #vOrp6DCPAkxnpIMK {
+                min-height: 20vh;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+            50% {
+                background-color: rgba(226, 226, 226, 0.1);
+            }
+            100% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+        }
+    </style><noscript>  <style>    .animated {      animation-play-state: running !important;    }    @keyframes pulse {}  </style></noscript>
+    <script nonce='0f0c74b5-d711-447d-8816-5a68e0f9545d'>
+        ! function() {
+            "use strict";
+
+            function t(t, e, n = .001) {
+                return Math.abs(t - e) < n
+            }
+
+            function e(t, e) {
+                return window.getComputedStyle(t).getPropertyValue(e)
+            }
+
+            function n(t, e, n) {
+                t.style.setProperty(e, n)
+            }
+
+            function o(t, n) {
+                const o = document.createElement("div");
+                o.style.setProperty(t, n), document.body.append(o);
+                const i = e(o, t);
+                return o.remove(), i
+            }
+
+            function i() {
+                const i = function() {
+                        const t = parseFloat(o("font-size", "0.1px"));
+                        return t > 1 ? t : 0
+                    }(),
+                    r = function(t) {
+                        const e = 2 * Math.max(t, 1);
+                        return e / parseFloat(o("font-size", `${e}px`))
+                    }(i);
+                if (function(t) {
+                        if (0 === t) return;
+                        n(document.documentElement, "--minfs", `${t}px`);
+                        const e = () => {
+                            const e = 100 * t,
+                                {
+                                    clientWidth: o
+                                } = document.documentElement;
+                            n(document.documentElement, "--rzf", e > o ? (o / e).toPrecision(4) : null)
+                        };
+                        window.addEventListener("resize", e), e()
+                    }(i * Math.max(1, r)), t(r, 1)) return;
+                const c = t(parseFloat(e(document.documentElement, "font-size")), parseFloat(o("grid-template-columns", "1rem")));
+                n(document.documentElement, c ? "--rfso" : "--bfso", r.toPrecision(4))
+            }
+
+            function r() {
+                const t = () => {
+                    const t = window.innerWidth - document.documentElement.clientWidth;
+                    var e, n, o;
+                    e = document.documentElement, n = "--sbw", o = t >= 0 ? `${t}px` : null, e.style.setProperty(n, o)
+                };
+                window.addEventListener("resize", t), t()
+            }
+            var c;
+            const d = "undefined" != typeof window ? null === (c = window.navigator) || void 0 === c ? void 0 : c.userAgent : void 0;
+            const a = !(!d || (s = d, !s.match(/AppleWebKit\//) || s.match(/Chrome\//) || s.match(/Chromium\//)));
+            var s;
+
+            function u(t) {
+                var e, n, o, i;
+                if (0 !== t.getBoundingClientRect().width) return;
+                const r = Array.from(t.children).map((t => t));
+                r.forEach(((t, e) => {
+                    if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = "", t.style.clipPath = "";
+                    else {
+                        const n = document.createElement("div");
+                        n.setAttribute("data-foreign-object-container", ""), n.style.willChange = "transform", t.insertAdjacentElement("beforebegin", n), t.remove(), n.append(t), r[e] = n
+                    }
+                }));
+                const c = t.closest("svg"),
+                    d = null == c ? void 0 : c.getBoundingClientRect(),
+                    a = t.getScreenCTM();
+                if (!a || !d) return;
+                const {
+                    a: s,
+                    b: u,
+                    c: l,
+                    d: m,
+                    e: f,
+                    f: p
+                } = a, v = null !== (n = null === (e = t.x) || void 0 === e ? void 0 : e.baseVal.value) && void 0 !== n ? n : 0, h = null !== (i = null === (o = t.y) || void 0 === o ? void 0 : o.baseVal.value) && void 0 !== i ? i : 0;
+                r.forEach((t => {
+                    if (!t.hasAttribute("data-foreign-object-container")) return;
+                    const {
+                        style: e
+                    } = t;
+                    e.transformOrigin = `${-v}px ${-h}px`, e.transform = `matrix(${s}, ${u}, ${l}, ${m}, ${f-d.left}, ${p-d.top})`;
+                    const n = (d.top - p) / s,
+                        o = (d.left - f) / s,
+                        i = n + d.height / s,
+                        r = o + d.width / s;
+                    e.clipPath = `polygon(${o}px ${n}px, ${r}px ${n}px, ${r}px ${i}px, ${o}px ${i}px)`
+                }))
+            }
+
+            function l() {
+                const t = document.querySelectorAll("foreignObject");
+                Array.from(t).forEach(u)
+            }[function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", i) : i()
+            }, function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", r) : r()
+            }, function() {
+                a && (window.addEventListener("resize", l), "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", l) : l())
+            }].forEach((t => t()))
+        }();
+    </script>
+    <script nonce="0f0c74b5-d711-447d-8816-5a68e0f9545d">
+        window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
+    </script>
+    <script nonce="0f0c74b5-d711-447d-8816-5a68e0f9545d">
+        window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <section id="ah6AJYHU5LTI8hk0" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;position:relative;align-items:center;">
+            <div id="eAu4wS1kpnDxEipj" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="adfHG01j4DRjjE6E" style="z-index:0;position:relative;">
+                    <div id="EzcLfuuEImpogRy8" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="fMaOEZMqcoOjQhbS" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="CGb25MVtgMThpq37" style="background-color:#ffffff;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
+                                <div id="ujkVkF1SK6sm2JVs" style="transform:rotate(0deg);top:-18.57638889%;left:0%;width:100%;position:absolute;height:118.57638889%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e030292e26afa4057299fa27ac5dfc6f.jpg" alt="" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="MDCywDmKbbd65axB" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="wYXmLuUJ9sYha6lh" style="z-index:2;position:relative;">
+                    <div id="i3pkf2trUL2YcEGa" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="jUtRFdIyou8Ivy5F" style="flex-direction:column;display:flex;width:100%;justify-content:flex-end;opacity:1.0;height:100%;">
+                            <p id="BkI9pdEDEyfjGDVu" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;text-align:left;"><span id="e8Sl7jaI3qvWNghj" style="color:#ffffff;font-weight:700;">Ev</span><span id="Sv8mTuoVdT9rRMjD" style="color:#ff1616;font-weight:700;">e</span><span id="vzWqXJLDllSgQ6VQ" style="color:#000000;font-weight:700;">n</span>
+                                <span
+                                    id="O2L78DIWgY4aqDW0" style="color:#000000;font-weight:700;">t</span><span id="PzHJ02nrcf1OfXkN" style="color:#ff1616;font-weight:700;">r</span><span id="BtuX4qBwUwvexOMO" style="color:#ffffff;font-weight:700;">ra</span></p>
+                            <p id="JhUob2HsGmXd4ZdW" style="color:#ffffff;white-space:pre;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;text-align:left;"><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="wm3NLqtbcc8h1VTe" style="z-index:3;position:relative;">
+                    <div id="gRRe8gSYLtZUvCve" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="jM3GEp8APsbRLfOT" style="flex-direction:column;display:flex;width:100%;justify-content:flex-end;opacity:1.0;height:100%;">
+                            <p id="b8esFOcaswG5mDIm" style="text-transform:uppercase;color:#ffffff;font-family:YACgEVg3xZg-0;line-height:1.2em;text-align:left;"><span id="aPrQBBuOJLgkJMEe" style="color:#ffffff;font-weight:700;"> </span><span id="rcxtE3IW2GJFIwXK" style="color:#fd0000;font-weight:700;">T</span><span id="dG9v9oNSPNnhIe2x" style="color:#ffffff;font-weight:700;">he </span>
+                                <span
+                                    id="cLs7KQnGPWNN3cau" style="color:#fd0000;font-weight:700;">g</span><span id="KN03EBGMjLqMwc74" style="color:#ffffff;font-weight:700;">oal </span><span id="T00fK9HEyxqxgKAq" style="color:#fd0000;font-weight:700;">o</span><span id="ElUxNkkv0uogXtEF" style="color:#ffffff;font-weight:700;">f</span>
+                                    <span
+                                        id="ZDmiG7m21WA4P6ai" style="color:#fd0000;font-weight:700;"> e</span><span id="qLIADPeWruZBaiyf" style="color:#ffffff;font-weight:700;">vent </span><span id="L5EqIp1qCaKfE4me" style="color:#fd0000;font-weight:700;">m</span><span id="sZ54EEuhBKbys734" style="color:#ffffff;font-weight:700;">anagement </span>
+                                        <span
+                                            id="U2wmK66Sln1gaMaw" style="color:#fd0000;font-weight:700;">i</span><span id="ylmZkxvLVbZu2tOD" style="color:#ffffff;font-weight:700;">s </span><span id="Jg2ycU4vGSUMQdIg" style="color:#fd0000;font-weight:700;">t</span><span id="upi0GcPuPs682hyI" style="color:#ffffff;font-weight:700;">o </span>
+                                            <span
+                                                id="gDUbYr4b96NdGkyS" style="color:#fd0000;font-weight:700;">e</span><span id="U3PAUnT3LIiEZT6K" style="color:#ffffff;font-weight:700;">nsure </span><span id="NG5mV1iKrvSKYMBv" style="color:#fd0000;font-weight:700;">t</span><span id="Ql4D02M5eg8KE7Vu" style="color:#ffffff;font-weight:700;">hat </span>
+                                                <span
+                                                    id="UtRrx5QNdqO62WFn" style="color:#fd0000;font-weight:700;">t</span><span id="berriEGo3t7EgBIR" style="color:#ffffff;font-weight:700;">he </span><span id="OTnpDwMCjdEpoFYV" style="color:#f40000;font-weight:700;">e</span><span id="EQqcbagSwkeEO1jJ" style="color:#ffffff;font-weight:700;">vent</span>
+                                                    <span
+                                                        id="u5OJJxuZQGxGhBVz" style="color:#f40000;font-weight:700;"> r</span><span id="M73RD4d8HOtVz2sU" style="color:#ffffff;font-weight:700;">uns</span><span id="gvar0rtexXU1wZOg" style="color:#f40000;font-weight:700;"> s</span><span id="PTSpmvdq6W24KFp4" style="color:#ffffff;font-weight:700;">moothly</span>
+                                                        <span
+                                                            id="Exw3owexWt1plBwe" style="color:#f40000;font-weight:700;"> a</span><span id="JSHCsovvDpT71sgx" style="color:#ffffff;font-weight:700;">nd</span><span id="PfzIqSigGVdWJ4NF" style="color:#f40000;font-weight:700;"> m</span><span id="ysQuRIAwv98okimt" style="color:#ffffff;font-weight:700;">eets</span>
+                                                            <span
+                                                                id="ujsBRDX10WOcFr1Y" style="color:#f40000;font-weight:700;"> t</span><span id="TSeydSTl4QcGvpfU" style="color:#ffffff;font-weight:700;">he</span><span id="JA7NM8GyFJD8yXXn" style="color:#f40000;font-weight:700;"> </span><span id="sFSImGOhVyvxr8AI" style="color:#fd0000;font-weight:700;">o</span>
+                                                                <span
+                                                                    id="ZmyoBAhSdLQ6ewKN" style="color:#ffffff;font-weight:700;">bjectives </span><span id="JLc69To36rLRzsSc" style="color:#fd0000;font-weight:700;">o</span><span id="Cew5wT2PcckBzySp" style="color:#ffffff;font-weight:700;">f </span><span id="SA5rBHTRxh1WB5DL"
+                                                                        style="color:#fd0000;font-weight:700;">t</span><span id="Pd3PbNUaukq2o3Ox" style="color:#ffffff;font-weight:700;">he </span><span id="knEmdeK3PI7IeU5t" style="color:#fd0000;font-weight:700;">h</span>
+                                                                    <span
+                                                                        id="OAsOJpEWiuVCnH7p" style="color:#ffffff;font-weight:700;">ost</span><span id="u6xhz6utKyOy72zQ" style="color:#fd0000;font-weight:700;"> o</span><span id="Wvttlx6cddTcKBKL" style="color:#ffffff;font-weight:700;">rganization</span><span id="XXTqwcG1GOuepJjC"
+                                                                            style="color:#fd0000;font-weight:700;">. E</span><span id="hRc1L7m44HojdS0m" style="color:#ffffff;font-weight:700;">vent</span><span id="dfbOZzeY6wRUtaJY" style="color:#fd0000;font-weight:700;"> m</span>
+                                                                        <span
+                                                                            id="I50gPmC7EAn5QgcI" style="color:#ffffff;font-weight:700;">anagers</span><span id="kgXUqVr3bpA0FVI5" style="color:#fd0000;font-weight:700;"> m</span><span id="SPDKGohaHCHAYLen" style="color:#ffffff;font-weight:700;">ay </span><span id="GMyDvRzBDRYYYIpN"
+                                                                                style="color:#fd0000;font-weight:700;">w</span><span id="TQjZBfHn8snpGYea" style="color:#ffffff;font-weight:700;">ork </span><span id="DLIBOZE43Fjug08d" style="color:#fd0000;font-weight:700;">i</span>
+                                                                            <span
+                                                                                id="b4EGLDU4q9LiyHJP" style="color:#ffffff;font-weight:700;">n-</span><span id="vd11lipFzUQiXxWG" style="color:#fd0000;font-weight:700;">h</span><span id="YRvo2UagtHauP6Qm" style="color:#ffffff;font-weight:700;">ouse </span><span id="eMoIFg2LiuBSXTZ7"
+                                                                                    style="color:#fd0000;font-weight:700;">f</span><span id="C8BZ9gQ04KRZrfPd" style="color:#ffffff;font-weight:700;">or </span><span id="askCoUXEGUKpHilg" style="color:#000000;font-weight:700;">a</span>
+                                                                                <span
+                                                                                    id="uUlkiOAFwUuCwz9s" style="color:#fd0000;font-weight:700;"> c</span><span id="ji0bfzlPVnRjzOSq" style="color:#ffffff;font-weight:700;">ompany</span><span id="Jg6TIvG5lHUFGlIX" style="color:#fd0000;font-weight:700;"> o</span><span id="RD9CCwDfsKqGcTXG"
+                                                                                        style="color:#ffffff;font-weight:700;">r</span><span id="oMvi6LmFLsVSem2Q" style="color:#fd0000;font-weight:700;"> o</span><span id="i4se0nR3hdcMyeOq" style="color:#ffffff;font-weight:700;">rganization</span>
+                                                                                    <span
+                                                                                        id="VFd4sOJEzL6Uw10e" style="color:#fd0000;font-weight:700;">, o</span><span id="Qh33hZhUo0cLjcsw" style="color:#ffffff;font-weight:700;">r</span><span id="eKp0Tt1wpuSORmcQ" style="color:#fd0000;font-weight:700;"> t</span>
+                                                                                        <span
+                                                                                            id="LKKfvuP80YMdKLHO" style="color:#ffffff;font-weight:700;">hey </span><span id="MNyiMw06mXOWJRmJ" style="color:#fd0000;font-weight:700;">m</span><span id="SMmM4lEKWr9BFsLJ" style="color:#ffffff;font-weight:700;">ay </span>
+                                                                                            <span
+                                                                                                id="laSajTlIR3qeaSc3" style="color:#fd0000;font-weight:700;">w</span><span id="yVuenJzQHSE4oxxs" style="color:#ffffff;font-weight:700;">ork for an </span><span id="B6yhLo0fcMGxPT6j" style="color:#fd0000;font-weight:700;">e</span>
+                                                                                                <span
+                                                                                                    id="ggE9HyQMKSDgjGAa" style="color:#ffffff;font-weight:700;">vent</span><span id="z4hNAIkF6sMalpJ9" style="color:#fd0000;font-weight:700;"> m</span><span id="k1d2QD5qhwzKkaoM" style="color:#ffffff;font-weight:700;">anagement</span>
+                                                                                                    <span
+                                                                                                        id="Dxg7vAG0UwJ6ickZ" style="color:#fd0000;font-weight:700;"> c</span><span id="rItWC4M41PhHujGe" style="color:#ffffff;font-weight:700;">ompany</span><span id="VoEqc4Rn0HH0mmUg" style="color:#fd0000;font-weight:700;"> t</span>
+                                                                                                        <span
+                                                                                                            id="FX8ct30WcyeacfMZ" style="color:#ffffff;font-weight:700;">hat</span><span id="qrsbvfXSbUU6iu07" style="color:#fd0000;font-weight:700;"> s</span><span id="QLZzjDgt7vcwy53D" style="color:#ffffff;font-weight:700;">erves </span>
+                                                                                                            <span
+                                                                                                                id="HqVzx6iuKQW1kIUi" style="color:#fd0000;font-weight:700;">m</span><span id="qK9o66JcDYWTRSa0" style="color:#ffffff;font-weight:700;">ultiple </span><span id="WczDif343LujMss8" style="color:#fd0000;font-weight:700;">c</span>
+                                                                                                                <span
+                                                                                                                    id="n0wAKNRMbCLUfrZL" style="color:#ffffff;font-weight:700;">lients.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="fXQxFBzd4OfRLSvk" style="z-index:5;position:relative;">
+                    <div id="isuvJNVCisWAlGqt" style="padding-top:29.96537317%;transform:rotate(0deg);">
+                        <div id="g6rCVzKFcHYCbzgu" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="LpYUoGOrt3o1I1Ys" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="tYAK1GcFZa5rhEU1" style="background-color:#004a98;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="os1qjG8WT0UuR2Rc" style="z-index:6;position:relative;">
+                    <div id="da0nvk2jwJRiuApV" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="kOJ4F8Vi8O0KV9Jz" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="T1n9HxzXPeNycbk9" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;text-align:center;"><span id="KYD20YRjdMThBHZS" style="color:#ffffff;font-weight:700;">Register Now</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="O2bFWLDoDs2d9maP" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="VcPVZxO6udVQS3i0" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="YpCSkB0V0r8iKS3B" style="z-index:0;position:relative;">
+                    <div id="agCUsRmDRNZXF9il" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="nJuaWZhE92QYKl70" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="zPjFITZzexmKGlMN" style="background-color:#07133d;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="TXrNYIfUCtnd8usG" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="AMYKKm9sPoP7g7kD" style="z-index:4;position:relative;">
+                    <div id="wyFfV9tzOL9fGGkY" style="padding-top:99.9996%;transform:rotate(0deg);">
+                        <div id="mhyzasWLXKTlG9qa" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="mtQuxrj3qEgVbj4o" viewBox="0 0 500.0 499.998" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="zRtVGHSUjQRhEx8x" style="transform:scale(1, 1);"><g id="EdguUJY6EldFUt7o" style="clip-path:url(#KL6tNbOwsqfdHNAf);"><clippath id="KL6tNbOwsqfdHNAf"><path d="M500.0,250.0019989013672 C500.0,388.06700134277344 388.0690002441406,499.9980010986328 250.0,499.9980010986328 C111.92900085449219,499.9980010986328 0.0,388.06700134277344 0.0,250.0019989013672 C0.0,111.93000030517578 111.92900085449219,0.0 250.0,0.0 C388.0709991455078,0.0 500.0,111.93000030517578 500.0,250.0019989013672"></path></clippath><g id="KMtiBIxYJdQOJVFG" style="transform:scale(1, 1);transform-origin:250px 250px;"><image id="wyxkNaPqBJYwJtFH" href="images/32876f753c0ebd3040e96fc1a52f4f16.jpg" width="749.997px" height="499.998px" preserveAspectRatio="none" style="transform:translate(-186.32220783px, 0px) rotate(0deg);transform-origin:374.9985px 249.999px;opacity:1.0;"></image></g></g></g></svg></div>
+                    </div>
+                </div>
+                <div id="exMle1b6UjGEKlyZ" style="z-index:6;position:relative;">
+                    <div id="DbTUoeoPmMzgQwYB" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="XgTY4uJLn9SSN60W" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="XnsbSVmOT0u2vOyr" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;"><span id="AhfIL7uUDQuXcGPb" style="color:#ffffff;">Our biggest summit yet</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="fQg6yXcTJ1WRJxjG" style="z-index:7;position:relative;">
+                    <div id="b0NPEQ3dmUVbtKMQ" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="aQcTytL0HipAPwNc" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="QXS6nsDgAHqpNwSe" style="color:#ffffff;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="ViJakDMER914U1ZW" style="color:#ffffff;">We&#x27;re going global! This year&#x27;s Mega Media Summit will be streamed on a virtual platform across eight time zones, with participants worldwide.</span></p>
+                            <p id="hTgAkrwo72YHESBP"
+                                style="color:#ffffff;white-space:pre;font-family:YACgEVg3xZg-0;line-height:1.4em;"><br></p>
+                            <p id="ipI119ILWUnh2NUm" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="DhDd33YdCS8IREbu" style="color:#ffffff;">Get the latest industry insights, mingle with fellow practitioners, and get inspired by our keynote speakers during this exciting 3-day virtual conference.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="YgUT27OmRJmMDk5a" style="z-index:2;position:relative;">
+                    <div id="YVcUVqLkrkZ51Zv8" style="padding-top:25.99681724%;transform:rotate(0deg);">
+                        <div id="TPLaGG9fvtaI9xHO" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="ZdiEEmgX7DPRgswn" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="Kgo7XOfppj1DX7PQ" style="background-color:#004a98;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="uzvzP2sXuIPyaSi0" style="z-index:3;position:relative;">
+                    <div id="uVMDxlky4zHeQ1uR" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="IvppEkzKMDVmpkBp" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="j0QnwaWcKefB5lPN" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;text-align:center;"><span id="G9rGh2WelBSb2KXR" style="color:#ffffff;font-weight:700;">Reserve your seat</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="VheN4LItNQruaMFZ" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="BPAwXiDryP10oho9" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="J4q97Tkln3ONoo8R" style="z-index:0;position:relative;">
+                    <div id="wpVhDRCAEU8Fvll8" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="RLFcGFCNg3Znz6ys" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="jsyCkOyo4mfcTZlm" style="background-color:#07133d;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="T7kkbGy1VFX3Vgz8" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="sDCy3Lj9mcg5PrbQ" style="z-index:2;position:relative;">
+                    <div id="tQRuEO2cBR4MNNJj" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="qf5Yn8KGesIk3enw" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="jpZxzS0qYWcu5QQ1" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;"><span id="C1z2wVyie0NYcmt3" style="color:#ffffff;">Summit Highlights</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="pz77GshXtE3gXtRb" style="z-index:1;position:relative;">
+                    <div id="ClJSDoNcZdEOyhAU" style="padding-top:95.28025943%;transform:rotate(0deg);">
+                        <div id="z1KI0VL4NC6LAdNA" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="dBzMfmJiaN3j9v8d" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="MvPHX70mPthPjn5a" style="background-color:#004a98;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="WebvtxDcEI0HWpk1" style="z-index:3;position:relative;">
+                    <div id="kf8EYAcALYVb0TgK" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="XyauvxDRnSZR57nj" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="kOs5h9VRdcAlwD2Q" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;"><span id="KBa1s5lnqFLJFmjh" style="color:#ffffff;">01</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="HahdVnau5iM1WL5t" style="z-index:8;position:relative;">
+                    <div id="VOTf2ghxpTKSWO5o" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="nit0uWUCfh3bDC7V" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="x8gtgumDVEmeOiON" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;"><span id="EwrfxCLhIl1RFSWv" style="color:#ffffff;font-weight:700;">Talks &amp; Open Forums</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="b9fp83ZzBd8Qn4oE" style="z-index:7;position:relative;">
+                    <div id="FEHKM3MlGMBc8cpo" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="PqMnQjlNKeXfN03C" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="L4iueB3VyYMtD4y8" style="text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="wV1eEeA4w4wrBCYj" style="color:#ffffff;">The industry&#x27;s biggest names</span></p>
+                            <p id="Pk2qFStgGc0f8p4D" style="text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="xSsevIK3l1QGzP1B" style="color:#ffffff;">share their insights</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="uAAVTcnPsIt4A49D" style="z-index:4;position:relative;">
+                    <div id="EyZALoxQ8bCGj2tf" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="lmkMFFR4EFJL22wV" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="P5glo3W9pww3B2kW" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;"><span id="Y4ViIxu8Wn5XA5NM" style="color:#ffffff;">02</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="KUqpbn8QQ2iyh0M2" style="z-index:11;position:relative;">
+                    <div id="u7nfgsDOMfNcqxwX" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="ch9K24fRGyNUedhY" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="yxgN6v4kjqgFwAOl" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;"><span id="NGKfqaSTMRICJG19" style="color:#ffffff;font-weight:700;">Mini Masterclasses</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="uWS8mfWv6qggQxKg" style="z-index:10;position:relative;">
+                    <div id="YEm5318IJqjHweS6" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="hxsecay4azEzgYd0" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Xtu2F9ZlY1Gzu7qy" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="RHi965BTNKsAZFLb" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">Expert-led workshops to supercharge</span></p>
+                            <p id="PWt2V6JoXDjkl5Uk" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="woOI6oTJHyA73pcg" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">your career</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="xAqik7WQcrWWn6M9" style="z-index:5;position:relative;">
+                    <div id="EOOHm6owhVsJufIi" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="DbckR6XVDaXihhZb" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="uJ8yozW7FZ41MECR" style="color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;"><span id="tLXcW8Gh4hx1RcFH" style="color:#ffffff;">03</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Np25QdokZ5uOb2Jl" style="z-index:14;position:relative;">
+                    <div id="izDKdcYQFnCNwWMh" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="H8NXyo2u2FtQfND6" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="hzAC1keVb0hkzEsG" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;"><span id="drW0Zq3ODbhAlITu" style="color:#ffffff;font-weight:700;">Seamless Networking</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="D7avblUbKSHFcIZi" style="z-index:13;position:relative;">
+                    <div id="rz8duk0WP1uDqwYI" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="SZKzlrLbUdfVz4pX" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="JoVbH3xVMT8xeWdP" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="Iz6t3hDVWc4qy7Hu" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">Connect with thousands of media</span></p>
+                            <p id="Z8ccGVyoWD3BltS1" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="r3iTR9aMuxdsE3zG" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">practitioners on our platform</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fNMelVhGI7jdxY9F" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="uCDohMjiEsEcCgXc" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="sh62YNMy8XfSVEHI" style="z-index:0;position:relative;">
+                    <div id="pq8NyDoIKrZts1m3" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="zJyNXeeFsymCx7SE" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="zC5wKIvAWe4PmVcm" style="background-color:#004a98;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="F6T8sDyIajwN5n74" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="wsUMq2kyZVD84RsN" style="z-index:5;position:relative;">
+                    <div id="aCEEUBvuYlzgEaJQ" style="padding-top:99.9996%;transform:rotate(0deg);">
+                        <div id="pZn3btoWI9XPEBgi" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="VR0EakyrxEQImR27" viewBox="0 0 500.0 499.998" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="sJuZlVfVsE8SJrFJ" style="transform:scale(1, 1);"><g id="YOWaPunt2lMDNyj5" style="clip-path:url(#qnC7FPcFVUMPm42x);"><clippath id="qnC7FPcFVUMPm42x"><path d="M500.0,250.0019989013672 C500.0,388.06700134277344 388.0690002441406,499.9980010986328 250.0,499.9980010986328 C111.92900085449219,499.9980010986328 0.0,388.06700134277344 0.0,250.0019989013672 C0.0,111.93000030517578 111.92900085449219,0.0 250.0,0.0 C388.0709991455078,0.0 500.0,111.93000030517578 500.0,250.0019989013672"></path></clippath><g id="HmIfRLqFNtg6Iqjj" style="transform:scale(1, 1);transform-origin:250px 250px;"><image id="jMzCtT23KNC1ZRFT" href="images/92acd77251b837f0aeb26517074e92b9.jpg" width="749.997px" height="499.998px" preserveAspectRatio="none" style="transform:translate(-75.41665192px, 0px) rotate(0deg);transform-origin:374.9985px 249.999px;opacity:1.0;"></image></g></g></g></svg></div>
+                    </div>
+                </div>
+                <div id="lYQ2OMNrOQDc4lwb" style="z-index:4;position:relative;">
+                    <div id="znhYMY2OsIW2KCEJ" style="padding-top:99.9996%;transform:rotate(0deg);">
+                        <div id="FKNKAldIleFKi8J9" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="S059JhzJ2TEOky1d" viewBox="0 0 500.0 499.998" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="rM9rHDQrbTarhCVM" style="transform:scale(1, 1);"><g id="QX7UiN1KPs5Cn6mT" style="clip-path:url(#mxC8eTNldsdR8y8H);"><clippath id="mxC8eTNldsdR8y8H"><path d="M500.0,250.0019989013672 C500.0,388.06700134277344 388.0690002441406,499.9980010986328 250.0,499.9980010986328 C111.92900085449219,499.9980010986328 0.0,388.06700134277344 0.0,250.0019989013672 C0.0,111.93000030517578 111.92900085449219,0.0 250.0,0.0 C388.0709991455078,0.0 500.0,111.93000030517578 500.0,250.0019989013672"></path></clippath><g id="MHIzHjxheaT5JPDl" style="transform:scale(1, 1);transform-origin:250px 250px;"><image id="qpiOobLyzgc4mqLf" href="images/719537802c6f07fb3f8131c1cd741973.jpg" width="749.997px" height="499.998px" preserveAspectRatio="none" style="transform:translate(-124.9985px, 0px) rotate(0deg);transform-origin:374.9985px 249.999px;opacity:1.0;"></image></g></g></g></svg></div>
+                    </div>
+                </div>
+                <div id="JA8mjSjt4VBYCcrl" style="z-index:7;position:relative;">
+                    <div id="c2PlvB1hmt2MK3yV" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="TWxqExTgQ2vmLcrH" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="b6DwJ2iJ9WNiMOiZ" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;direction:ltr;text-align:left;"><span id="vp0Ge15w5xOOteVY" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">About the organizers</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="hIGPVbynjuRnUGVE" style="z-index:8;position:relative;">
+                    <div id="MHkKabsUQ7XSQp5Z" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="engDm0e63sI0UQCj" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="GmW40dwP977Xzpw3" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="ObhUiExmwlTaAUzh" style="color:#ffffff;">The Mega Media Summit is presented by InnoBlue Events in partnership with the Global Media Alliance. Together, they have over a decade of experience in crafting relevant and dynamic events for professional learning and networking.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="DAcaLWvzdMPsm3l0" style="z-index:2;position:relative;">
+                    <div id="ww0uVr5JO2MnZ8j3" style="padding-top:26.34055936%;transform:rotate(0deg);">
+                        <div id="GhiLcD9GjaP7U1Np" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="ham886e2adNFf2AK" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="KvnYOi3gjYnmy1TV" style="background-color:#07133d;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ULPAUYQ8Mo1FodBQ" style="z-index:3;position:relative;">
+                    <div id="d2xA0LXx7JJmhkqN" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="SPmyMToHQv8nY0LZ" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="genbkXzW2I3L0UeR" style="color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;text-align:center;"><span id="Kibwll6xcfe839ne" style="color:#ffffff;font-weight:700;">Learn More</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vOrp6DCPAkxnpIMK" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="Ih4PJoKaStYGYuaL" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="o9TEAzDBRXAKCyE7" style="z-index:0;position:relative;">
+                    <div id="NFvW8IhKnwvUnsuI" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="C0gZXO0uvaq72Fxo" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="KF2vysaOeYn0gd4B" style="background-color:#07133d;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
+                                <div id="Hh5KAAZYKZGxWFi5" style="transform:rotate(0deg);top:-83.3984375%;left:0%;width:100%;position:absolute;height:266.796875%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/78cdea3679c85e17970c53caf3cf4824.jpg" alt="Building Exterior" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="IzMzh9bXTPpXUN92" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="LirgdDK4lK8WVd2S" style="z-index:1;position:relative;">
+                    <div id="ophlFh9tm8jcq73U" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="VxkmMUwlYonciUrg" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="MgacBCdEuSIvKbY1" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;direction:ltr;text-align:left;"><span id="bhpziEQtLOIsLjFb" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">See you at</span></p>
+                            <p id="sQDQwYbXWlz2dEve" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEl46n1V_s-0;line-height:1em;direction:ltr;text-align:left;"><span id="gTaglUOgL42EI00e" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">t</span><span id="Kd07gwWbEF2EXBCI" style="text-decoration-line:none;color:#652041;font-weight:400;font-style:normal;">h</span>
+                                <span
+                                    id="gAL5dYNz25w2KDzA" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">e su</span><span id="cwZXtAekiXF3e1xx" style="text-decoration-line:none;color:#f40000;font-weight:400;font-style:normal;">m</span><span id="zc19ISere9A8TSEY" style="text-decoration-line:none;color:#fd0000;font-weight:400;font-style:normal;">m</span>
+                                    <span
+                                        id="Hy4FfnTtZhTo58Um" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">it!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="xgfzZo0tcts2xdT3" style="z-index:4;position:relative;">
+                    <div id="V1T2bJdxJVU7rDYr" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="i4bCiFka7c9KTpwJ" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="fyuLpLgTPGFHbucI" style="text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;"><span id="tKrjePkLSrHopjEK" style="color:#ffffff;font-weight:700;">Mailing Address</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Esz0yJiG1NQbSpqx" style="z-index:3;position:relative;">
+                    <div id="PbNayCwiy7xgRZQv" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="l9EaKIowI0OR1GT6" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="mkDdYQbn5SthqzUR" style="text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;"><span id="ACAVPYrtFp5fTUxO" style="color:#ffffff;">Balasore, Odisha, India</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tOFWMcE1HwuUQE3X" style="z-index:6;position:relative;">
+                    <div id="UxtN9TfQbi50MsjN" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="uUkMfjANmVUKKJh0" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="AzAce1tqtzshnVZk" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="tSVrdCFSNZhsSUGV" style="text-decoration-line:none;color:#ffffff;font-weight:700;font-style:normal;">Email Address</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Lfw8lZHPYFumYdep" style="z-index:5;position:relative;">
+                    <div id="N1poGIFiYswsBVsh" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="EsuirE9sZA5Rbi2O" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="tOApwUcERihzLu2n" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="MBfKkpzrHWyUZZ8q" style="color:#ffffff;">dalaibrahmadutta@gmail.com</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bsHw06F3esTJu2id" style="z-index:8;position:relative;">
+                    <div id="uWle7GK74PFpFHAy" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="biIZQJn280gPVySj" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="axHNOQpzGXwZi7ej" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="LJWU7ksVR9FKijGn" style="text-decoration-line:none;color:#ffffff;font-weight:700;font-style:normal;">Phone Number</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="PTfj9ookx0ezZZAb" style="z-index:7;position:relative;">
+                    <div id="nCsXvaDMSuNbIXjc" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="UjrlMHDYQQt32hER" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="CYiEzj81MLHx9SM2" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YACgEVg3xZg-0;line-height:1.4em;direction:ltr;text-align:left;"><span id="YCzNuH2lN3XkxZaN" style="text-decoration-line:none;color:#ffffff;font-weight:400;font-style:normal;">(123) 456 7890</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async="" nonce="0f0c74b5-d711-447d-8816-5a68e0f9545d"></script>
+    </div>
+    <script nonce="0f0c74b5-d711-447d-8816-5a68e0f9545d">
+        const lang = navigator.language ? navigator.language : 'en';
+        fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+            response.text().then(footerStr => {
+                const div = document.createElement('div');
+                div.innerHTML = footerStr;
+                for (const child of [...div.children]) {
+                    if (child.tagName.toLowerCase() !== 'script') {
+                        document.body.append(child);
+                    }
+                }
+
+                (() => {
+                    ! function() {
+                        "use strict";
+                        const e = document.getElementById("modal_backdrop"),
+                            t = document.getElementById("report_form"),
+                            o = document.getElementById("report_button"),
+                            n = document.getElementById("form_report"),
+                            c = document.getElementById("form_cancel"),
+                            s = document.getElementById("form_submit_reason"),
+                            a = document.getElementById("form_go_back"),
+                            d = document.getElementById("form_submit_captcha"),
+                            l = document.getElementById("form_close"),
+                            i = document.getElementById("report_reason_0"),
+                            r = document.getElementById("error_message"),
+                            m = document.getElementById("error_message_captcha"),
+                            u = [document.getElementById("form_step_terms"), document.getElementById("form_step_report_reason"), document.getElementById("form_step_captcha"), document.getElementById("form_step_success")];
+
+                        function p() {
+                            e.classList.remove("active"), t.classList.remove("active"), o.classList.remove("active"), o.focus()
+                        }
+
+                        function E(e) {
+                            u.forEach(((t, o) => {
+                                t.style.display = o === e ? "block" : "none"
+                            }))
+                        }
+                        let _, y = !1;
+                        const f = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => _ : () => {
+                            const e = t.elements.namedItem("g-recaptcha-response");
+                            return null == e ? void 0 : e.value
+                        };
+                        e.onclick = p, c.onclick = p, l.onclick = p, o.onclick = function() {
+                            u.forEach(((e, t) => {
+                                e.style.display = 0 === t ? "block" : "none"
+                            })), e.classList.add("active"), t.classList.add("active"), o.classList.add("active"), i.checked = !0, setTimeout((() => {
+                                i.focus()
+                            }), 350)
+                        }, n.onclick = () => E(1), s.onclick = () => {
+                            E(2),
+                                function() {
+                                    if (y) return;
+                                    const e = document.createElement("script");
+                                    console.log("our window captcha: ", window.C_CAPTCHA_IMPLEMENTATION, window.C_CAPTCHA_KEY), e.src = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? "https://cstaticdun.126.net/load.min.js" : "https://www.google.com/recaptcha/api.js", e.async = !0, e.defer = !0, document.head.appendChild(e), y = !0, e.onload = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => {
+                                        var e;
+                                        null === (e = window.initNECaptcha) || void 0 === e || e.call(window, {
+                                            captchaId: window.C_CAPTCHA_KEY,
+                                            element: "#netease-captcha",
+                                            protocol: "https",
+                                            width: "auto",
+                                            onVerify: (e, t) => {
+                                                _ = t.validate
+                                            }
+                                        })
+                                    } : () => {}
+                                }()
+                        }, a.onclick = () => E(1), t.addEventListener("submit", (function(e) {
+                            e.preventDefault(), r.style.display = "none", m.style.display = "none";
+                            const t = function() {
+                                    let e = "";
+                                    const t = document.getElementsByName("report_reason");
+                                    for (let o = 0; o < t.length; o++) {
+                                        const n = t[o];
+                                        !0 === n.checked && (e = n.value)
+                                    }
+                                    return e
+                                }(),
+                                o = f();
+                            if (!o) return void(m.style.display = "block");
+                            const n = {
+                                    reason: t,
+                                    challenge: o
+                                },
+                                c = window.location.origin + window.location.pathname + "/_api/report";
+                            d.classList.add("loading"), fetch(c, {
+                                method: "POST",
+                                body: JSON.stringify(n),
+                                headers: {
+                                    "Content-Type": "application/json; charset=utf-8"
+                                }
+                            }).then((e => {
+                                d.classList.remove("loading"), e.ok ? E(3) : r.style.display = "block"
+                            }))
+                        }))
+                    }();
+                })();
+                window.dispatchEvent(new Event('resize'));
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,738 @@
+<style>
+    .footer-overflow-container {
+        overflow-x: auto;
+        display: flex;
+        background-color: #000000;
+    }
+
+    .footer-container {
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .footer-pill-link {
+        appearance: none;
+        text-decoration: none;
+    }
+
+    .footer-pill {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1000px;
+        border: none;
+        background: none;
+        padding: 8px 12px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+        white-space: nowrap;
+        text-decoration: none;
+        font-weight: 600;
+        font-style: normal;
+        font-size: calc(13px * var(--rfso, var(--bfso, 1)));
+        color: #ffffff;
+        transition: background-color 0.2s;
+    }
+
+    .footer-pill:hover {
+        cursor: pointer;
+    }
+
+    .footer-pill+.footer-pill {
+        margin-left: 8px;
+    }
+
+    .footer-pill-primary {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-pill-primary:hover>.footer-pill-primary-background {
+        opacity: 1;
+    }
+
+    .footer-pill-primary-background {
+        position: absolute;
+        z-index: -1;
+        border-radius: 1000px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #00C4CC 0%, #7D2AE8 100%);
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.2s;
+    }
+
+    /* Subtle wipe effect */
+
+    .footer-pill-primary-background::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to right, rgba(125, 42, 232, 0) 0%, #1a1a1a calc(50px + 20%), #1a1a1a 100%);
+        transform: translateX(0);
+        transition: transform 0.7s;
+    }
+
+    .footer-pill-primary:hover>.footer-pill-primary-background::after {
+        transform: translateX(110%);
+    }
+
+    .footer-pill-primary-background>svg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform-origin: center;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    .animation-container {
+        animation: spin linear 12s infinite;
+        animation-play-state: paused;
+    }
+
+    .footer-pill-primary:hover>.footer-pill-primary-background .animation-container {
+        animation-play-state: running;
+    }
+
+    .footer-pill-secondary {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .footer-pill-secondary:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-pill-secondary:active,
+    .footer-pill-secondary.active {
+        background-color: rgba(255, 255, 255, 0.15)
+    }
+
+    .inline-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+    .inline-icon>svg {
+        fill: rgba(218, 218, 218, 1);
+    }
+
+    .inline-icon-logo {
+        display: inline-block;
+        height: 16px;
+        margin-left: 5px;
+    }
+
+    .inline-icon-logo>svg {
+        height: 100%;
+    }
+
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        transition: opacity 0.35s, visibility 0.35s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .modal-backdrop.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .report-form-modal {
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 16px;
+        width: 367px;
+        /* min width for the gcaptcha to fit*/
+        transform: translate3d(0, calc(-100% + 24px), 0);
+        z-index: 10000;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin: 0;
+        box-shadow: 0px 2px 18px 0px rgba(14, 19, 24, 0.25), 0px 0px 1px 0px rgba(14, 19, 24, 0.02);
+        transition-duration: 0.35s;
+        transition-property: opacity, transform, visibility;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .report-form-modal.active {
+        transform: translate3d(0, calc(-100% + 8px), 0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .form-content {
+        margin: 32px;
+    }
+
+    .form-content>* {
+        margin: 16px 0;
+    }
+
+    .form-title {
+        font-size: calc(24px * var(--rfso, var(--bfso, 1)));
+        font-weight: 700;
+    }
+
+    .form-body {
+        font-size: calc(14px * var(--rfso, var(--bfso, 1)));
+        font-weight: 400;
+        color: rgba(14, 19, 24, 0.7);
+    }
+
+    .form-body-bold {
+        font-size: calc(14px * var(--rfso, var(--bfso, 1)));
+        font-weight: 600;
+        line-height: 22.4px;
+        color: rgba(14, 19, 24, 1);
+    }
+
+    .form-radio-input {
+        display: grid;
+        grid-template-columns: 24px auto;
+        grid-template-rows: auto;
+        grid-template-areas: "radio-button radio-label" ". radio-description"
+    }
+
+    .form-radio-input:hover {
+        cursor: pointer;
+    }
+
+    .radio-button-input {
+        opacity: 0;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .radio-button {
+        align-self: flex-start;
+        grid-area: radio-button;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: 4px 8px 0 0;
+        vertical-align: middle;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 1px rgba(53, 71, 90, .2);
+        outline: none;
+        background-color: #ffffff;
+        flex-shrink: 0;
+    }
+
+    .radio-button-input:checked+.radio-button {
+        background: #fff;
+        box-shadow: inset 0 0 0 5px #8b3dff;
+        transition: box-shadow .1s ease-in-out, background-color .1s ease-in-out;
+    }
+
+    .form-radio-input:hover .radio-button-input:not(:checked)+.radio-button {
+        box-shadow: inset 0 0 0 1px rgba(30, 41, 51, .45);
+    }
+
+    .radio-button-input+.radio-button::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: transparent;
+        display: block;
+        margin: 5px;
+        border-radius: 50%;
+    }
+
+    .radio-button-input:checked+.radio-button::after {
+        background-color: #ffffff;
+        transition: background-color .1s ease-in-out;
+    }
+
+    .form-radio-label {
+        grid-area: radio-label;
+        font-size: calc(14px * var(--rfso, var(--bfso, 1)));
+        font-weight: 600;
+        line-height: 22.4px;
+        color: rgba(14, 19, 24, 1);
+    }
+
+    .form-radio-desc {
+        grid-area: radio-description;
+        font-size: calc(12px * var(--rfso, var(--bfso, 1)));
+        font-weight: 400;
+        color: rgba(14, 19, 24, 0.7);
+        margin: 0;
+    }
+
+    .g-recaptcha {
+        width: 300px;
+    }
+
+    .form-buttons {
+        margin-top: 32px;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: auto auto;
+        justify-content: flex-end;
+    }
+
+    .button {
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        background-color: rgba(64, 87, 109, 0.07);
+        border-radius: 4px;
+        color: #0e1318;
+        cursor: pointer;
+        display: inline-flex;
+        height: 40px;
+        margin: 0;
+        max-width: 100%;
+        min-width: 80px;
+        width: 100%;
+        padding: 0 6px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        outline: none;
+        outline-offset: 2px;
+        transition: background-color 0.2s;
+    }
+
+    .button:hover {
+        background-color: rgba(57, 76, 96, .15);
+    }
+
+    .button:active {
+        background-color: rgba(53, 71, 90, .2);
+    }
+
+    .submit-button {
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        background-color: #7d2ae8;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        height: 40px;
+        margin: 0;
+        max-width: 100%;
+        min-width: 80px;
+        width: 100%;
+        padding: 0 6px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        outline: none;
+        outline-offset: 2px;
+        transition: background-color 0.2s;
+    }
+
+    .submit-button:hover {
+        background-color: #8d39fa;
+    }
+
+    .submit-button:active {
+        background-color: #6718cf;
+    }
+
+    .button-text {
+        font-size: calc(14px * var(--rfso, var(--bfso, 1)));
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+
+    .submit-button.loading .button-text {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .submit-button.loading::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        margin: auto;
+        border: 4px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: spin 1s ease infinite;
+    }
+
+    .text-danger {
+        text-align: left;
+        margin: 4px 0 0;
+        color: #f84856;
+        font-size: calc(12px * var(--rfso, var(--bfso, 1)));
+    }
+
+    .a-link:visited {
+        color: rgba(14, 19, 24, 0.7)
+    }
+
+    .a-link {
+        text-decoration: underline;
+        color: rgba(14, 19, 24, 0.7)
+    }
+
+    .a-link:hover {
+        color: #7d2ae8;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0turn);
+        }
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    @supports selector(:focus-visible) {
+        .button:focus-visible {
+            outline: auto;
+        }
+        .submit-button:focus-visible {
+            outline: auto;
+        }
+        .radio-button-input:focus-visible+.radio-button {
+            outline: auto;
+        }
+        .footer-pill:focus-visible {
+            outline: auto;
+        }
+        .footer-pill-primary:focus-visible>.footer-pill-primary-background::after {
+            transform: translateX(110%);
+        }
+        .footer-pill-primary:focus-visible>.footer-pill-primary-background {
+            opacity: 1;
+        }
+        .footer-pill-primary:focus-visible>.footer-pill-primary-background .animation-container {
+            animation-play-state: running;
+        }
+    }
+
+    @supports not selector(:focus-visible) {
+        .button:focus {
+            outline: auto;
+        }
+        .submit-button:focus {
+            outline: auto;
+        }
+        .radio-button-input:focus+.radio-button {
+            outline: auto;
+        }
+        .footer-pill:focus {
+            outline: auto;
+        }
+        .footer-pill-primary:focus>.footer-pill-primary-background::after {
+            transform: translateX(110%);
+        }
+        .footer-pill-primary:focus>.footer-pill-primary-background {
+            opacity: 1;
+        }
+        .footer-pill-primary:focus>.footer-pill-primary-background .animation-container {
+            animation-play-state: running;
+        }
+    }
+
+    /* stylelint-disable-next-line media-feature-name-disallowed-list */
+
+    @media only screen and (max-width: 600px) {
+        .modal-backdrop {
+            background-color: rgba(14, 19, 24, 0.45);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+        .report-form-modal {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px 8px 0 0;
+            transform: translate3d(0, 33%, 0);
+        }
+        .report-form-modal.active {
+            transform: translate3d(0, 0, 0);
+        }
+        .form-content {
+            margin: 16px;
+        }
+        .form-buttons {
+            display: grid;
+            grid-gap: 8px;
+            grid-template-columns: 1fr;
+        }
+        .submit-button {
+            order: -1;
+        }
+        @supports (padding: env(safe-area-inset-bottom)) {
+            .footer-container {
+                padding: 16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
+            }
+            .form-content {
+                margin: 16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
+            }
+        }
+    }
+
+    @media (prefers-reduced-motion) {
+        .report-form-modal,
+        .report-form-modal.active {
+            transition-property: opacity, visibility;
+            transform: translate3d(0, calc(-100% + 8px), 0);
+        }
+        @media only screen and (max-width: 600px) {
+            .report-form-modal,
+            .report-form-modal.active {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .animation-container {
+            animation-play-state: paused !important;
+        }
+        .footer-pill-primary-background::after {
+            transform: translateX(0);
+            opacity: 0;
+            transition: opacity 0.7s;
+        }
+        .footer-pill-primary-background>svg {
+            display: none;
+        }
+    }
+</style>
+<div class="footer-overflow-container">
+    <div class="footer-container">
+        <button id="report_button" class="footer-pill footer-pill-secondary" type="button">
+      Terms &amp; Support
+    </button>
+        <a class="footer-pill footer-pill-primary footer-pill-link" target="_blank" href="https://www.canva.com">
+            <div class="footer-pill-primary-background">
+                <svg viewBox="20 20 55 55" xmlns="http://www.w3.org/2000/svg">
+          <title>Canva</title>
+          <defs>
+            <radialGradient id="cyanSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="1"/>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="cyanSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="0.75"/>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="purpleSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="1"/>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="purpleSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Average the RGB values of the Cyan & Purple brand colors -> Blue rect background -->
+          <rect x="0" y="0" width="100" height="100" fill="rgb(62.5, 119, 218)"/>
+          <g class="animation-container">
+            <!-- Initial Rotation -->
+            <g transform="rotate(25)">
+              <!-- Large Spots -->
+              <g transform="rotate(0) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(180) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(90) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(270) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"></rect>
+              </g>
+              <!-- Small spots -->
+              <g transform="rotate(0) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"></rect>
+              </g>
+              <g transform="rotate(180) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"></rect>
+              </g>
+              <g transform="rotate(90) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"></rect>
+              </g>
+              <g transform="rotate(270) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"></rect>
+              </g>
+            </g>
+          </g>
+        </svg>
+            </div>
+            Designed with
+            <span class="inline-icon-logo">
+            <svg viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                d="M79.444 18.096c-.136 0-.26.088-.324.272-.82 2.34-1.928 3.732-2.84 3.732-.524 0-.736-.584-.736-1.5 0-2.292 1.372-7.152 2.064-9.368.08-.268.132-.508.132-.712 0-.644-.352-.96-1.224-.96-.94 0-1.952.368-2.936 2.092-.34-1.52-1.368-2.184-2.804-2.184-1.66 0-3.264 1.068-4.584 2.8-1.32 1.732-2.872 2.3-4.04 2.02.84-2.056 1.152-3.592 1.152-4.732 0-1.788-.884-2.868-2.312-2.868-2.172 0-3.424 2.072-3.424 4.252 0 1.684.764 3.416 2.444 4.256-1.408 3.184-3.464 6.064-4.244 6.064-1.008 0-1.304-4.932-1.248-8.46.036-2.024.204-2.128.204-2.74 0-.352-.228-.592-1.144-.592-2.136 0-2.796 1.808-2.896 3.884a10.233 10.233 0 01-.368 2.332c-.892 3.184-2.732 5.6-3.932 5.6-.556 0-.708-.556-.708-1.284 0-2.292 1.284-5.156 1.284-7.6 0-1.796-.788-2.932-2.272-2.932-1.748 0-4.06 2.08-6.248 5.976.72-2.984 1.016-5.872-1.116-5.872A2.886 2.886 0 0036 9.916a.752.752 0 00-.432.728c.204 3.176-2.56 11.312-5.18 11.312-.476 0-.708-.516-.708-1.348 0-2.296 1.368-7.144 2.056-9.364.088-.288.136-.536.136-.752 0-.608-.376-.92-1.228-.92-.936 0-1.952.356-2.932 2.08-.344-1.52-1.372-2.184-2.808-2.184-2.356 0-4.988 2.492-6.144 5.74-1.548 4.336-4.668 8.524-8.868 8.524-3.812 0-5.824-3.172-5.824-8.184C4.068 8.312 9.38 2.4 13.32 2.4c1.884 0 2.784 1.2 2.784 3.04 0 2.228-1.244 3.264-1.244 4.112 0 .26.216.516.644.516 1.712 0 3.728-2.012 3.728-4.756S17.004.56 13.064.56C6.552.56 0 7.112 0 15.508c0 6.68 3.296 10.708 8.996 10.708 3.888 0 7.284-3.024 9.116-6.552.208 2.924 1.536 4.452 3.56 4.452 1.8 0 3.256-1.072 4.368-2.956.428 1.972 1.564 2.936 3.04 2.936 1.692 0 3.108-1.072 4.456-3.064-.02 1.564.336 3.036 1.692 3.036.64 0 1.404-.148 1.54-.708 1.428-5.904 4.956-10.724 6.036-10.724.32 0 .408.308.408.672 0 1.604-1.132 4.892-1.132 6.992 0 2.268.964 3.768 2.956 3.768 2.208 0 4.452-2.704 5.948-6.656.468 3.692 1.48 6.672 3.064 6.672 1.944 0 5.396-4.092 7.488-8.424.82.104 2.052.076 3.236-.76-.504 1.276-.8 2.672-.8 4.068 0 4.02 1.92 5.148 3.572 5.148 1.796 0 3.252-1.072 4.368-2.956.368 1.7 1.308 2.932 3.036 2.932 2.704 0 5.052-2.764 5.052-5.032 0-.6-.256-.964-.556-.964zM23.32 21.888c-1.092 0-1.52-1.1-1.52-2.74 0-2.848 1.948-7.604 4.008-7.604.9 0 1.24 1.06 1.24 2.356 0 2.892-1.852 7.988-3.728 7.988zm37.404-8.5c-.652-.776-.888-1.832-.888-2.772 0-1.16.424-2.14.932-2.14s.664.5.664 1.196c0 1.164-.416 2.864-.708 3.716zm8.468 8.5c-1.092 0-1.52-1.264-1.52-2.74 0-2.748 1.948-7.604 4.024-7.604.9 0 1.22 1.052 1.22 2.356 0 2.892-1.82 7.988-3.724 7.988z"
+                fill="#fff"/></svg>
+          </span>
+
+        </a>
+    </div>
+    <div id="modal_backdrop" class="modal-backdrop"></div>
+    <form id="report_form" class="report-form-modal" role="dialog" aria-labelledby="reportDialog">
+        <div class="form-content" id="form_step_terms" style="display: block;">
+            <h2 class="form-title">Terms &amp; Support</h2>
+            <p class="form-body">This website has been created with Canva, but the content is User Content that is subject to our <a class="a-link" href="https://www.canva.com/policies/terms-of-use/" target="_blank">Terms of Use</a>. If you see anything that breaches our
+                <a class="a-link" href="https://www.canva.com/policies/acceptable-use-policy/" target="_blank">acceptable use policy</a>, please report it to our content review team.</p>
+            <div class="form-buttons">
+                <button id="form_report" type="button" class="button">
+          <span class="button-text">
+            Report
+          </span>
+        </button>
+            </div>
+        </div>
+        <div class="form-content" id="form_step_report_reason" style="display: none;">
+            <h2 class="form-title" id="reportDialog">Report</h2>
+            <p class="form-body">Reporting helps Canva ensure its content is appropriate and correctly labelled.
+            </p>
+            <p class="form-body-bold"></p>
+            <label class="form-radio-input" for="report_reason_0">
+        <input id="report_reason_0" class="radio-button-input" type="radio" name="report_reason"
+               value="0" autocomplete="off" checked>
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_0">
+          Inappropriate content
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_1">
+        <input id="report_reason_1" class="radio-button-input" type="radio" name="report_reason"
+               value="1" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_1">
+          Hateful speech, activities or discrimination
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_2">
+        <input id="report_reason_2" class="radio-button-input" type="radio" name="report_reason"
+               value="2" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_2">
+          Illegal content
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_3">
+        <input id="report_reason_3" class="radio-button-input" type="radio" name="report_reason"
+               value="3" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_3">
+          Defamation or harassment
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_4">
+        <input id="report_reason_4" class="radio-button-input" type="radio" name="report_reason"
+               value="3" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_4">
+          Intellectual Property infringement
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_5">
+        <input id="report_reason_5" class="radio-button-input" type="radio" name="report_reason"
+               value="3" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_5">
+          Misinformation
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_6">
+        <input id="report_reason_6" class="radio-button-input" type="radio" name="report_reason"
+               value="3" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_6">
+          Phishing
+        </span>
+      </label>
+            <label class="form-radio-input" for="report_reason_other">
+        <input id="report_reason_other" class="radio-button-input" type="radio" name="report_reason"
+               value="4" autocomplete="off">
+        <span class="radio-button"></span>
+        <span class="form-radio-label" for="report_reason_other">
+          Something else. Please contact Canva at <a class="a-link" href="mailto:privacy@canva.com" target="_blank">privacy@canva.com</a> for and include the website URL to report other concerns.
+        </span>
+      </label>
+            <div class="form-buttons">
+                <button id="form_cancel" type="button" class="button">
+          <span class="button-text">Cancel</span>
+        </button>
+                <button id="form_submit_reason" type="button" class="submit-button">
+          <span class="button-text">Next</span>
+        </button>
+            </div>
+        </div>
+        <div class="form-content" id="form_step_captcha" style="display: none;">
+            <h2 class="form-title">Report</h2>
+            <p class="form-body">Let&#x27;s just make sure you&#x27;re human.</p>
+            <div class="g-recaptcha" data-sitekey="6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO"></div>
+            <div id="netease-captcha"></div>
+            <p id="error_message_captcha" class="text-danger" style="display: none;">
+                Please complete the verification.
+            </p>
+            <p id="error_message" class="text-danger" style="display: none;">
+                We weren&#x27;t able to submit your report right now. Please try again later.
+            </p>
+            <div class="form-buttons">
+                <button id="form_go_back" type="button" class="button">
+          <span class="button-text">Back</span>
+        </button>
+                <button id="form_submit_captcha" type="submit" class="submit-button">
+          <span class="button-text">Submit</span>
+        </button>
+            </div>
+        </div>
+        <div class="form-content" id="form_step_success" style="display: none;">
+            <h2 class="form-title">Thank you</h2>
+            <p class="form-body">Thanks for flagging this content as inappropriate. Our content review team is on it and will review as soon as possible.</p>
+            <div class="form-buttons">
+                <button id="form_close" type="button" class="submit-button">
+          <span class="button-text">
+            Close
+          </span>
+        </button>
+            </div>
+        </div>
+    </form>
+</div>
