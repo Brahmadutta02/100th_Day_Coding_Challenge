@@ -1,0 +1,3775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/brehms-garage/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brehms&#x27; Garage</title>
+    <meta name="description" content="A bike and car garage is a multi-purpose garage that can be used to store both bicycles and automobiles." />
+    <link rel="icon" href="26387fa4f5b1e3f7b6217b27d79bf264.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="2d0b56e7e51cf11036ad8734bdb67e2d.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
+    <style>
+        :root {
+            --ffsd: 0px;
+            --1vw: calc((100vw - var(--sbw, 0px)) / 100);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animated {
+                animation: none !important;
+            }
+        }
+
+        @media not all and (min-resolution:.001dpcm) {
+            @media {
+                :root {
+                    --ffsd: 0.5px;
+                }
+            }
+        }
+
+        html {
+            zoom: var(--rzf, 1);
+            font-size: max(calc(min(var(--1vw, 1vw), 13.66px) * var(--rfso, 1)), var(--minfs, 0px));
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: calc(1rem * var(--bfso, 1));
+        }
+
+        body,
+        html,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+            font-synthesis: none;
+            font-kerning: none;
+            font-variant-ligatures: none;
+            font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+            font-family: unset;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: geometricprecision;
+            white-space: normal;
+        }
+
+        li {
+            text-align: unset;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/bb64de64e312897c0538cd71dce20ba3.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/1d90eb03ba409b9437025b1879335c8a.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/a05b944f1573ac4db8c80cc9b295e520.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/439776b04d21ae43b1a78238a2a8644e.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/bb64de64e312897c0538cd71dce20ba3.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/a05b944f1573ac4db8c80cc9b295e520.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/bb64de64e312897c0538cd71dce20ba3.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/a05b944f1573ac4db8c80cc9b295e520.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/bb64de64e312897c0538cd71dce20ba3.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/a05b944f1573ac4db8c80cc9b295e520.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/bb64de64e312897c0538cd71dce20ba3.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/a05b944f1573ac4db8c80cc9b295e520.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/1d90eb03ba409b9437025b1879335c8a.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/439776b04d21ae43b1a78238a2a8644e.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/1d90eb03ba409b9437025b1879335c8a.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/439776b04d21ae43b1a78238a2a8644e.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/1d90eb03ba409b9437025b1879335c8a.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEALZQmvs4-0;
+            font-display: swap;
+            src: url(fonts/439776b04d21ae43b1a78238a2a8644e.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/80e6615d78e74dc4e030071b84f0de05.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/d8472b3b7676e19ea9aa5aae086ee1d9.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/c0d99f5cd9366c40d64a7572f793a852.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/a95c6b67ca0089b9e9a358173e8b22ac.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/80e6615d78e74dc4e030071b84f0de05.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/c0d99f5cd9366c40d64a7572f793a852.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/80e6615d78e74dc4e030071b84f0de05.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/c0d99f5cd9366c40d64a7572f793a852.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/80e6615d78e74dc4e030071b84f0de05.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/c0d99f5cd9366c40d64a7572f793a852.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/80e6615d78e74dc4e030071b84f0de05.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/c0d99f5cd9366c40d64a7572f793a852.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/d8472b3b7676e19ea9aa5aae086ee1d9.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/a95c6b67ca0089b9e9a358173e8b22ac.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/d8472b3b7676e19ea9aa5aae086ee1d9.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/a95c6b67ca0089b9e9a358173e8b22ac.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/d8472b3b7676e19ea9aa5aae086ee1d9.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnS2G4JLg-0;
+            font-display: swap;
+            src: url(fonts/a95c6b67ca0089b9e9a358173e8b22ac.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            font-display: swap;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        #verticalMenu {
+            border: 12px solid #ffffff;
+            padding: 0;
+            margin: 0 0 0 auto;
+            z-index: 2;
+            font-size: 1.5rem;
+            right: 0px;
+            box-sizing: border-box;
+            transition: all 0.35s;
+            background-color: #ffffff;
+            transform: translateX(400px);
+            overflow: auto;
+            max-width: 80vw;
+            top: 0px;
+            width: 400px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            position: fixed;
+            height: 100%;
+        }
+
+        #menuToggle:checked~#verticalMenu {
+            transform: translateX(0px);
+        }
+
+        #menuButton {
+            z-index: 3;
+            color: #0e1318;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menuButton:hover {
+            cursor: pointer;
+            text-decoration-line: none;
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLinkContent:hover {
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLink {
+            color: hsla(210, 26%, 7%, 0.7);
+            list-style-type: none;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+
+        #horizontalMenu>.navMenuLink {
+            max-width: 148px;
+        }
+
+        .navMenuLinkContent {
+            padding: 10px 16px;
+            text-decoration-line: none;
+            overflow: hidden;
+            color: hsla(210, 26%, 7%, 0.7);
+            white-space: nowrap;
+            font-weight: 700;
+            display: inline-block;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-overflow: ellipsis;
+            margin-right: auto;
+        }
+
+        #menuToggle:checked~#menuButton {
+            background-color: rgba(30, 41, 51, 45);
+            z-index: 2;
+            top: 0px;
+            width: 100vw;
+            position: fixed;
+            opacity: 0.55;
+            height: 100vh;
+        }
+
+        #menuToggle:checked~#menuButton>#menuButtonIcon {
+            display: none;
+        }
+
+        #horizontalMenu {
+            display: flex;
+        }
+
+        @media (max-width: 0px) {
+            #horizontalMenu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1px) {
+            #menuButton,
+            #verticalMenu {
+                display: none;
+            }
+        }
+
+        html {
+            scroll-padding-top: 50px;
+        }
+
+        @media (max-width: 375px) {
+            #gTTIUV4CtaPmdi6v {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uxkXViVZcYkaK7cJ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #QtAXvZnIRWhwmjAK {
+                font-size: max(0px, calc(8.78477306em - var(--ffsd)));
+            }
+            #FwAdmMy1pitIrsMm {
+                transform: translateX(calc(max(0px, 8.78477306em) * -0.01));
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 8.78477306em) * 0.075);
+            }
+            #eO6pfv3vA02S887j {
+                min-width: 88.88882382rem;
+            }
+            #zICqIZELxBDA1tIl {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #yP4a0ZqGe7qGlk16 {
+                font-size: max(0px, calc(2.93863553em - var(--ffsd)));
+            }
+            #xNHHfayh5QMEfCry {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 2.93863553em) * 0.075);
+            }
+            #m5PXlQDwNQCltF0H {
+                min-width: 61.51518056rem;
+            }
+            #sKJHtd6GGlvjQ9Rf {
+                grid-area: 4 / 3 / 5 / 8;
+            }
+            #fgLB0yCJsziSGkGj {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #SrGP8yrexPKZzzP5 {
+                font-size: max(0px, calc(1.8807345em - var(--ffsd)));
+            }
+            #SWxb6otVv4jlqe4y {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.8807345em) * 0.05);
+            }
+            #jK6yUMEL5AJhNuxI {
+                min-width: 17.70501757rem;
+            }
+            #nieP0pBydDyzEV7x {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #FG1RUYMYjK6A2qus {
+                grid-template-columns: 5.62225476rem 13.68682163rem 19.84629963rem 2.05878186rem 17.57168424rem 2.05878186rem 19.84629963rem 13.68682163rem 5.62225476rem;
+                grid-template-rows: minmax(13.85160926rem, max-content) minmax(10.54172767rem, max-content) minmax(0.71241133rem, max-content) minmax(3.43820657rem, max-content) minmax(3.06912993rem, max-content) minmax(1.33754712rem, max-content) minmax(2.215734rem, max-content) minmax(1.33754712rem, max-content) minmax(19.71863457rem, max-content);
+            }
+            #pHGxjI7QougmfdIr {
+                min-height: 20vh;
+            }
+            #fG2FbEf5dfpjmg4T {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #mpHXCuLxrxkVnF21 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #L2XcMN4ENFqFM6jM {
+                grid-area: 2 / 2 / 7 / 3;
+            }
+            #WZsXFPZDm4HQfd2j {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #CwaQYURTrU5kiPl7 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #nGHCvSkV2WVrFggO {
+                min-width: 37.00571723rem;
+            }
+            #rXRspEpm8NnjVKTi {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            #RWUH5O0VVAqxFFpw {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #esPXlExBkWqbDyCZ {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #LT1GwhLZ5NS6IGxj {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #WgAPM075oS5JnxBe {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+            }
+            #Hqit761q1Jr02K81 {
+                min-width: 37.00571723rem;
+            }
+            #qbaY1qAyExmbACi5 {
+                grid-area: 5 / 4 / 6 / 6;
+            }
+            #FeoebtiQtoa6OAD7 {
+                grid-template-columns: 8.07336083rem 40.61944963rem 5.96707623rem 0 36.8723839rem 0 8.46772941rem;
+                grid-template-rows: minmax(8.98981941rem, max-content) minmax(3.88246041rem, max-content) minmax(8.63835981rem, max-content) minmax(1.75178113rem, max-content) minmax(20.087847rem, max-content) minmax(3.88246041rem, max-content) minmax(8.98981941rem, max-content);
+            }
+            #lbvsp82Byjb5egOY {
+                min-height: 20vh;
+            }
+            #lWWS0Uj9TkF6T1UJ {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fINXbcDAXtwKuWgz {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #TXchIzbgihDoZ7pH {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #pqESWb03U8bgX3zE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #RfCVdYxFMh9DALO4 {
+                min-width: 27.32074888rem;
+            }
+            #Nx4o4opNH9f0ZDmN {
+                grid-area: 2 / 3 / 3 / 10;
+            }
+            #LVwOasoO1UUufCjH {
+                grid-area: 4 / 2 / 23 / 9;
+            }
+            #KnLHxEYU5HaFwXsg {
+                grid-area: 8 / 4 / 26 / 11;
+            }
+            #SNBYRK8BC8p6QLvk {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #GPjfSBeJm2tvO0yx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #KOxNVX70gwS3gphC {
+                min-width: 20.31794776rem;
+            }
+            #pR4maUEgUAwux16N {
+                grid-area: 10 / 6 / 13 / 8;
+            }
+            #asdS5iELYojkPZBR {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #vOBqHTLsPejqhhSU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #OL03VACi8RfhQCOx {
+                min-width: 20.31794776rem;
+            }
+            #KCWjoyvpwvdU591n {
+                grid-area: 16 / 5 / 19 / 7;
+            }
+            #Qn5Qp4O5caBQrn3E {
+                grid-area: 7 / 12 / 22 / 18;
+            }
+            #BDghx2sALCqSLR1J {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #KyWsVe6HieWJYbso {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ZjZYowJ12NMl2MEy {
+                min-width: 19.91385909rem;
+            }
+            #l4o0Fc8GIBhqf19u {
+                grid-area: 11 / 15 / 14 / 17;
+            }
+            #Eh6DTCCHkAVTyOPG {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #A2occwnMeKx7SZ2j {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #RvygAC5bhPYRY4SY {
+                min-width: 19.91385909rem;
+            }
+            #YYPaHqJT99DkVbdi {
+                grid-area: 17 / 14 / 20 / 16;
+            }
+            #xyNRgmYxMSRNG3uu {
+                grid-area: 5 / 13 / 24 / 19;
+            }
+            #VYzzaVL6heoPre8o {
+                grid-area: 6 / 20 / 25 / 26;
+            }
+            #ubyukdk4IUefhazm {
+                grid-area: 9 / 21 / 27 / 27;
+            }
+            #jVwE13Qkadr0MVba {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #L4GV5818AIajCzYV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #HJ2xiAyDj8CoFlee {
+                min-width: 19.91385909rem;
+            }
+            #j20GP1zYbZLIwWBr {
+                grid-area: 12 / 23 / 15 / 25;
+            }
+            #yKixv1UzLp8ttEJ3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #IHSvwXu3iRveXDlU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #F7co1NMfMGpWyPlP {
+                min-width: 19.91385909rem;
+            }
+            #nCSv3Adgi7eQHzQo {
+                grid-area: 18 / 22 / 21 / 24;
+            }
+            #Ek2UfI2GA9D9eunP {
+                grid-template-columns: 7.88520308rem 0 0 3.50140056rem 0 20.18461443rem 0 3.50140056rem 0 0 1.3336736rem 0.01928591rem 3.68415898rem 0 19.78052576rem 0 3.7034449rem 0.01928591rem 1.31438769rem 0 3.7034449rem 0 19.78052576rem 0 3.7034449rem 0 7.88520308rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(3.20883447rem, max-content) 0 0 minmax(22.62509153rem, max-content) minmax(0.00167209rem, max-content) 0 minmax(1.83071988rem, max-content) 0 0 minmax(1.75695461rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(3.09419253rem, max-content) 0 0 minmax(1.83239197rem, max-content) minmax(0.00167209rem, max-content) 0 0 0 0 minmax(7.11618566rem, max-content);
+            }
+            #LyN8dNQGdBlPDJyW {
+                min-height: 20vh;
+            }
+            #TGDozISeyozAhn16 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #l4lgc9a0OIIwEMvK {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #vm48BfjEbBZNdFX0 {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #nfj2IRLvOPWjFNQz {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #jpcOKAmxD6fvnAZG {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #d8bQcLaAD0nXiyYL {
+                min-width: 34.73165582rem;
+            }
+            #d1gAfJcfcJyhVvpb {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+            #KmIRjxBehbfg0H8x {
+                grid-area: 4 / 2 / 14 / 5;
+            }
+            #NX5UUytpxYWfYwUb {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #kWW4uiajrKT58miS {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #eMSTuZo64QxAuDEq {
+                min-width: 23.56199581rem;
+            }
+            #G8nwdg07A1SDNXtp {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #Z767zzh5beVHrXTV {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #D2nh83GM6ZxF36oj {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #UN6FigEiPRXvoY8Z {
+                min-width: 23.56199581rem;
+            }
+            #LNuPNmML7nO3P7qm {
+                grid-area: 10 / 7 / 13 / 12;
+            }
+            #hnisvvPAGzWnQ0Kh {
+                grid-area: 16 / 3 / 26 / 6;
+            }
+            #eitJZrE33uuUOzmu {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #T5t97hVPYszxXoEd {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bdjJWI0wOP6CnVTD {
+                min-width: 23.56199581rem;
+            }
+            #FgGKJFLxyxMlJTF9 {
+                grid-area: 18 / 10 / 20 / 15;
+            }
+            #rdVyu348med0GuGd {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #QSq17x9K6jfgsQpf {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #Vzs718nOlYlDAU8w {
+                min-width: 23.56199581rem;
+            }
+            #FOQELkBaddNO2Uss {
+                grid-area: 22 / 9 / 24 / 14;
+            }
+            #rJL3IwSeHecNtyin {
+                grid-area: 7 / 16 / 15 / 18;
+            }
+            #Rb2FidwFsj0Xoefv {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #zGCaYsk6QF0Oc49N {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #P4nRTlWdhFvd4Xzv {
+                min-width: 23.56199581rem;
+            }
+            #O82t49N5oIdznwJz {
+                grid-area: 6 / 21 / 9 / 25;
+            }
+            #a5ch36JumvuAPPn6 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #q7LLwuJwWnhtVxrS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #NKubvyeKPaDGgpRH {
+                min-width: 23.56199581rem;
+            }
+            #peuHxyR11DEZKNjr {
+                grid-area: 11 / 20 / 12 / 24;
+            }
+            #hCqYs0bvcYQ15xQf {
+                grid-area: 17 / 17 / 27 / 19;
+            }
+            #cOVGITJ7RQT4cB1q {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #sWeV9o0ebmgLDgfE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #sIlxj8gWfU5ceh8I {
+                min-width: 23.56199581rem;
+            }
+            #xrVgHOLzYH1TvJrG {
+                grid-area: 19 / 23 / 21 / 27;
+            }
+            #Ggy3Op3uTScuNbhM {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #UIUoYGSJGaxaBsMH {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #xeBfxIxFlhjLt77Y {
+                min-width: 23.56199581rem;
+            }
+            #j6poSC8fg0gfT45W {
+                grid-area: 23 / 22 / 25 / 26;
+            }
+            #RRZRIeMan22ZQJtc {
+                grid-template-columns: 7.9004329rem 0 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 0 7.50124461rem 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 15.40167751rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(7.44619838rem, max-content) 0 0 minmax(0.14112147rem, max-content) minmax(2.12827823rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(3.09419253rem, max-content) minmax(3.22108346rem, max-content) minmax(0.07320644rem, max-content) 0 minmax(3.98572756rem, max-content) 0 0 0 minmax(2.26939971rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(4.70473426rem, max-content) 0 minmax(1.68374817rem, max-content) 0 minmax(12.22580647rem, max-content);
+            }
+            #EvVVIpjK3QcHjbAo {
+                min-height: 20vh;
+            }
+            #TgqkBx6jIAuVCJ4w {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #hAHSCOWEbiNUnY1X {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #P5poen44ZQjzhWFk {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #EBYFRC10c8mTaovn {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #y2ti8mDyq4KJ0F4h {
+                min-width: 33.38731276rem;
+            }
+            #Ywml7Y5zmfibruRV {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #r7EIzWOsP5LhMa9W {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #xNER1Wt78gZpXBbH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bnN3lp0EAYlW390I {
+                min-width: 20.36675835rem;
+            }
+            #nUp5zVcSg2QZOVZo {
+                grid-area: 4 / 4 / 7 / 6;
+            }
+            #NuXwM6Pu2S4762Sg {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #JMHcrslpMzUwovPF {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #bkpUuTwmyhHrIb9X {
+                min-width: 20.36675835rem;
+            }
+            #Gt9aUPfWiXm6tpPE {
+                grid-area: 10 / 3 / 13 / 5;
+            }
+            #IVHtVp7bzBonVNf7 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #Zdt3ClfKIfFfxaTV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ecmO26qCRLYDeoOK {
+                min-width: 20.36675835rem;
+            }
+            #OcI42Q1F5EDHmS9R {
+                grid-area: 5 / 8 / 8 / 11;
+            }
+            #mHa09gjBSLY8hev4 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #KZhepuxLaJRaCf4Q {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #ZiCCEI1R409ULbQJ {
+                min-width: 20.36675835rem;
+            }
+            #lkc6NY59ZM03OwxG {
+                grid-area: 11 / 7 / 14 / 10;
+            }
+            #uFdriEzLligYvaT8 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #ndFgL1DC4Cx8aTD1 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #Vjg3rJ5FWIzuNrIM {
+                min-width: 20.36675835rem;
+            }
+            #jVeL6FH41XnpW9Ja {
+                grid-area: 6 / 13 / 9 / 15;
+            }
+            #lmRdW2Zg0V2Esih2 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #uWza84N3elXP6RbS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #FpsH8P9hxMFlzypS {
+                min-width: 20.36675835rem;
+            }
+            #Pdra57S1BEy8tO9x {
+                grid-area: 12 / 12 / 15 / 14;
+            }
+            #rK9vGex8yNPa9Dl2 {
+                grid-template-columns: 8.10351425rem 0 0 20.23342501rem 0 11.54634823rem 0 1.47420618rem 18.75921883rem 0 11.97781177rem 0 20.23342501rem 0 7.67205071rem;
+                grid-template-rows: minmax(33.19914317rem, max-content) minmax(8.63835981rem, max-content) minmax(1.1989622rem, max-content) 0 0 minmax(2.04978038rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(1.62030307rem, max-content) 0 0 minmax(9.02178079rem, max-content);
+            }
+            #YZCWnDYy7nxj69Dz {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 375.05px) and (max-width: 480px) {
+            #gTTIUV4CtaPmdi6v {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uxkXViVZcYkaK7cJ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #QtAXvZnIRWhwmjAK {
+                font-size: max(0px, calc(8.78477306em - var(--ffsd)));
+            }
+            #FwAdmMy1pitIrsMm {
+                transform: translateX(calc(max(0px, 8.78477306em) * -0.01));
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 8.78477306em) * 0.075);
+            }
+            #eO6pfv3vA02S887j {
+                min-width: 88.85965715rem;
+            }
+            #zICqIZELxBDA1tIl {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #yP4a0ZqGe7qGlk16 {
+                font-size: max(0px, calc(2.93863553em - var(--ffsd)));
+            }
+            #xNHHfayh5QMEfCry {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 2.93863553em) * 0.075);
+            }
+            #m5PXlQDwNQCltF0H {
+                min-width: 61.48601389rem;
+            }
+            #sKJHtd6GGlvjQ9Rf {
+                grid-area: 4 / 3 / 5 / 8;
+            }
+            #fgLB0yCJsziSGkGj {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #SrGP8yrexPKZzzP5 {
+                font-size: max(0px, calc(1.8807345em - var(--ffsd)));
+            }
+            #SWxb6otVv4jlqe4y {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.8807345em) * 0.05);
+            }
+            #jK6yUMEL5AJhNuxI {
+                min-width: 17.6758509rem;
+            }
+            #nieP0pBydDyzEV7x {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #FG1RUYMYjK6A2qus {
+                grid-template-columns: 5.62225476rem 13.68682163rem 19.84629963rem 2.05878186rem 17.57168424rem 2.05878186rem 19.84629963rem 13.68682163rem 5.62225476rem;
+                grid-template-rows: minmax(13.85160926rem, max-content) minmax(10.54172767rem, max-content) minmax(0.71241133rem, max-content) minmax(3.43820657rem, max-content) minmax(3.06912993rem, max-content) minmax(1.33754712rem, max-content) minmax(2.215734rem, max-content) minmax(1.33754712rem, max-content) minmax(19.71863457rem, max-content);
+            }
+            #pHGxjI7QougmfdIr {
+                min-height: 20vh;
+            }
+            #fG2FbEf5dfpjmg4T {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #mpHXCuLxrxkVnF21 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #L2XcMN4ENFqFM6jM {
+                grid-area: 2 / 2 / 7 / 3;
+            }
+            #WZsXFPZDm4HQfd2j {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #CwaQYURTrU5kiPl7 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #nGHCvSkV2WVrFggO {
+                min-width: 36.97655057rem;
+            }
+            #rXRspEpm8NnjVKTi {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            #RWUH5O0VVAqxFFpw {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #esPXlExBkWqbDyCZ {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #LT1GwhLZ5NS6IGxj {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #WgAPM075oS5JnxBe {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+            }
+            #Hqit761q1Jr02K81 {
+                min-width: 36.97655057rem;
+            }
+            #qbaY1qAyExmbACi5 {
+                grid-area: 5 / 4 / 6 / 6;
+            }
+            #FeoebtiQtoa6OAD7 {
+                grid-template-columns: 8.07336083rem 40.61944963rem 5.96707623rem 0 36.8723839rem 0 8.46772941rem;
+                grid-template-rows: minmax(8.98981941rem, max-content) minmax(3.88246041rem, max-content) minmax(8.63835981rem, max-content) minmax(1.75178113rem, max-content) minmax(20.087847rem, max-content) minmax(3.88246041rem, max-content) minmax(8.98981941rem, max-content);
+            }
+            #lbvsp82Byjb5egOY {
+                min-height: 20vh;
+            }
+            #lWWS0Uj9TkF6T1UJ {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fINXbcDAXtwKuWgz {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #TXchIzbgihDoZ7pH {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #pqESWb03U8bgX3zE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #RfCVdYxFMh9DALO4 {
+                min-width: 27.29158221rem;
+            }
+            #Nx4o4opNH9f0ZDmN {
+                grid-area: 2 / 3 / 3 / 10;
+            }
+            #LVwOasoO1UUufCjH {
+                grid-area: 4 / 2 / 23 / 9;
+            }
+            #KnLHxEYU5HaFwXsg {
+                grid-area: 8 / 4 / 26 / 11;
+            }
+            #SNBYRK8BC8p6QLvk {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #GPjfSBeJm2tvO0yx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #KOxNVX70gwS3gphC {
+                min-width: 20.28878109rem;
+            }
+            #pR4maUEgUAwux16N {
+                grid-area: 10 / 6 / 13 / 8;
+            }
+            #asdS5iELYojkPZBR {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #vOBqHTLsPejqhhSU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #OL03VACi8RfhQCOx {
+                min-width: 20.28878109rem;
+            }
+            #KCWjoyvpwvdU591n {
+                grid-area: 16 / 5 / 19 / 7;
+            }
+            #Qn5Qp4O5caBQrn3E {
+                grid-area: 7 / 12 / 22 / 18;
+            }
+            #BDghx2sALCqSLR1J {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #KyWsVe6HieWJYbso {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ZjZYowJ12NMl2MEy {
+                min-width: 19.88469242rem;
+            }
+            #l4o0Fc8GIBhqf19u {
+                grid-area: 11 / 15 / 14 / 17;
+            }
+            #Eh6DTCCHkAVTyOPG {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #A2occwnMeKx7SZ2j {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #RvygAC5bhPYRY4SY {
+                min-width: 19.88469242rem;
+            }
+            #YYPaHqJT99DkVbdi {
+                grid-area: 17 / 14 / 20 / 16;
+            }
+            #xyNRgmYxMSRNG3uu {
+                grid-area: 5 / 13 / 24 / 19;
+            }
+            #VYzzaVL6heoPre8o {
+                grid-area: 6 / 20 / 25 / 26;
+            }
+            #ubyukdk4IUefhazm {
+                grid-area: 9 / 21 / 27 / 27;
+            }
+            #jVwE13Qkadr0MVba {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #L4GV5818AIajCzYV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #HJ2xiAyDj8CoFlee {
+                min-width: 19.88469242rem;
+            }
+            #j20GP1zYbZLIwWBr {
+                grid-area: 12 / 23 / 15 / 25;
+            }
+            #yKixv1UzLp8ttEJ3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #IHSvwXu3iRveXDlU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #F7co1NMfMGpWyPlP {
+                min-width: 19.88469242rem;
+            }
+            #nCSv3Adgi7eQHzQo {
+                grid-area: 18 / 22 / 21 / 24;
+            }
+            #Ek2UfI2GA9D9eunP {
+                grid-template-columns: 7.88520308rem 0 0 3.50140056rem 0 20.18461443rem 0 3.50140056rem 0 0 1.3336736rem 0.01928591rem 3.68415898rem 0 19.78052576rem 0 3.7034449rem 0.01928591rem 1.31438769rem 0 3.7034449rem 0 19.78052576rem 0 3.7034449rem 0 7.88520308rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(3.20883447rem, max-content) 0 0 minmax(22.62509153rem, max-content) minmax(0.00167209rem, max-content) 0 minmax(1.83071988rem, max-content) 0 0 minmax(1.75695461rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(3.09419253rem, max-content) 0 0 minmax(1.83239197rem, max-content) minmax(0.00167209rem, max-content) 0 0 0 0 minmax(7.11618566rem, max-content);
+            }
+            #LyN8dNQGdBlPDJyW {
+                min-height: 20vh;
+            }
+            #TGDozISeyozAhn16 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #l4lgc9a0OIIwEMvK {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #vm48BfjEbBZNdFX0 {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #nfj2IRLvOPWjFNQz {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #jpcOKAmxD6fvnAZG {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #d8bQcLaAD0nXiyYL {
+                min-width: 34.70248916rem;
+            }
+            #d1gAfJcfcJyhVvpb {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+            #KmIRjxBehbfg0H8x {
+                grid-area: 4 / 2 / 14 / 5;
+            }
+            #NX5UUytpxYWfYwUb {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #kWW4uiajrKT58miS {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #eMSTuZo64QxAuDEq {
+                min-width: 23.53282914rem;
+            }
+            #G8nwdg07A1SDNXtp {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #Z767zzh5beVHrXTV {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #D2nh83GM6ZxF36oj {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #UN6FigEiPRXvoY8Z {
+                min-width: 23.53282914rem;
+            }
+            #LNuPNmML7nO3P7qm {
+                grid-area: 10 / 7 / 13 / 12;
+            }
+            #hnisvvPAGzWnQ0Kh {
+                grid-area: 16 / 3 / 26 / 6;
+            }
+            #eitJZrE33uuUOzmu {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #T5t97hVPYszxXoEd {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bdjJWI0wOP6CnVTD {
+                min-width: 23.53282914rem;
+            }
+            #FgGKJFLxyxMlJTF9 {
+                grid-area: 18 / 10 / 20 / 15;
+            }
+            #rdVyu348med0GuGd {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #QSq17x9K6jfgsQpf {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #Vzs718nOlYlDAU8w {
+                min-width: 23.53282914rem;
+            }
+            #FOQELkBaddNO2Uss {
+                grid-area: 22 / 9 / 24 / 14;
+            }
+            #rJL3IwSeHecNtyin {
+                grid-area: 7 / 16 / 15 / 18;
+            }
+            #Rb2FidwFsj0Xoefv {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #zGCaYsk6QF0Oc49N {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #P4nRTlWdhFvd4Xzv {
+                min-width: 23.53282914rem;
+            }
+            #O82t49N5oIdznwJz {
+                grid-area: 6 / 21 / 9 / 25;
+            }
+            #a5ch36JumvuAPPn6 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #q7LLwuJwWnhtVxrS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #NKubvyeKPaDGgpRH {
+                min-width: 23.53282914rem;
+            }
+            #peuHxyR11DEZKNjr {
+                grid-area: 11 / 20 / 12 / 24;
+            }
+            #hCqYs0bvcYQ15xQf {
+                grid-area: 17 / 17 / 27 / 19;
+            }
+            #cOVGITJ7RQT4cB1q {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #sWeV9o0ebmgLDgfE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #sIlxj8gWfU5ceh8I {
+                min-width: 23.53282914rem;
+            }
+            #xrVgHOLzYH1TvJrG {
+                grid-area: 19 / 23 / 21 / 27;
+            }
+            #Ggy3Op3uTScuNbhM {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #UIUoYGSJGaxaBsMH {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #xeBfxIxFlhjLt77Y {
+                min-width: 23.53282914rem;
+            }
+            #j6poSC8fg0gfT45W {
+                grid-area: 23 / 22 / 25 / 26;
+            }
+            #RRZRIeMan22ZQJtc {
+                grid-template-columns: 7.9004329rem 0 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 0 7.50124461rem 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 15.40167751rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(7.44619838rem, max-content) 0 0 minmax(0.14112147rem, max-content) minmax(2.12827823rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(3.09419253rem, max-content) minmax(3.22108346rem, max-content) minmax(0.07320644rem, max-content) 0 minmax(3.98572756rem, max-content) 0 0 0 minmax(2.26939971rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(4.70473426rem, max-content) 0 minmax(1.68374817rem, max-content) 0 minmax(12.22580647rem, max-content);
+            }
+            #EvVVIpjK3QcHjbAo {
+                min-height: 20vh;
+            }
+            #TgqkBx6jIAuVCJ4w {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #hAHSCOWEbiNUnY1X {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #P5poen44ZQjzhWFk {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #EBYFRC10c8mTaovn {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #y2ti8mDyq4KJ0F4h {
+                min-width: 33.3581461rem;
+            }
+            #Ywml7Y5zmfibruRV {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #r7EIzWOsP5LhMa9W {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #xNER1Wt78gZpXBbH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bnN3lp0EAYlW390I {
+                min-width: 20.33759168rem;
+            }
+            #nUp5zVcSg2QZOVZo {
+                grid-area: 4 / 4 / 7 / 6;
+            }
+            #NuXwM6Pu2S4762Sg {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #JMHcrslpMzUwovPF {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #bkpUuTwmyhHrIb9X {
+                min-width: 20.33759168rem;
+            }
+            #Gt9aUPfWiXm6tpPE {
+                grid-area: 10 / 3 / 13 / 5;
+            }
+            #IVHtVp7bzBonVNf7 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #Zdt3ClfKIfFfxaTV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ecmO26qCRLYDeoOK {
+                min-width: 20.33759168rem;
+            }
+            #OcI42Q1F5EDHmS9R {
+                grid-area: 5 / 8 / 8 / 11;
+            }
+            #mHa09gjBSLY8hev4 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #KZhepuxLaJRaCf4Q {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #ZiCCEI1R409ULbQJ {
+                min-width: 20.33759168rem;
+            }
+            #lkc6NY59ZM03OwxG {
+                grid-area: 11 / 7 / 14 / 10;
+            }
+            #uFdriEzLligYvaT8 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #ndFgL1DC4Cx8aTD1 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #Vjg3rJ5FWIzuNrIM {
+                min-width: 20.33759168rem;
+            }
+            #jVeL6FH41XnpW9Ja {
+                grid-area: 6 / 13 / 9 / 15;
+            }
+            #lmRdW2Zg0V2Esih2 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #uWza84N3elXP6RbS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #FpsH8P9hxMFlzypS {
+                min-width: 20.33759168rem;
+            }
+            #Pdra57S1BEy8tO9x {
+                grid-area: 12 / 12 / 15 / 14;
+            }
+            #rK9vGex8yNPa9Dl2 {
+                grid-template-columns: 8.10351425rem 0 0 20.23342501rem 0 11.54634823rem 0 1.47420618rem 18.75921883rem 0 11.97781177rem 0 20.23342501rem 0 7.67205071rem;
+                grid-template-rows: minmax(33.19914317rem, max-content) minmax(8.63835981rem, max-content) minmax(1.1989622rem, max-content) 0 0 minmax(2.04978038rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(1.62030307rem, max-content) 0 0 minmax(9.02178079rem, max-content);
+            }
+            #YZCWnDYy7nxj69Dz {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 480.05px) and (max-width: 768px) {
+            #gTTIUV4CtaPmdi6v {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uxkXViVZcYkaK7cJ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #QtAXvZnIRWhwmjAK {
+                font-size: max(0px, calc(8.78477306em - var(--ffsd)));
+            }
+            #FwAdmMy1pitIrsMm {
+                transform: translateX(calc(max(0px, 8.78477306em) * -0.01));
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 8.78477306em) * 0.075);
+            }
+            #eO6pfv3vA02S887j {
+                min-width: 88.82059465rem;
+            }
+            #zICqIZELxBDA1tIl {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #yP4a0ZqGe7qGlk16 {
+                font-size: max(0px, calc(2.93863553em - var(--ffsd)));
+            }
+            #xNHHfayh5QMEfCry {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 2.93863553em) * 0.075);
+            }
+            #m5PXlQDwNQCltF0H {
+                min-width: 61.44695139rem;
+            }
+            #sKJHtd6GGlvjQ9Rf {
+                grid-area: 4 / 3 / 5 / 8;
+            }
+            #fgLB0yCJsziSGkGj {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #SrGP8yrexPKZzzP5 {
+                font-size: max(0px, calc(1.8807345em - var(--ffsd)));
+            }
+            #SWxb6otVv4jlqe4y {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.8807345em) * 0.05);
+            }
+            #jK6yUMEL5AJhNuxI {
+                min-width: 17.6367884rem;
+            }
+            #nieP0pBydDyzEV7x {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #FG1RUYMYjK6A2qus {
+                grid-template-columns: 5.62225476rem 13.68682163rem 19.84629963rem 2.05878186rem 17.57168424rem 2.05878186rem 19.84629963rem 13.68682163rem 5.62225476rem;
+                grid-template-rows: minmax(13.85160926rem, max-content) minmax(10.54172767rem, max-content) minmax(0.71241133rem, max-content) minmax(3.43820657rem, max-content) minmax(3.06912993rem, max-content) minmax(1.33754712rem, max-content) minmax(2.215734rem, max-content) minmax(1.33754712rem, max-content) minmax(19.71863457rem, max-content);
+            }
+            #pHGxjI7QougmfdIr {
+                min-height: 20vh;
+            }
+            #fG2FbEf5dfpjmg4T {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #mpHXCuLxrxkVnF21 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #L2XcMN4ENFqFM6jM {
+                grid-area: 2 / 2 / 7 / 3;
+            }
+            #WZsXFPZDm4HQfd2j {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #CwaQYURTrU5kiPl7 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #nGHCvSkV2WVrFggO {
+                min-width: 36.93748807rem;
+            }
+            #rXRspEpm8NnjVKTi {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            #RWUH5O0VVAqxFFpw {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #esPXlExBkWqbDyCZ {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #LT1GwhLZ5NS6IGxj {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #WgAPM075oS5JnxBe {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+            }
+            #Hqit761q1Jr02K81 {
+                min-width: 36.93748807rem;
+            }
+            #qbaY1qAyExmbACi5 {
+                grid-area: 5 / 4 / 6 / 6;
+            }
+            #FeoebtiQtoa6OAD7 {
+                grid-template-columns: 8.07336083rem 40.61944963rem 5.96707623rem 0 36.8723839rem 0 8.46772941rem;
+                grid-template-rows: minmax(8.98981941rem, max-content) minmax(3.88246041rem, max-content) minmax(8.63835981rem, max-content) minmax(1.75178113rem, max-content) minmax(20.087847rem, max-content) minmax(3.88246041rem, max-content) minmax(8.98981941rem, max-content);
+            }
+            #lbvsp82Byjb5egOY {
+                min-height: 20vh;
+            }
+            #lWWS0Uj9TkF6T1UJ {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fINXbcDAXtwKuWgz {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #TXchIzbgihDoZ7pH {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #pqESWb03U8bgX3zE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #RfCVdYxFMh9DALO4 {
+                min-width: 27.25251971rem;
+            }
+            #Nx4o4opNH9f0ZDmN {
+                grid-area: 2 / 3 / 3 / 10;
+            }
+            #LVwOasoO1UUufCjH {
+                grid-area: 4 / 2 / 23 / 9;
+            }
+            #KnLHxEYU5HaFwXsg {
+                grid-area: 8 / 4 / 26 / 11;
+            }
+            #SNBYRK8BC8p6QLvk {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #GPjfSBeJm2tvO0yx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #KOxNVX70gwS3gphC {
+                min-width: 20.24971859rem;
+            }
+            #pR4maUEgUAwux16N {
+                grid-area: 10 / 6 / 13 / 8;
+            }
+            #asdS5iELYojkPZBR {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #vOBqHTLsPejqhhSU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #OL03VACi8RfhQCOx {
+                min-width: 20.24971859rem;
+            }
+            #KCWjoyvpwvdU591n {
+                grid-area: 16 / 5 / 19 / 7;
+            }
+            #Qn5Qp4O5caBQrn3E {
+                grid-area: 7 / 12 / 22 / 18;
+            }
+            #BDghx2sALCqSLR1J {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #KyWsVe6HieWJYbso {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ZjZYowJ12NMl2MEy {
+                min-width: 19.84562992rem;
+            }
+            #l4o0Fc8GIBhqf19u {
+                grid-area: 11 / 15 / 14 / 17;
+            }
+            #Eh6DTCCHkAVTyOPG {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #A2occwnMeKx7SZ2j {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #RvygAC5bhPYRY4SY {
+                min-width: 19.84562992rem;
+            }
+            #YYPaHqJT99DkVbdi {
+                grid-area: 17 / 14 / 20 / 16;
+            }
+            #xyNRgmYxMSRNG3uu {
+                grid-area: 5 / 13 / 24 / 19;
+            }
+            #VYzzaVL6heoPre8o {
+                grid-area: 6 / 20 / 25 / 26;
+            }
+            #ubyukdk4IUefhazm {
+                grid-area: 9 / 21 / 27 / 27;
+            }
+            #jVwE13Qkadr0MVba {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #L4GV5818AIajCzYV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #HJ2xiAyDj8CoFlee {
+                min-width: 19.84562992rem;
+            }
+            #j20GP1zYbZLIwWBr {
+                grid-area: 12 / 23 / 15 / 25;
+            }
+            #yKixv1UzLp8ttEJ3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #IHSvwXu3iRveXDlU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #F7co1NMfMGpWyPlP {
+                min-width: 19.84562992rem;
+            }
+            #nCSv3Adgi7eQHzQo {
+                grid-area: 18 / 22 / 21 / 24;
+            }
+            #Ek2UfI2GA9D9eunP {
+                grid-template-columns: 7.88520308rem 0 0 3.50140056rem 0 20.18461443rem 0 3.50140056rem 0 0 1.3336736rem 0.01928591rem 3.68415898rem 0 19.78052576rem 0 3.7034449rem 0.01928591rem 1.31438769rem 0 3.7034449rem 0 19.78052576rem 0 3.7034449rem 0 7.88520308rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(3.20883447rem, max-content) 0 0 minmax(22.62509153rem, max-content) minmax(0.00167209rem, max-content) 0 minmax(1.83071988rem, max-content) 0 0 minmax(1.75695461rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(3.09419253rem, max-content) 0 0 minmax(1.83239197rem, max-content) minmax(0.00167209rem, max-content) 0 0 0 0 minmax(7.11618566rem, max-content);
+            }
+            #LyN8dNQGdBlPDJyW {
+                min-height: 20vh;
+            }
+            #TGDozISeyozAhn16 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #l4lgc9a0OIIwEMvK {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #vm48BfjEbBZNdFX0 {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #nfj2IRLvOPWjFNQz {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #jpcOKAmxD6fvnAZG {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #d8bQcLaAD0nXiyYL {
+                min-width: 34.66342666rem;
+            }
+            #d1gAfJcfcJyhVvpb {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+            #KmIRjxBehbfg0H8x {
+                grid-area: 4 / 2 / 14 / 5;
+            }
+            #NX5UUytpxYWfYwUb {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #kWW4uiajrKT58miS {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #eMSTuZo64QxAuDEq {
+                min-width: 23.49376664rem;
+            }
+            #G8nwdg07A1SDNXtp {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #Z767zzh5beVHrXTV {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #D2nh83GM6ZxF36oj {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #UN6FigEiPRXvoY8Z {
+                min-width: 23.49376664rem;
+            }
+            #LNuPNmML7nO3P7qm {
+                grid-area: 10 / 7 / 13 / 12;
+            }
+            #hnisvvPAGzWnQ0Kh {
+                grid-area: 16 / 3 / 26 / 6;
+            }
+            #eitJZrE33uuUOzmu {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #T5t97hVPYszxXoEd {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bdjJWI0wOP6CnVTD {
+                min-width: 23.49376664rem;
+            }
+            #FgGKJFLxyxMlJTF9 {
+                grid-area: 18 / 10 / 20 / 15;
+            }
+            #rdVyu348med0GuGd {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #QSq17x9K6jfgsQpf {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #Vzs718nOlYlDAU8w {
+                min-width: 23.49376664rem;
+            }
+            #FOQELkBaddNO2Uss {
+                grid-area: 22 / 9 / 24 / 14;
+            }
+            #rJL3IwSeHecNtyin {
+                grid-area: 7 / 16 / 15 / 18;
+            }
+            #Rb2FidwFsj0Xoefv {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #zGCaYsk6QF0Oc49N {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #P4nRTlWdhFvd4Xzv {
+                min-width: 23.49376664rem;
+            }
+            #O82t49N5oIdznwJz {
+                grid-area: 6 / 21 / 9 / 25;
+            }
+            #a5ch36JumvuAPPn6 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #q7LLwuJwWnhtVxrS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #NKubvyeKPaDGgpRH {
+                min-width: 23.49376664rem;
+            }
+            #peuHxyR11DEZKNjr {
+                grid-area: 11 / 20 / 12 / 24;
+            }
+            #hCqYs0bvcYQ15xQf {
+                grid-area: 17 / 17 / 27 / 19;
+            }
+            #cOVGITJ7RQT4cB1q {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #sWeV9o0ebmgLDgfE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #sIlxj8gWfU5ceh8I {
+                min-width: 23.49376664rem;
+            }
+            #xrVgHOLzYH1TvJrG {
+                grid-area: 19 / 23 / 21 / 27;
+            }
+            #Ggy3Op3uTScuNbhM {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #UIUoYGSJGaxaBsMH {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #xeBfxIxFlhjLt77Y {
+                min-width: 23.49376664rem;
+            }
+            #j6poSC8fg0gfT45W {
+                grid-area: 23 / 22 / 25 / 26;
+            }
+            #RRZRIeMan22ZQJtc {
+                grid-template-columns: 7.9004329rem 0 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 0 7.50124461rem 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 15.40167751rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(7.44619838rem, max-content) 0 0 minmax(0.14112147rem, max-content) minmax(2.12827823rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(3.09419253rem, max-content) minmax(3.22108346rem, max-content) minmax(0.07320644rem, max-content) 0 minmax(3.98572756rem, max-content) 0 0 0 minmax(2.26939971rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(4.70473426rem, max-content) 0 minmax(1.68374817rem, max-content) 0 minmax(12.22580647rem, max-content);
+            }
+            #EvVVIpjK3QcHjbAo {
+                min-height: 20vh;
+            }
+            #TgqkBx6jIAuVCJ4w {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #hAHSCOWEbiNUnY1X {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #P5poen44ZQjzhWFk {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #EBYFRC10c8mTaovn {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #y2ti8mDyq4KJ0F4h {
+                min-width: 33.3190836rem;
+            }
+            #Ywml7Y5zmfibruRV {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #r7EIzWOsP5LhMa9W {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #xNER1Wt78gZpXBbH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bnN3lp0EAYlW390I {
+                min-width: 20.29852918rem;
+            }
+            #nUp5zVcSg2QZOVZo {
+                grid-area: 4 / 4 / 7 / 6;
+            }
+            #NuXwM6Pu2S4762Sg {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #JMHcrslpMzUwovPF {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #bkpUuTwmyhHrIb9X {
+                min-width: 20.29852918rem;
+            }
+            #Gt9aUPfWiXm6tpPE {
+                grid-area: 10 / 3 / 13 / 5;
+            }
+            #IVHtVp7bzBonVNf7 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #Zdt3ClfKIfFfxaTV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ecmO26qCRLYDeoOK {
+                min-width: 20.29852918rem;
+            }
+            #OcI42Q1F5EDHmS9R {
+                grid-area: 5 / 8 / 8 / 11;
+            }
+            #mHa09gjBSLY8hev4 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #KZhepuxLaJRaCf4Q {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #ZiCCEI1R409ULbQJ {
+                min-width: 20.29852918rem;
+            }
+            #lkc6NY59ZM03OwxG {
+                grid-area: 11 / 7 / 14 / 10;
+            }
+            #uFdriEzLligYvaT8 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #ndFgL1DC4Cx8aTD1 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #Vjg3rJ5FWIzuNrIM {
+                min-width: 20.29852918rem;
+            }
+            #jVeL6FH41XnpW9Ja {
+                grid-area: 6 / 13 / 9 / 15;
+            }
+            #lmRdW2Zg0V2Esih2 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #uWza84N3elXP6RbS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #FpsH8P9hxMFlzypS {
+                min-width: 20.29852918rem;
+            }
+            #Pdra57S1BEy8tO9x {
+                grid-area: 12 / 12 / 15 / 14;
+            }
+            #rK9vGex8yNPa9Dl2 {
+                grid-template-columns: 8.10351425rem 0 0 20.23342501rem 0 11.54634823rem 0 1.47420618rem 18.75921883rem 0 11.97781177rem 0 20.23342501rem 0 7.67205071rem;
+                grid-template-rows: minmax(33.19914317rem, max-content) minmax(8.63835981rem, max-content) minmax(1.1989622rem, max-content) 0 0 minmax(2.04978038rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(1.62030307rem, max-content) 0 0 minmax(9.02178079rem, max-content);
+            }
+            #YZCWnDYy7nxj69Dz {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 768.05px) and (max-width: 1024px) {
+            #gTTIUV4CtaPmdi6v {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uxkXViVZcYkaK7cJ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #QtAXvZnIRWhwmjAK {
+                font-size: max(0px, calc(8.78477306em - var(--ffsd)));
+            }
+            #FwAdmMy1pitIrsMm {
+                transform: translateX(calc(max(0px, 8.78477306em) * -0.01));
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 8.78477306em) * 0.075);
+            }
+            #eO6pfv3vA02S887j {
+                min-width: 88.80431861rem;
+            }
+            #zICqIZELxBDA1tIl {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #yP4a0ZqGe7qGlk16 {
+                font-size: max(0px, calc(2.93863553em - var(--ffsd)));
+            }
+            #xNHHfayh5QMEfCry {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 2.93863553em) * 0.075);
+            }
+            #m5PXlQDwNQCltF0H {
+                min-width: 61.43067535rem;
+            }
+            #sKJHtd6GGlvjQ9Rf {
+                grid-area: 4 / 3 / 5 / 8;
+            }
+            #fgLB0yCJsziSGkGj {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #SrGP8yrexPKZzzP5 {
+                font-size: max(0px, calc(1.8807345em - var(--ffsd)));
+            }
+            #SWxb6otVv4jlqe4y {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.8807345em) * 0.05);
+            }
+            #jK6yUMEL5AJhNuxI {
+                min-width: 17.62051236rem;
+            }
+            #nieP0pBydDyzEV7x {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #FG1RUYMYjK6A2qus {
+                grid-template-columns: 5.62225476rem 13.68682163rem 19.84629963rem 2.05878186rem 17.57168424rem 2.05878186rem 19.84629963rem 13.68682163rem 5.62225476rem;
+                grid-template-rows: minmax(13.85160926rem, max-content) minmax(10.54172767rem, max-content) minmax(0.71241133rem, max-content) minmax(3.43820657rem, max-content) minmax(3.06912993rem, max-content) minmax(1.33754712rem, max-content) minmax(2.215734rem, max-content) minmax(1.33754712rem, max-content) minmax(19.71863457rem, max-content);
+            }
+            #pHGxjI7QougmfdIr {
+                min-height: 20vh;
+            }
+            #fG2FbEf5dfpjmg4T {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #mpHXCuLxrxkVnF21 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #L2XcMN4ENFqFM6jM {
+                grid-area: 2 / 2 / 7 / 3;
+            }
+            #WZsXFPZDm4HQfd2j {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #CwaQYURTrU5kiPl7 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #nGHCvSkV2WVrFggO {
+                min-width: 36.92121202rem;
+            }
+            #rXRspEpm8NnjVKTi {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            #RWUH5O0VVAqxFFpw {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #esPXlExBkWqbDyCZ {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #LT1GwhLZ5NS6IGxj {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #WgAPM075oS5JnxBe {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+            }
+            #Hqit761q1Jr02K81 {
+                min-width: 36.92121202rem;
+            }
+            #qbaY1qAyExmbACi5 {
+                grid-area: 5 / 4 / 6 / 6;
+            }
+            #FeoebtiQtoa6OAD7 {
+                grid-template-columns: 8.07336083rem 40.61944963rem 5.96707623rem 0 36.8723839rem 0 8.46772941rem;
+                grid-template-rows: minmax(8.98981941rem, max-content) minmax(3.88246041rem, max-content) minmax(8.63835981rem, max-content) minmax(1.75178113rem, max-content) minmax(20.087847rem, max-content) minmax(3.88246041rem, max-content) minmax(8.98981941rem, max-content);
+            }
+            #lbvsp82Byjb5egOY {
+                min-height: 20vh;
+            }
+            #lWWS0Uj9TkF6T1UJ {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fINXbcDAXtwKuWgz {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #TXchIzbgihDoZ7pH {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #pqESWb03U8bgX3zE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #RfCVdYxFMh9DALO4 {
+                min-width: 27.23624367rem;
+            }
+            #Nx4o4opNH9f0ZDmN {
+                grid-area: 2 / 3 / 3 / 10;
+            }
+            #LVwOasoO1UUufCjH {
+                grid-area: 4 / 2 / 23 / 9;
+            }
+            #KnLHxEYU5HaFwXsg {
+                grid-area: 8 / 4 / 26 / 11;
+            }
+            #SNBYRK8BC8p6QLvk {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #GPjfSBeJm2tvO0yx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #KOxNVX70gwS3gphC {
+                min-width: 20.23344255rem;
+            }
+            #pR4maUEgUAwux16N {
+                grid-area: 10 / 6 / 13 / 8;
+            }
+            #asdS5iELYojkPZBR {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #vOBqHTLsPejqhhSU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #OL03VACi8RfhQCOx {
+                min-width: 20.23344255rem;
+            }
+            #KCWjoyvpwvdU591n {
+                grid-area: 16 / 5 / 19 / 7;
+            }
+            #Qn5Qp4O5caBQrn3E {
+                grid-area: 7 / 12 / 22 / 18;
+            }
+            #BDghx2sALCqSLR1J {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #KyWsVe6HieWJYbso {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ZjZYowJ12NMl2MEy {
+                min-width: 19.82935388rem;
+            }
+            #l4o0Fc8GIBhqf19u {
+                grid-area: 11 / 15 / 14 / 17;
+            }
+            #Eh6DTCCHkAVTyOPG {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #A2occwnMeKx7SZ2j {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #RvygAC5bhPYRY4SY {
+                min-width: 19.82935388rem;
+            }
+            #YYPaHqJT99DkVbdi {
+                grid-area: 17 / 14 / 20 / 16;
+            }
+            #xyNRgmYxMSRNG3uu {
+                grid-area: 5 / 13 / 24 / 19;
+            }
+            #VYzzaVL6heoPre8o {
+                grid-area: 6 / 20 / 25 / 26;
+            }
+            #ubyukdk4IUefhazm {
+                grid-area: 9 / 21 / 27 / 27;
+            }
+            #jVwE13Qkadr0MVba {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #L4GV5818AIajCzYV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #HJ2xiAyDj8CoFlee {
+                min-width: 19.82935388rem;
+            }
+            #j20GP1zYbZLIwWBr {
+                grid-area: 12 / 23 / 15 / 25;
+            }
+            #yKixv1UzLp8ttEJ3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #IHSvwXu3iRveXDlU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #F7co1NMfMGpWyPlP {
+                min-width: 19.82935388rem;
+            }
+            #nCSv3Adgi7eQHzQo {
+                grid-area: 18 / 22 / 21 / 24;
+            }
+            #Ek2UfI2GA9D9eunP {
+                grid-template-columns: 7.88520308rem 0 0 3.50140056rem 0 20.18461443rem 0 3.50140056rem 0 0 1.3336736rem 0.01928591rem 3.68415898rem 0 19.78052576rem 0 3.7034449rem 0.01928591rem 1.31438769rem 0 3.7034449rem 0 19.78052576rem 0 3.7034449rem 0 7.88520308rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(3.20883447rem, max-content) 0 0 minmax(22.62509153rem, max-content) minmax(0.00167209rem, max-content) 0 minmax(1.83071988rem, max-content) 0 0 minmax(1.75695461rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(3.09419253rem, max-content) 0 0 minmax(1.83239197rem, max-content) minmax(0.00167209rem, max-content) 0 0 0 0 minmax(7.11618566rem, max-content);
+            }
+            #LyN8dNQGdBlPDJyW {
+                min-height: 20vh;
+            }
+            #TGDozISeyozAhn16 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #l4lgc9a0OIIwEMvK {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #vm48BfjEbBZNdFX0 {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #nfj2IRLvOPWjFNQz {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #jpcOKAmxD6fvnAZG {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #d8bQcLaAD0nXiyYL {
+                min-width: 34.64715062rem;
+            }
+            #d1gAfJcfcJyhVvpb {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+            #KmIRjxBehbfg0H8x {
+                grid-area: 4 / 2 / 14 / 5;
+            }
+            #NX5UUytpxYWfYwUb {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #kWW4uiajrKT58miS {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #eMSTuZo64QxAuDEq {
+                min-width: 23.4774906rem;
+            }
+            #G8nwdg07A1SDNXtp {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #Z767zzh5beVHrXTV {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #D2nh83GM6ZxF36oj {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #UN6FigEiPRXvoY8Z {
+                min-width: 23.4774906rem;
+            }
+            #LNuPNmML7nO3P7qm {
+                grid-area: 10 / 7 / 13 / 12;
+            }
+            #hnisvvPAGzWnQ0Kh {
+                grid-area: 16 / 3 / 26 / 6;
+            }
+            #eitJZrE33uuUOzmu {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #T5t97hVPYszxXoEd {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bdjJWI0wOP6CnVTD {
+                min-width: 23.4774906rem;
+            }
+            #FgGKJFLxyxMlJTF9 {
+                grid-area: 18 / 10 / 20 / 15;
+            }
+            #rdVyu348med0GuGd {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #QSq17x9K6jfgsQpf {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #Vzs718nOlYlDAU8w {
+                min-width: 23.4774906rem;
+            }
+            #FOQELkBaddNO2Uss {
+                grid-area: 22 / 9 / 24 / 14;
+            }
+            #rJL3IwSeHecNtyin {
+                grid-area: 7 / 16 / 15 / 18;
+            }
+            #Rb2FidwFsj0Xoefv {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #zGCaYsk6QF0Oc49N {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #P4nRTlWdhFvd4Xzv {
+                min-width: 23.4774906rem;
+            }
+            #O82t49N5oIdznwJz {
+                grid-area: 6 / 21 / 9 / 25;
+            }
+            #a5ch36JumvuAPPn6 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #q7LLwuJwWnhtVxrS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #NKubvyeKPaDGgpRH {
+                min-width: 23.4774906rem;
+            }
+            #peuHxyR11DEZKNjr {
+                grid-area: 11 / 20 / 12 / 24;
+            }
+            #hCqYs0bvcYQ15xQf {
+                grid-area: 17 / 17 / 27 / 19;
+            }
+            #cOVGITJ7RQT4cB1q {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #sWeV9o0ebmgLDgfE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #sIlxj8gWfU5ceh8I {
+                min-width: 23.4774906rem;
+            }
+            #xrVgHOLzYH1TvJrG {
+                grid-area: 19 / 23 / 21 / 27;
+            }
+            #Ggy3Op3uTScuNbhM {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #UIUoYGSJGaxaBsMH {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #xeBfxIxFlhjLt77Y {
+                min-width: 23.4774906rem;
+            }
+            #j6poSC8fg0gfT45W {
+                grid-area: 23 / 22 / 25 / 26;
+            }
+            #RRZRIeMan22ZQJtc {
+                grid-template-columns: 7.9004329rem 0 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 0 7.50124461rem 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 15.40167751rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(7.44619838rem, max-content) 0 0 minmax(0.14112147rem, max-content) minmax(2.12827823rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(3.09419253rem, max-content) minmax(3.22108346rem, max-content) minmax(0.07320644rem, max-content) 0 minmax(3.98572756rem, max-content) 0 0 0 minmax(2.26939971rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(4.70473426rem, max-content) 0 minmax(1.68374817rem, max-content) 0 minmax(12.22580647rem, max-content);
+            }
+            #EvVVIpjK3QcHjbAo {
+                min-height: 20vh;
+            }
+            #TgqkBx6jIAuVCJ4w {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #hAHSCOWEbiNUnY1X {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #P5poen44ZQjzhWFk {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #EBYFRC10c8mTaovn {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #y2ti8mDyq4KJ0F4h {
+                min-width: 33.30280755rem;
+            }
+            #Ywml7Y5zmfibruRV {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #r7EIzWOsP5LhMa9W {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #xNER1Wt78gZpXBbH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bnN3lp0EAYlW390I {
+                min-width: 20.28225314rem;
+            }
+            #nUp5zVcSg2QZOVZo {
+                grid-area: 4 / 4 / 7 / 6;
+            }
+            #NuXwM6Pu2S4762Sg {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #JMHcrslpMzUwovPF {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #bkpUuTwmyhHrIb9X {
+                min-width: 20.28225314rem;
+            }
+            #Gt9aUPfWiXm6tpPE {
+                grid-area: 10 / 3 / 13 / 5;
+            }
+            #IVHtVp7bzBonVNf7 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #Zdt3ClfKIfFfxaTV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ecmO26qCRLYDeoOK {
+                min-width: 20.28225314rem;
+            }
+            #OcI42Q1F5EDHmS9R {
+                grid-area: 5 / 8 / 8 / 11;
+            }
+            #mHa09gjBSLY8hev4 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #KZhepuxLaJRaCf4Q {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #ZiCCEI1R409ULbQJ {
+                min-width: 20.28225314rem;
+            }
+            #lkc6NY59ZM03OwxG {
+                grid-area: 11 / 7 / 14 / 10;
+            }
+            #uFdriEzLligYvaT8 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #ndFgL1DC4Cx8aTD1 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #Vjg3rJ5FWIzuNrIM {
+                min-width: 20.28225314rem;
+            }
+            #jVeL6FH41XnpW9Ja {
+                grid-area: 6 / 13 / 9 / 15;
+            }
+            #lmRdW2Zg0V2Esih2 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #uWza84N3elXP6RbS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #FpsH8P9hxMFlzypS {
+                min-width: 20.28225314rem;
+            }
+            #Pdra57S1BEy8tO9x {
+                grid-area: 12 / 12 / 15 / 14;
+            }
+            #rK9vGex8yNPa9Dl2 {
+                grid-template-columns: 8.10351425rem 0 0 20.23342501rem 0 11.54634823rem 0 1.47420618rem 18.75921883rem 0 11.97781177rem 0 20.23342501rem 0 7.67205071rem;
+                grid-template-rows: minmax(33.19914317rem, max-content) minmax(8.63835981rem, max-content) minmax(1.1989622rem, max-content) 0 0 minmax(2.04978038rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(1.62030307rem, max-content) 0 0 minmax(9.02178079rem, max-content);
+            }
+            #YZCWnDYy7nxj69Dz {
+                min-height: 20vh;
+            }
+        }
+
+        @media (min-width: 1024.05px) {
+            #gTTIUV4CtaPmdi6v {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #uxkXViVZcYkaK7cJ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #QtAXvZnIRWhwmjAK {
+                font-size: max(0px, calc(8.78477306em - var(--ffsd)));
+            }
+            #FwAdmMy1pitIrsMm {
+                transform: translateX(calc(max(0px, 8.78477306em) * -0.01));
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 8.78477306em) * 0.075);
+            }
+            #eO6pfv3vA02S887j {
+                min-width: 88.7920937rem;
+            }
+            #zICqIZELxBDA1tIl {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #yP4a0ZqGe7qGlk16 {
+                font-size: max(0px, calc(2.93863553em - var(--ffsd)));
+            }
+            #xNHHfayh5QMEfCry {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 2.93863553em) * 0.075);
+            }
+            #m5PXlQDwNQCltF0H {
+                min-width: 61.41845044rem;
+            }
+            #sKJHtd6GGlvjQ9Rf {
+                grid-area: 4 / 3 / 5 / 8;
+            }
+            #fgLB0yCJsziSGkGj {
+                grid-area: 6 / 4 / 9 / 7;
+            }
+            #SrGP8yrexPKZzzP5 {
+                font-size: max(0px, calc(1.8807345em - var(--ffsd)));
+            }
+            #SWxb6otVv4jlqe4y {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.8807345em) * 0.05);
+            }
+            #jK6yUMEL5AJhNuxI {
+                min-width: 17.60828746rem;
+            }
+            #nieP0pBydDyzEV7x {
+                grid-area: 7 / 5 / 8 / 6;
+            }
+            #FG1RUYMYjK6A2qus {
+                grid-template-columns: 5.62225476rem 13.68682163rem 19.84629963rem 2.05878186rem 17.57168424rem 2.05878186rem 19.84629963rem 13.68682163rem 5.62225476rem;
+                grid-template-rows: minmax(13.85160926rem, max-content) minmax(10.54172767rem, max-content) minmax(0.71241133rem, max-content) minmax(3.43820657rem, max-content) minmax(3.06912993rem, max-content) minmax(1.33754712rem, max-content) minmax(2.215734rem, max-content) minmax(1.33754712rem, max-content) minmax(19.71863457rem, max-content);
+            }
+            #pHGxjI7QougmfdIr {
+                min-height: 20vh;
+            }
+            #fG2FbEf5dfpjmg4T {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #mpHXCuLxrxkVnF21 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #L2XcMN4ENFqFM6jM {
+                grid-area: 2 / 2 / 7 / 3;
+            }
+            #WZsXFPZDm4HQfd2j {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #CwaQYURTrU5kiPl7 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #nGHCvSkV2WVrFggO {
+                min-width: 36.90898712rem;
+            }
+            #rXRspEpm8NnjVKTi {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            #RWUH5O0VVAqxFFpw {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #esPXlExBkWqbDyCZ {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #LT1GwhLZ5NS6IGxj {
+                font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+            }
+            #WgAPM075oS5JnxBe {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+            }
+            #Hqit761q1Jr02K81 {
+                min-width: 36.90898712rem;
+            }
+            #qbaY1qAyExmbACi5 {
+                grid-area: 5 / 4 / 6 / 6;
+            }
+            #FeoebtiQtoa6OAD7 {
+                grid-template-columns: 8.07336083rem 40.61944963rem 5.96707623rem 0 36.8723839rem 0 8.46772941rem;
+                grid-template-rows: minmax(8.98981941rem, max-content) minmax(3.88246041rem, max-content) minmax(8.63835981rem, max-content) minmax(1.75178113rem, max-content) minmax(20.087847rem, max-content) minmax(3.88246041rem, max-content) minmax(8.98981941rem, max-content);
+            }
+            #lbvsp82Byjb5egOY {
+                min-height: 20vh;
+            }
+            #lWWS0Uj9TkF6T1UJ {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #fINXbcDAXtwKuWgz {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #TXchIzbgihDoZ7pH {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #pqESWb03U8bgX3zE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #RfCVdYxFMh9DALO4 {
+                min-width: 27.22401877rem;
+            }
+            #Nx4o4opNH9f0ZDmN {
+                grid-area: 2 / 3 / 3 / 10;
+            }
+            #LVwOasoO1UUufCjH {
+                grid-area: 4 / 2 / 23 / 9;
+            }
+            #KnLHxEYU5HaFwXsg {
+                grid-area: 8 / 4 / 26 / 11;
+            }
+            #SNBYRK8BC8p6QLvk {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #GPjfSBeJm2tvO0yx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #KOxNVX70gwS3gphC {
+                min-width: 20.22121765rem;
+            }
+            #pR4maUEgUAwux16N {
+                grid-area: 10 / 6 / 13 / 8;
+            }
+            #asdS5iELYojkPZBR {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #vOBqHTLsPejqhhSU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #OL03VACi8RfhQCOx {
+                min-width: 20.22121765rem;
+            }
+            #KCWjoyvpwvdU591n {
+                grid-area: 16 / 5 / 19 / 7;
+            }
+            #Qn5Qp4O5caBQrn3E {
+                grid-area: 7 / 12 / 22 / 18;
+            }
+            #BDghx2sALCqSLR1J {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #KyWsVe6HieWJYbso {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ZjZYowJ12NMl2MEy {
+                min-width: 19.81712898rem;
+            }
+            #l4o0Fc8GIBhqf19u {
+                grid-area: 11 / 15 / 14 / 17;
+            }
+            #Eh6DTCCHkAVTyOPG {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #A2occwnMeKx7SZ2j {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #RvygAC5bhPYRY4SY {
+                min-width: 19.81712898rem;
+            }
+            #YYPaHqJT99DkVbdi {
+                grid-area: 17 / 14 / 20 / 16;
+            }
+            #xyNRgmYxMSRNG3uu {
+                grid-area: 5 / 13 / 24 / 19;
+            }
+            #VYzzaVL6heoPre8o {
+                grid-area: 6 / 20 / 25 / 26;
+            }
+            #ubyukdk4IUefhazm {
+                grid-area: 9 / 21 / 27 / 27;
+            }
+            #jVwE13Qkadr0MVba {
+                font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+            }
+            #L4GV5818AIajCzYV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #HJ2xiAyDj8CoFlee {
+                min-width: 19.81712898rem;
+            }
+            #j20GP1zYbZLIwWBr {
+                grid-area: 12 / 23 / 15 / 25;
+            }
+            #yKixv1UzLp8ttEJ3 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #IHSvwXu3iRveXDlU {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #F7co1NMfMGpWyPlP {
+                min-width: 19.81712898rem;
+            }
+            #nCSv3Adgi7eQHzQo {
+                grid-area: 18 / 22 / 21 / 24;
+            }
+            #Ek2UfI2GA9D9eunP {
+                grid-template-columns: 7.88520308rem 0 0 3.50140056rem 0 20.18461443rem 0 3.50140056rem 0 0 1.3336736rem 0.01928591rem 3.68415898rem 0 19.78052576rem 0 3.7034449rem 0.01928591rem 1.31438769rem 0 3.7034449rem 0 19.78052576rem 0 3.7034449rem 0 7.88520308rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(3.20883447rem, max-content) 0 0 minmax(22.62509153rem, max-content) minmax(0.00167209rem, max-content) 0 minmax(1.83071988rem, max-content) 0 0 minmax(1.75695461rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(3.09419253rem, max-content) 0 0 minmax(1.83239197rem, max-content) minmax(0.00167209rem, max-content) 0 0 0 0 minmax(7.11618566rem, max-content);
+            }
+            #LyN8dNQGdBlPDJyW {
+                min-height: 20vh;
+            }
+            #TGDozISeyozAhn16 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #l4lgc9a0OIIwEMvK {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #vm48BfjEbBZNdFX0 {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #nfj2IRLvOPWjFNQz {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #jpcOKAmxD6fvnAZG {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #d8bQcLaAD0nXiyYL {
+                min-width: 34.63492571rem;
+            }
+            #d1gAfJcfcJyhVvpb {
+                grid-area: 2 / 4 / 3 / 11;
+            }
+            #KmIRjxBehbfg0H8x {
+                grid-area: 4 / 2 / 14 / 5;
+            }
+            #NX5UUytpxYWfYwUb {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #kWW4uiajrKT58miS {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #eMSTuZo64QxAuDEq {
+                min-width: 23.46526569rem;
+            }
+            #G8nwdg07A1SDNXtp {
+                grid-area: 5 / 8 / 8 / 13;
+            }
+            #Z767zzh5beVHrXTV {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #D2nh83GM6ZxF36oj {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #UN6FigEiPRXvoY8Z {
+                min-width: 23.46526569rem;
+            }
+            #LNuPNmML7nO3P7qm {
+                grid-area: 10 / 7 / 13 / 12;
+            }
+            #hnisvvPAGzWnQ0Kh {
+                grid-area: 16 / 3 / 26 / 6;
+            }
+            #eitJZrE33uuUOzmu {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #T5t97hVPYszxXoEd {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bdjJWI0wOP6CnVTD {
+                min-width: 23.46526569rem;
+            }
+            #FgGKJFLxyxMlJTF9 {
+                grid-area: 18 / 10 / 20 / 15;
+            }
+            #rdVyu348med0GuGd {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #QSq17x9K6jfgsQpf {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #Vzs718nOlYlDAU8w {
+                min-width: 23.46526569rem;
+            }
+            #FOQELkBaddNO2Uss {
+                grid-area: 22 / 9 / 24 / 14;
+            }
+            #rJL3IwSeHecNtyin {
+                grid-area: 7 / 16 / 15 / 18;
+            }
+            #Rb2FidwFsj0Xoefv {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #zGCaYsk6QF0Oc49N {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #P4nRTlWdhFvd4Xzv {
+                min-width: 23.46526569rem;
+            }
+            #O82t49N5oIdznwJz {
+                grid-area: 6 / 21 / 9 / 25;
+            }
+            #a5ch36JumvuAPPn6 {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #q7LLwuJwWnhtVxrS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #NKubvyeKPaDGgpRH {
+                min-width: 23.46526569rem;
+            }
+            #peuHxyR11DEZKNjr {
+                grid-area: 11 / 20 / 12 / 24;
+            }
+            #hCqYs0bvcYQ15xQf {
+                grid-area: 17 / 17 / 27 / 19;
+            }
+            #cOVGITJ7RQT4cB1q {
+                font-size: max(0px, calc(1.95215959em - var(--ffsd)));
+            }
+            #sWeV9o0ebmgLDgfE {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #sIlxj8gWfU5ceh8I {
+                min-width: 23.46526569rem;
+            }
+            #xrVgHOLzYH1TvJrG {
+                grid-area: 19 / 23 / 21 / 27;
+            }
+            #Ggy3Op3uTScuNbhM {
+                font-size: max(0px, calc(1.26890922em - var(--ffsd)));
+            }
+            #UIUoYGSJGaxaBsMH {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26890922em) * -0.05);
+                margin-bottom: calc(max(0px, 1.26890922em) * -0.05);
+            }
+            #xeBfxIxFlhjLt77Y {
+                min-width: 23.46526569rem;
+            }
+            #j6poSC8fg0gfT45W {
+                grid-area: 23 / 22 / 25 / 26;
+            }
+            #RRZRIeMan22ZQJtc {
+                grid-template-columns: 7.9004329rem 0 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 0 7.50124461rem 0 8.89482863rem 0 2.27483139rem 0 0 0 23.42866247rem 0 0 0 15.40167751rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(8.63835981rem, max-content) minmax(7.44619838rem, max-content) 0 0 minmax(0.14112147rem, max-content) minmax(2.12827823rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(3.09419253rem, max-content) minmax(3.22108346rem, max-content) minmax(0.07320644rem, max-content) 0 minmax(3.98572756rem, max-content) 0 0 0 minmax(2.26939971rem, max-content) 0 minmax(0.49421816rem, max-content) 0 minmax(4.70473426rem, max-content) 0 minmax(1.68374817rem, max-content) 0 minmax(12.22580647rem, max-content);
+            }
+            #EvVVIpjK3QcHjbAo {
+                min-height: 20vh;
+            }
+            #TgqkBx6jIAuVCJ4w {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #hAHSCOWEbiNUnY1X {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #P5poen44ZQjzhWFk {
+                font-size: max(0px, calc(3.90434114em - var(--ffsd)));
+            }
+            #EBYFRC10c8mTaovn {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(0px, 3.90434114em) * 0.075);
+            }
+            #y2ti8mDyq4KJ0F4h {
+                min-width: 33.29058265rem;
+            }
+            #Ywml7Y5zmfibruRV {
+                grid-area: 2 / 2 / 3 / 9;
+            }
+            #r7EIzWOsP5LhMa9W {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #xNER1Wt78gZpXBbH {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #bnN3lp0EAYlW390I {
+                min-width: 20.27002823rem;
+            }
+            #nUp5zVcSg2QZOVZo {
+                grid-area: 4 / 4 / 7 / 6;
+            }
+            #NuXwM6Pu2S4762Sg {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #JMHcrslpMzUwovPF {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #bkpUuTwmyhHrIb9X {
+                min-width: 20.27002823rem;
+            }
+            #Gt9aUPfWiXm6tpPE {
+                grid-area: 10 / 3 / 13 / 5;
+            }
+            #IVHtVp7bzBonVNf7 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #Zdt3ClfKIfFfxaTV {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #ecmO26qCRLYDeoOK {
+                min-width: 20.27002823rem;
+            }
+            #OcI42Q1F5EDHmS9R {
+                grid-area: 5 / 8 / 8 / 11;
+            }
+            #mHa09gjBSLY8hev4 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #KZhepuxLaJRaCf4Q {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #ZiCCEI1R409ULbQJ {
+                min-width: 20.27002823rem;
+            }
+            #lkc6NY59ZM03OwxG {
+                grid-area: 11 / 7 / 14 / 10;
+            }
+            #uFdriEzLligYvaT8 {
+                font-size: max(0px, calc(1.75694729em - var(--ffsd)));
+            }
+            #ndFgL1DC4Cx8aTD1 {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            #Vjg3rJ5FWIzuNrIM {
+                min-width: 20.27002823rem;
+            }
+            #jVeL6FH41XnpW9Ja {
+                grid-area: 6 / 13 / 9 / 15;
+            }
+            #lmRdW2Zg0V2Esih2 {
+                font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+            }
+            #uWza84N3elXP6RbS {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.36651537em) * -0.05);
+                margin-bottom: calc(max(0px, 1.36651537em) * -0.05);
+            }
+            #FpsH8P9hxMFlzypS {
+                min-width: 20.27002823rem;
+            }
+            #Pdra57S1BEy8tO9x {
+                grid-area: 12 / 12 / 15 / 14;
+            }
+            #rK9vGex8yNPa9Dl2 {
+                grid-template-columns: 8.10351425rem 0 0 20.23342501rem 0 11.54634823rem 0 1.47420618rem 18.75921883rem 0 11.97781177rem 0 20.23342501rem 0 7.67205071rem;
+                grid-template-rows: minmax(33.19914317rem, max-content) minmax(8.63835981rem, max-content) minmax(1.1989622rem, max-content) 0 0 minmax(2.04978038rem, max-content) 0 0 minmax(0.49421816rem, max-content) 0 0 minmax(1.62030307rem, max-content) 0 0 minmax(9.02178079rem, max-content);
+            }
+            #YZCWnDYy7nxj69Dz {
+                min-height: 20vh;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+            50% {
+                background-color: rgba(226, 226, 226, 0.1);
+            }
+            100% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+        }
+    </style><noscript>  <style>    .animated {      animation-play-state: running !important;    }    @keyframes pulse {}  </style></noscript>
+    <script nonce='4760e3fa-8628-49ea-a9e8-7b1ddca0e6bf'>
+        ! function() {
+            "use strict";
+
+            function t(t, e, n = .001) {
+                return Math.abs(t - e) < n
+            }
+
+            function e(t, e) {
+                return window.getComputedStyle(t).getPropertyValue(e)
+            }
+
+            function n(t, e, n) {
+                t.style.setProperty(e, n)
+            }
+
+            function o(t, n) {
+                const o = document.createElement("div");
+                o.style.setProperty(t, n), document.body.append(o);
+                const i = e(o, t);
+                return o.remove(), i
+            }
+
+            function i() {
+                const i = function() {
+                        const t = parseFloat(o("font-size", "0.1px"));
+                        return t > 1 ? t : 0
+                    }(),
+                    r = function(t) {
+                        const e = 2 * Math.max(t, 1);
+                        return e / parseFloat(o("font-size", `${e}px`))
+                    }(i);
+                if (function(t) {
+                        if (0 === t) return;
+                        n(document.documentElement, "--minfs", `${t}px`);
+                        const e = () => {
+                            const e = 100 * t,
+                                {
+                                    clientWidth: o
+                                } = document.documentElement;
+                            n(document.documentElement, "--rzf", e > o ? (o / e).toPrecision(4) : null)
+                        };
+                        window.addEventListener("resize", e), e()
+                    }(i * Math.max(1, r)), t(r, 1)) return;
+                const c = t(parseFloat(e(document.documentElement, "font-size")), parseFloat(o("grid-template-columns", "1rem")));
+                n(document.documentElement, c ? "--rfso" : "--bfso", r.toPrecision(4))
+            }
+
+            function r() {
+                const t = () => {
+                    const t = window.innerWidth - document.documentElement.clientWidth;
+                    var e, n, o;
+                    e = document.documentElement, n = "--sbw", o = t >= 0 ? `${t}px` : null, e.style.setProperty(n, o)
+                };
+                window.addEventListener("resize", t), t()
+            }
+            var c;
+            const d = "undefined" != typeof window ? null === (c = window.navigator) || void 0 === c ? void 0 : c.userAgent : void 0;
+            const a = !(!d || (s = d, !s.match(/AppleWebKit\//) || s.match(/Chrome\//) || s.match(/Chromium\//)));
+            var s;
+
+            function u(t) {
+                var e, n, o, i;
+                if (0 !== t.getBoundingClientRect().width) return;
+                const r = Array.from(t.children).map((t => t));
+                r.forEach(((t, e) => {
+                    if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = "", t.style.clipPath = "";
+                    else {
+                        const n = document.createElement("div");
+                        n.setAttribute("data-foreign-object-container", ""), n.style.willChange = "transform", t.insertAdjacentElement("beforebegin", n), t.remove(), n.append(t), r[e] = n
+                    }
+                }));
+                const c = t.closest("svg"),
+                    d = null == c ? void 0 : c.getBoundingClientRect(),
+                    a = t.getScreenCTM();
+                if (!a || !d) return;
+                const {
+                    a: s,
+                    b: u,
+                    c: l,
+                    d: m,
+                    e: f,
+                    f: p
+                } = a, v = null !== (n = null === (e = t.x) || void 0 === e ? void 0 : e.baseVal.value) && void 0 !== n ? n : 0, h = null !== (i = null === (o = t.y) || void 0 === o ? void 0 : o.baseVal.value) && void 0 !== i ? i : 0;
+                r.forEach((t => {
+                    if (!t.hasAttribute("data-foreign-object-container")) return;
+                    const {
+                        style: e
+                    } = t;
+                    e.transformOrigin = `${-v}px ${-h}px`, e.transform = `matrix(${s}, ${u}, ${l}, ${m}, ${f-d.left}, ${p-d.top})`;
+                    const n = (d.top - p) / s,
+                        o = (d.left - f) / s,
+                        i = n + d.height / s,
+                        r = o + d.width / s;
+                    e.clipPath = `polygon(${o}px ${n}px, ${r}px ${n}px, ${r}px ${i}px, ${o}px ${i}px)`
+                }))
+            }
+
+            function l() {
+                const t = document.querySelectorAll("foreignObject");
+                Array.from(t).forEach(u)
+            }[function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", i) : i()
+            }, function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", r) : r()
+            }, function() {
+                a && (window.addEventListener("resize", l), "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", l) : l())
+            }].forEach((t => t()))
+        }();
+    </script>
+    <script nonce="4760e3fa-8628-49ea-a9e8-7b1ddca0e6bf">
+        window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
+    </script>
+    <script nonce="4760e3fa-8628-49ea-a9e8-7b1ddca0e6bf">
+        window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <section id="pHGxjI7QougmfdIr" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;position:relative;align-items:center;">
+            <div id="uxkXViVZcYkaK7cJ" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="gTTIUV4CtaPmdi6v" style="z-index:0;position:relative;">
+                    <div id="iCz4rxFOmJ3cVKJO" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="RYmnzbssqDGr4qeF" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="LNKpxqgMKQaY5ffx" style="background-color:#090706;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
+                                <div id="ZowtNBj7XzR9NwJO" style="transform:rotate(0deg);top:-7.00451242%;left:0%;width:112.43102889%;position:absolute;height:133.31665404%;opacity:0.5;animation:pulse 1.5s ease-in-out infinite;"><img src="images/fddd0b3d4844f77d945723098aa8df45.jpg" alt="Man in Blue Dress Shirt Holding Red and Black Power Tool" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="FG1RUYMYjK6A2qus" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="zICqIZELxBDA1tIl" style="z-index:2;position:relative;">
+                    <div id="eO6pfv3vA02S887j" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="FwAdmMy1pitIrsMm" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="QtAXvZnIRWhwmjAK" style="text-transform:uppercase;color:#f0eeed;letter-spacing:-0.02em;font-family:YAEALZQmvs4-0;line-height:1.05em;text-align:center;"><span id="XWqInHJjS8L8nZ07" style="color:#f0eeed;">Brehms</span><span id="Ny37T8ao4HlNpYJ8" style="color:#f0eeed;font-weight:400;font-style:normal;">&#x27; Garage</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sKJHtd6GGlvjQ9Rf" style="z-index:5;position:relative;">
+                    <div id="m5PXlQDwNQCltF0H" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="xNHHfayh5QMEfCry" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="yP4a0ZqGe7qGlk16" style="text-transform:none;color:#f0eeed;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.05em;text-align:center;"><span id="TTYq0Se1Sn3TjeT2" style="color:#f0eeed;font-weight:400;font-style:normal;">Caring for cars since 2000</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="fgLB0yCJsziSGkGj" style="z-index:3;position:relative;">
+                    <div id="sH0NygHUidPgDA5k" style="padding-top:22.54955197%;transform:rotate(0deg);">
+                        <div id="JsPtkSHgBncyPva3" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="vJff0lSACqHTnFgm" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="z6s8kC1IqqTqS0RB" style="background-color:#d0282a;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nieP0pBydDyzEV7x" style="z-index:4;position:relative;">
+                    <div id="jK6yUMEL5AJhNuxI" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="SWxb6otVv4jlqe4y" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="SrGP8yrexPKZzzP5" style="text-transform:none;color:#f0eeed;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.1em;text-align:center;"><span id="yKCxmQXj5musDem4" style="color:#f0eeed;font-weight:400;font-style:normal;">Inquire Now</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lbvsp82Byjb5egOY" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="mpHXCuLxrxkVnF21" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="fG2FbEf5dfpjmg4T" style="z-index:0;position:relative;">
+                    <div id="P09w1qJLCK2EKCox" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="zodoMwvZgwSnPNLj" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="EIxVATW1PUnNd6wb" style="background-color:#ffffff;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="FeoebtiQtoa6OAD7" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="L2XcMN4ENFqFM6jM" style="z-index:1;position:relative;">
+                    <div id="nb6fgGPtBbXPHWoD" style="padding-top:94.1492539%;transform:rotate(0deg);">
+                        <div id="Zj4wrITlzIoBA00B" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="kSdsFs6nHZfcBN57" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="hnL0m0SBGY99JBW0" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="PDMHIUNAFPNoSeWs" style="transform:rotate(0deg);top:-29.66074811%;left:0%;width:100%;position:absolute;height:159.32149622%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/67d8459c97b15a74e4c093cefb830f3c.jpg" alt="Man in Black Jacket Holding Black and Red Power Tool" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rXRspEpm8NnjVKTi" style="z-index:4;position:relative;">
+                    <div id="nGHCvSkV2WVrFggO" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="CwaQYURTrU5kiPl7" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="WZsXFPZDm4HQfd2j" style="text-transform:uppercase;color:#000000;font-family:YAEALZQmvs4-0;line-height:1.05em;"><span id="t223fPmPhaELAlf4" style="color:#000000;">Repairing is caring</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qbaY1qAyExmbACi5" style="z-index:3;position:relative;">
+                    <div id="Hqit761q1Jr02K81" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="WgAPM075oS5JnxBe" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="RWUH5O0VVAqxFFpw" style="color:#000000;font-family:YAEnS2G4JLg-0;line-height:1.5em;"><span id="RqKUzpForOpa4uuf" style="color:#000000;">Miles&#x27; Garage actually does belong to Miles - a cheerful guy with an almost crazy obsession with cars. He and his team of specialists have learned to translate this obsessive nature into impressive service, repairing automobiles with such finesse, it&#x27;s almost an artform.</span><br></p>
+                            <p
+                                id="esPXlExBkWqbDyCZ" style="color:#000000;white-space:pre;font-family:YAEnS2G4JLg-0;line-height:1.5em;"><br></p>
+                                <p id="LT1GwhLZ5NS6IGxj" style="text-transform:none;color:#000000;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.5em;"><span id="YX5BW5VUz4S3w8Lv" style="color:#000000;">Miles and the rest of his garage is committed to caring for cars with top-notch service and repairs, because the longer a car lasts, the better for you, for the environment, and for your beloved automobile.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="LyN8dNQGdBlPDJyW" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="fINXbcDAXtwKuWgz" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="lWWS0Uj9TkF6T1UJ" style="z-index:0;position:relative;">
+                    <div id="KivXR4VX1P66Y20X" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="AGuSigBmsfZ1Ndp1" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="sf8Gwo1LuYe0j0Rl" style="background-color:#000000;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Ek2UfI2GA9D9eunP" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="Nx4o4opNH9f0ZDmN" style="z-index:4;position:relative;">
+                    <div id="RfCVdYxFMh9DALO4" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="pqESWb03U8bgX3zE" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="TXchIzbgihDoZ7pH" style="text-transform:uppercase;color:#ffffff;font-family:YAEALZQmvs4-0;line-height:1.05em;"><span id="gMcOyGDeVah4JxMh" style="color:#ffffff;">What we offer</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="LVwOasoO1UUufCjH" style="z-index:1;position:relative;">
+                    <div id="cggtt1BxibDvawAS" style="padding-top:116.36601803%;transform:rotate(0deg);">
+                        <div id="CbSCBx0jolV8NM1S" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="U0IlLmZopvK0NOb0" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="dnpdborXtG7E4J6m" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="oB5UdWsoNmnHou6x" style="transform:rotate(0deg);top:0%;left:-40.52940467%;width:182.79143006%;position:absolute;height:104.72211341%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/91bcaad311cbf5e28d26a6628166711a.jpg" alt="Man in Blue Denim Jacket Holding Brown Metal Pipe" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="KnLHxEYU5HaFwXsg" style="z-index:6;position:relative;">
+                    <div id="St4UNxe3fwIPU5Pi" style="padding-top:33.14088182%;transform:rotate(0deg);">
+                        <div id="qM57niVVStep25EW" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="krnfGZMSn2D5YPyI" viewBox="0 0 132.4976 43.9109" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="MDb6eH7lxkdI3gPT" style="transform:scale(1, 1);"><path id="LdusOgjnPRjxD3JT" d="M0.0,0.0 L132.4975834159842,0.0 L132.4975834159842,43.91086548996657 L0.0,43.91086548996657 L0.0,0.0" style="fill:#cf2025;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+                <div id="pR4maUEgUAwux16N" style="z-index:8;position:relative;">
+                    <div id="KOxNVX70gwS3gphC" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="GPjfSBeJm2tvO0yx" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="SNBYRK8BC8p6QLvk" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:center;"><span id="vcXdLbqttIJtlEFT" style="color:#ffffff;">Maintenance</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="KCWjoyvpwvdU591n" style="z-index:7;position:relative;">
+                    <div id="OL03VACi8RfhQCOx" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="vOBqHTLsPejqhhSU" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="asdS5iELYojkPZBR" style="margin-left:0em;text-transform:none;color:#ffffff;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:center;"><span id="i1z2nrDBFE6a8zxk" style="color:#ffffff;">Regular checkups to maintain your car&#x27;s high performance</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Qn5Qp4O5caBQrn3E" style="z-index:10;position:relative;">
+                    <div id="UbUEDkcnM6Y79s28" style="padding-top:33.14088182%;transform:rotate(0deg);">
+                        <div id="tNQaqttZ5TTvoJfQ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="bVLDeT50ME2Us8zm" viewBox="0 0 132.4976 43.9109" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="l5EIyxeSqkAnfjAl" style="transform:scale(1, 1);"><path id="p15JtS78OBBnM8gD" d="M0.0,0.0 L132.4975834159842,0.0 L132.4975834159842,43.91086548996657 L0.0,43.91086548996657 L0.0,0.0" style="fill:#cf2025;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+                <div id="l4o0Fc8GIBhqf19u" style="z-index:12;position:relative;">
+                    <div id="ZjZYowJ12NMl2MEy" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="KyWsVe6HieWJYbso" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="BDghx2sALCqSLR1J" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:center;"><span id="XtDgHaUvZ9FekKjd" style="color:#ffffff;">Repair</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="YYPaHqJT99DkVbdi" style="z-index:11;position:relative;">
+                    <div id="RvygAC5bhPYRY4SY" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="A2occwnMeKx7SZ2j" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Eh6DTCCHkAVTyOPG" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:center;"><span id="JBmP6IspBp6QuCE0" style="color:#ffffff;">Quality service that guarantees smooth and safe rides</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="xyNRgmYxMSRNG3uu" style="z-index:2;position:relative;">
+                    <div id="kdzx0ykdqpKOYzTx" style="padding-top:116.36601803%;transform:rotate(0deg);">
+                        <div id="cRE9qPd5Bz2pznAx" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="UxNAHyCfMbctfX8L" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="f3TbCTpEHvGRchQZ" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="x6540JGFIsVfcZFE" style="transform:rotate(0deg);top:-36.56618709%;left:-2.9722113%;width:105.94442259%;position:absolute;height:136.56618709%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/7df9de88043c8e32abad28f71dc2e547.jpg" alt="Man in Gray Suit Standing Beside Red Car" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="VYzzaVL6heoPre8o" style="z-index:3;position:relative;">
+                    <div id="Aebi1jQ0mi6tgSuS" style="padding-top:116.36601803%;transform:rotate(0deg);">
+                        <div id="CwX34d9nfqOnV2iX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="TSNYjBsYreCRUB40" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="cTk8iQSoDHYBYBSD" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="UlXBosUqCg7TNtRR" style="transform:rotate(0deg);top:-28.84103869%;left:-2.13142827%;width:102.13142827%;position:absolute;height:131.65109969%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/96b3413b337abe688e5205bef709f0c3.jpg" alt="Black Car on Gray Concrete Floor" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ubyukdk4IUefhazm" style="z-index:14;position:relative;">
+                    <div id="gavs8gQGLLOV88I2" style="padding-top:33.14088182%;transform:rotate(0deg);">
+                        <div id="gkpzEyIdaILTd6yZ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="yuykuV3HQ7T8epq5" viewBox="0 0 132.4976 43.9109" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="uVgbVbvGOl8n1rHy" style="transform:scale(1, 1);"><path id="OWPlOInR99mwgfaO" d="M0.0,0.0 L132.4975834159842,0.0 L132.4975834159842,43.910865489966625 L0.0,43.910865489966625 L0.0,0.0" style="fill:#cf2025;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+                <div id="j20GP1zYbZLIwWBr" style="z-index:16;position:relative;">
+                    <div id="HJ2xiAyDj8CoFlee" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="L4GV5818AIajCzYV" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="jVwE13Qkadr0MVba" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:center;"><span id="T1oVm0xaXhNZzIor" style="color:#ffffff;">Parts/Accessories</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="nCSv3Adgi7eQHzQo" style="z-index:15;position:relative;">
+                    <div id="F7co1NMfMGpWyPlP" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="IHSvwXu3iRveXDlU" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="yKixv1UzLp8ttEJ3" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:center;"><span id="rsgV2M55N7NQTQQb" style="color:#ffffff;">Interior parts and premium exteriors for standout style</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="EvVVIpjK3QcHjbAo" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="l4lgc9a0OIIwEMvK" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="TGDozISeyozAhn16" style="z-index:0;position:relative;">
+                    <div id="jQ0KA7VQvUqsWA04" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="iQvn5dE9uT9WHhR1" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="ieBv5oLBDhEWzRrf" style="background-color:#ffffff;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="RRZRIeMan22ZQJtc" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="d1gAfJcfcJyhVvpb" style="z-index:8;position:relative;">
+                    <div id="d8bQcLaAD0nXiyYL" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="jpcOKAmxD6fvnAZG" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="vm48BfjEbBZNdFX0" style="text-transform:uppercase;color:#000000;font-family:YAEALZQmvs4-0;line-height:1.05em;"><span id="ooFVgImpeJ8PS3mR" style="color:#000000;">What</span></p>
+                            <p id="nfj2IRLvOPWjFNQz" style="text-transform:uppercase;color:#000000;font-family:YAEALZQmvs4-0;line-height:1.05em;"><span id="fAK6EkHubNboDMej" style="color:#000000;">clients say</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="KmIRjxBehbfg0H8x" style="z-index:1;position:relative;">
+                    <div id="GN2TvvWlIjG5MPsT" style="padding-top:102.89237354%;transform:rotate(0deg);">
+                        <div id="ZWybOxRc83kxigud" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="LW6LF2sDUZdXGn9m" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="PQJMBe7HPSp7OsMt" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="SjW8lWPQdN3E3cDN" style="transform:rotate(0deg);top:-15.20783642%;left:0%;width:100%;position:absolute;height:145.78339952%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/524858e0776247c8e5ebb8607c48e67c.jpg" alt="Close-Up Shot of an Afro-Haired Man in Checkered Shirt Looking Down" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="G8nwdg07A1SDNXtp" style="z-index:7;position:relative;">
+                    <div id="eMSTuZo64QxAuDEq" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="kWW4uiajrKT58miS" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="NX5UUytpxYWfYwUb" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="tKgzyLtH57AkDgEK" style="color:#000000;">Biswaranjan Panda</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="LNuPNmML7nO3P7qm" style="z-index:6;position:relative;">
+                    <div id="UN6FigEiPRXvoY8Z" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="D2nh83GM6ZxF36oj" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Z767zzh5beVHrXTV" style="margin-left:0em;text-transform:none;color:#000000;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="BktIB5QwjuyA1rqb" style="color:#000000;">So happy to have found a garage filled with car-obsessed people like me! When it comes to my car, I trust only Miles&#x27; Garage.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="hnisvvPAGzWnQ0Kh" style="z-index:3;position:relative;">
+                    <div id="mz9ENekO93YuCJPj" style="padding-top:102.89237354%;transform:rotate(0deg);">
+                        <div id="f2HiMdWhCiN4RYDR" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="i0xU8QD6NuWGKVOy" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="v5dMoMemmJXfbN9C" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="zQ5NXZsf77x45Dle" style="transform:rotate(0deg);top:-22.3116543%;left:-13.14777612%;width:113.14777612%;position:absolute;height:165.36408473%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/afb80bd951fcf5180a3194fea5b60ab3.jpg" alt="Woman in Gray and Black Long Sleeve Shirt Driving Car" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="FgGKJFLxyxMlJTF9" style="z-index:14;position:relative;">
+                    <div id="bdjJWI0wOP6CnVTD" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="T5t97hVPYszxXoEd" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="eitJZrE33uuUOzmu" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="MNswBZiypLhY14p6" style="color:#000000;">Sneha</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="FOQELkBaddNO2Uss" style="z-index:13;position:relative;">
+                    <div id="Vzs718nOlYlDAU8w" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="QSq17x9K6jfgsQpf" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="rdVyu348med0GuGd" style="margin-left:0em;text-transform:none;color:#000000;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="mPx9S1gd4VntRi8C" style="color:#000000;">At Miles&#x27; Garage, I got fast and flawless service. I love their efficiency and attention to detail.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="rJL3IwSeHecNtyin" style="z-index:2;position:relative;">
+                    <div id="ZS0y4L8EtHpqblDB" style="padding-top:101.30581713%;transform:rotate(0deg);">
+                        <div id="oH6haxtJz1oriqsb" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="riFX7poVuQeP7bTt" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="qnDe7mQN3Zb3ZgJM" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="cwN5pkUZGgPGGaDI" style="transform:rotate(0deg);top:-33.39830194%;left:0%;width:100%;position:absolute;height:148.06652199%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/495184b7f4e3281fb6914dcc38b7684e.jpg" alt="Close-Up Shot of a Bearded Man in Black Shirt" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="O82t49N5oIdznwJz" style="z-index:11;position:relative;">
+                    <div id="P4nRTlWdhFvd4Xzv" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="zGCaYsk6QF0Oc49N" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Rb2FidwFsj0Xoefv" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="RZnjBO9H6Ufm18zJ" style="color:#000000;">Snehasih Pradhan</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="peuHxyR11DEZKNjr" style="z-index:10;position:relative;">
+                    <div id="NKubvyeKPaDGgpRH" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="q7LLwuJwWnhtVxrS" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="a5ch36JumvuAPPn6" style="margin-left:0em;text-transform:none;color:#000000;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="OYISpH0dQ0JFm3ta" style="color:#000000;">The staff here really know their stuff. I can trust them with every repair, big or small.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="hCqYs0bvcYQ15xQf" style="z-index:4;position:relative;">
+                    <div id="OIxSQL8mfFddwYtN" style="padding-top:102.89237354%;transform:rotate(0deg);">
+                        <div id="S6oYOkz29LZWmVcE" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="vNl8TAWqb9aQTR0f" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="NCQtXEABRaAF173n" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="vsFOwx2tyKyplp1y" style="transform:rotate(0deg);top:-22.89169976%;left:0%;width:100%;position:absolute;height:145.78339952%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e8a378d0f9bdcb8544d191ac9d7a28e2.jpg" alt="Portrait Photo of Man in White Crew Neck Shirt" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="xrVgHOLzYH1TvJrG" style="z-index:17;position:relative;">
+                    <div id="sIlxj8gWfU5ceh8I" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="sWeV9o0ebmgLDgfE" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="cOVGITJ7RQT4cB1q" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="wNAFlV9r7WwfSTcU" style="color:#000000;">Sourav Saha</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="j6poSC8fg0gfT45W" style="z-index:16;position:relative;">
+                    <div id="xeBfxIxFlhjLt77Y" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="UIUoYGSJGaxaBsMH" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Ggy3Op3uTScuNbhM" style="margin-left:0em;text-transform:none;color:#000000;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="chLn6gbk5Esgob7C" style="color:#000000;">Fast, fair, and affordable service. I highly recommend Miles&#x27; Garage if your car needs repair.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="YZCWnDYy7nxj69Dz" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="hAHSCOWEbiNUnY1X" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="TgqkBx6jIAuVCJ4w" style="z-index:0;position:relative;">
+                    <div id="outzuG0LdHLJJ7vx" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="ySVFs7pO06hlbMtu" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="BM5dwFs2zLacKbM9" style="background-color:#000000;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
+                                <div id="j51RvHJDXXeU6suz" style="transform:rotate(0deg);top:-75.92513568%;left:0%;width:100%;position:absolute;height:266.796875%;opacity:0.35;animation:pulse 1.5s ease-in-out infinite;"><img src="images/52ca8c620818a3d82ccb901a67a7f323.jpg" alt="Black and Silver Car Wheel" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rK9vGex8yNPa9Dl2" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="Ywml7Y5zmfibruRV" style="z-index:1;position:relative;">
+                    <div id="y2ti8mDyq4KJ0F4h" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="EBYFRC10c8mTaovn" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="P5poen44ZQjzhWFk" style="text-transform:uppercase;color:#ffffff;font-family:YAEALZQmvs4-0;line-height:1.05em;"><span id="tp70r2BpycfJMELs" style="color:#ffffff;">Contact Details</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="nUp5zVcSg2QZOVZo" style="z-index:4;position:relative;">
+                    <div id="bnN3lp0EAYlW390I" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="xNER1Wt78gZpXBbH" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="r7EIzWOsP5LhMa9W" style="margin-left:0em;text-transform:uppercase;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="GRSxNxVMJ39Hje9m" style="color:#ffffff;">Mailing Address</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Gt9aUPfWiXm6tpPE" style="z-index:3;position:relative;">
+                    <div id="bkpUuTwmyhHrIb9X" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="JMHcrslpMzUwovPF" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="NuXwM6Pu2S4762Sg" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="oyA58YORbKfrz9Wk" style="color:#ffffff;">Balasore, Odisha, India</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="OcI42Q1F5EDHmS9R" style="z-index:7;position:relative;">
+                    <div id="ecmO26qCRLYDeoOK" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="Zdt3ClfKIfFfxaTV" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="IVHtVp7bzBonVNf7" style="margin-left:0em;text-transform:uppercase;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="md6Lkl3PiK7XsNat" style="color:#ffffff;">Email Address</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lkc6NY59ZM03OwxG" style="z-index:6;position:relative;">
+                    <div id="ZiCCEI1R409ULbQJ" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="KZhepuxLaJRaCf4Q" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="mHa09gjBSLY8hev4" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="doHduz9YpbMmwipJ" style="color:#ffffff;">dalaibrahmadutta@gmail.com</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="jVeL6FH41XnpW9Ja" style="z-index:10;position:relative;">
+                    <div id="Vjg3rJ5FWIzuNrIM" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="ndFgL1DC4Cx8aTD1" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="uFdriEzLligYvaT8" style="margin-left:0em;text-transform:uppercase;color:#ffffff;letter-spacing:0em;font-family:YAEALZQmvs4-0;line-height:1.2em;direction:ltr;text-align:left;"><span id="rc0FqwmabbIQRlYd" style="color:#ffffff;">Phone Number</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Pdra57S1BEy8tO9x" style="z-index:9;position:relative;">
+                    <div id="FpsH8P9hxMFlzypS" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="uWza84N3elXP6RbS" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="lmRdW2Zg0V2Esih2" style="margin-left:0em;text-transform:none;color:#ffffff;letter-spacing:0em;font-family:YAEnS2G4JLg-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="w1ifRVw1BWoKmkxR" style="color:#ffffff;">(123) 456 7890</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async="" nonce="4760e3fa-8628-49ea-a9e8-7b1ddca0e6bf"></script>
+    </div>
+    <script nonce="4760e3fa-8628-49ea-a9e8-7b1ddca0e6bf">
+        const lang = navigator.language ? navigator.language : 'en';
+        fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+            response.text().then(footerStr => {
+                const div = document.createElement('div');
+                div.innerHTML = footerStr;
+                for (const child of [...div.children]) {
+                    if (child.tagName.toLowerCase() !== 'script') {
+                        document.body.append(child);
+                    }
+                }
+
+                (() => {
+                    ! function() {
+                        "use strict";
+                        const e = document.getElementById("modal_backdrop"),
+                            t = document.getElementById("report_form"),
+                            o = document.getElementById("report_button"),
+                            n = document.getElementById("form_report"),
+                            c = document.getElementById("form_cancel"),
+                            s = document.getElementById("form_submit_reason"),
+                            a = document.getElementById("form_go_back"),
+                            d = document.getElementById("form_submit_captcha"),
+                            l = document.getElementById("form_close"),
+                            i = document.getElementById("report_reason_0"),
+                            r = document.getElementById("error_message"),
+                            m = document.getElementById("error_message_captcha"),
+                            u = [document.getElementById("form_step_terms"), document.getElementById("form_step_report_reason"), document.getElementById("form_step_captcha"), document.getElementById("form_step_success")];
+
+                        function p() {
+                            e.classList.remove("active"), t.classList.remove("active"), o.classList.remove("active"), o.focus()
+                        }
+
+                        function E(e) {
+                            u.forEach(((t, o) => {
+                                t.style.display = o === e ? "block" : "none"
+                            }))
+                        }
+                        let _, y = !1;
+                        const f = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => _ : () => {
+                            const e = t.elements.namedItem("g-recaptcha-response");
+                            return null == e ? void 0 : e.value
+                        };
+                        e.onclick = p, c.onclick = p, l.onclick = p, o.onclick = function() {
+                            u.forEach(((e, t) => {
+                                e.style.display = 0 === t ? "block" : "none"
+                            })), e.classList.add("active"), t.classList.add("active"), o.classList.add("active"), i.checked = !0, setTimeout((() => {
+                                i.focus()
+                            }), 350)
+                        }, n.onclick = () => E(1), s.onclick = () => {
+                            E(2),
+                                function() {
+                                    if (y) return;
+                                    const e = document.createElement("script");
+                                    console.log("our window captcha: ", window.C_CAPTCHA_IMPLEMENTATION, window.C_CAPTCHA_KEY), e.src = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? "https://cstaticdun.126.net/load.min.js" : "https://www.google.com/recaptcha/api.js", e.async = !0, e.defer = !0, document.head.appendChild(e), y = !0, e.onload = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => {
+                                        var e;
+                                        null === (e = window.initNECaptcha) || void 0 === e || e.call(window, {
+                                            captchaId: window.C_CAPTCHA_KEY,
+                                            element: "#netease-captcha",
+                                            protocol: "https",
+                                            width: "auto",
+                                            onVerify: (e, t) => {
+                                                _ = t.validate
+                                            }
+                                        })
+                                    } : () => {}
+                                }()
+                        }, a.onclick = () => E(1), t.addEventListener("submit", (function(e) {
+                            e.preventDefault(), r.style.display = "none", m.style.display = "none";
+                            const t = function() {
+                                    let e = "";
+                                    const t = document.getElementsByName("report_reason");
+                                    for (let o = 0; o < t.length; o++) {
+                                        const n = t[o];
+                                        !0 === n.checked && (e = n.value)
+                                    }
+                                    return e
+                                }(),
+                                o = f();
+                            if (!o) return void(m.style.display = "block");
+                            const n = {
+                                    reason: t,
+                                    challenge: o
+                                },
+                                c = window.location.origin + window.location.pathname + "/_api/report";
+                            d.classList.add("loading"), fetch(c, {
+                                method: "POST",
+                                body: JSON.stringify(n),
+                                headers: {
+                                    "Content-Type": "application/json; charset=utf-8"
+                                }
+                            }).then((e => {
+                                d.classList.remove("loading"), e.ok ? E(3) : r.style.display = "block"
+                            }))
+                        }))
+                    }();
+                })();
+                window.dispatchEvent(new Event('resize'));
+            });
+        });
+    </script>
+</body>
+
+</html>
