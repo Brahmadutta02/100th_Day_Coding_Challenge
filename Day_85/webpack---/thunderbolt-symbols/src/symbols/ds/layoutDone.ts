@@ -1,0 +1,6 @@
+export const LayoutDoneServiceSymbol = Symbol('LayoutDoneService')
+export const RenderDoneObserverSymbol = Symbol('RenderDoneObserver')
+export const LayoutChangeObserverSymbol = Symbol('LayoutChangeObserver')
+export const RenderDoneHookSymbol = Symbol('RenderDoneHook')
+export const LayoutChangeHookSymbol = Symbol('LayoutChangeHook')
+export const LayoutDiagnosticSymbol = Symbol('LayoutDiagnostic')

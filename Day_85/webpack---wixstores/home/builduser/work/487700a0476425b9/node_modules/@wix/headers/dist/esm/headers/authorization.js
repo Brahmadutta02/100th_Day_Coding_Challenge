@@ -1,0 +1,6 @@
+export function authorization(signedInstance) {
+    return {
+        authorization: signedInstance
+    };
+}
+//# sourceMappingURL=authorization.js.map

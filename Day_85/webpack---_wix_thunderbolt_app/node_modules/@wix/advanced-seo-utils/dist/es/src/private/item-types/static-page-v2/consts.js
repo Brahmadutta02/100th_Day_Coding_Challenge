@@ -1,0 +1,1 @@
+export var BLOG_APP_DEF_ID = '14bcded7-0066-7c35-14d7-466cb3f09103';
