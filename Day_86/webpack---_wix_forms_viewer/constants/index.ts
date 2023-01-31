@@ -1,0 +1,13 @@
+export const FORMS_APP_DEF_ID = '14ce1214-b278-a7e4-1373-00cebd1bef7c'
+export const FORMS_WIDGET_ID = 'init-phase'
+
+export const WIX_APP_ID = {
+  CHAT: '14517e1a-3ff0-af98-408e-2bd6953c36a2',
+  MEMBERS_AREA: '14cffd81-5215-0a7f-22f8-074b0e2401fb',
+  FILE_SHARE: '1537b24e-29d1-6d8f-b8e1-d6860f2f70b9',
+  SHARED_GALLERY: '476dc2dd-e16e-43b0-a0aa-1a486c78fbe2',
+  GROUPS: '148c2287-c669-d849-d153-463c7486a694',
+  EVENTS: '140603ad-af8d-84a5-2c80-a0f60cb47351',
+  FORUM: '14724f35-6794-cd1a-0244-25fd138f9242',
+  BLOG: '14bcded7-0066-7c35-14d7-466cb3f09103',
+}

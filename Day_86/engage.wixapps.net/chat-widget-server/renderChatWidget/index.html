@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0">
+    <script>
+        //startLoadTime
+        window.startLoadTime = Date.now();
+    </script>
+    <script src="//static.parastorage.com/polyfill/v3/polyfill.min.js?features=Intl.~locale.en,default,es6,es7,es2017,es2018,es2019,IntersectionObserver&flags=gated&unknown=polyfill&rum=0" crossorigin></script>
+    <script src="//static.parastorage.com/services/chat-widget/1.2382.0/assets/sentry-lazy-load.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg-semver/fedops-logger@5/fedops-logger.bundle.min.js" crossorigin></script>
+    <script>
+        window.fedopsLogger && window.fedopsLogger.reportAppLoadStarted("chat-widget");
+    </script>
+    <link rel="stylesheet" href="//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/v8/languages.css">
+    <link rel="stylesheet" href="//static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+
+    <link rel="stylesheet" href="//static.parastorage.com/services/chat-widget/1.2382.0/chat-widget.min.css">
+
+    <script type="text/javascript" src="//static.parastorage.com/services/js-sdk/1.640.0/js/wix-private.min.js" crossorigin></script>
+</head>
+
+<body style="margin: 0;">
+    <div dir="ltr" lang="en" id="root"></div>
+    <script>
+        window.__UNPKG_URL__ = '//static.parastorage.com/unpkg';
+        window.__EDITOR_SETTINGS__ = {
+            "siteColors": [{
+                "name": "color_1",
+                "value": "#FFFFFF",
+                "reference": "white/black"
+            }, {
+                "name": "color_2",
+                "value": "#000000",
+                "reference": "black/white"
+            }, {
+                "name": "color_3",
+                "value": "#ED1C24",
+                "reference": "primery-1"
+            }, {
+                "name": "color_4",
+                "value": "#0088CB",
+                "reference": "primery-2"
+            }, {
+                "name": "color_5",
+                "value": "#FFCB05",
+                "reference": "primery-3"
+            }, {
+                "name": "color_11",
+                "value": "#0D2130",
+                "reference": "color-1"
+            }, {
+                "name": "color_12",
+                "value": "#0E2E47",
+                "reference": "color-2"
+            }, {
+                "name": "color_13",
+                "value": "#58758C",
+                "reference": "color-3"
+            }, {
+                "name": "color_14",
+                "value": "#9DB1BF",
+                "reference": "color-4"
+            }, {
+                "name": "color_15",
+                "value": "#FFFFFF",
+                "reference": "color-5"
+            }, {
+                "name": "color_16",
+                "value": "#2B3032",
+                "reference": "color-6"
+            }, {
+                "name": "color_17",
+                "value": "#555F63",
+                "reference": "color-7"
+            }, {
+                "name": "color_18",
+                "value": "#808F95",
+                "reference": "color-8"
+            }, {
+                "name": "color_19",
+                "value": "#ABB5B8",
+                "reference": "color-9"
+            }, {
+                "name": "color_20",
+                "value": "#D1D9DC",
+                "reference": "color-10"
+            }, {
+                "name": "color_21",
+                "value": "#262522",
+                "reference": "color-11"
+            }, {
+                "name": "color_22",
+                "value": "#4B4944",
+                "reference": "color-12"
+            }, {
+                "name": "color_23",
+                "value": "#716E66",
+                "reference": "color-13"
+            }, {
+                "name": "color_24",
+                "value": "#A09E99",
+                "reference": "color-14"
+            }, {
+                "name": "color_25",
+                "value": "#D0CEC9",
+                "reference": "color-15"
+            }, {
+                "name": "color_26",
+                "value": "#1C2A1C",
+                "reference": "color-16"
+            }, {
+                "name": "color_27",
+                "value": "#385539",
+                "reference": "color-17"
+            }, {
+                "name": "color_28",
+                "value": "#547F55",
+                "reference": "color-18"
+            }, {
+                "name": "color_29",
+                "value": "#8DAA8E",
+                "reference": "color-19"
+            }, {
+                "name": "color_30",
+                "value": "#BCD4BD",
+                "reference": "color-20"
+            }, {
+                "name": "color_31",
+                "value": "#3C3924",
+                "reference": "color-21"
+            }, {
+                "name": "color_32",
+                "value": "#777247",
+                "reference": "color-22"
+            }, {
+                "name": "color_33",
+                "value": "#B3AB6B",
+                "reference": "color-23"
+            }, {
+                "name": "color_34",
+                "value": "#CCC8A3",
+                "reference": "color-24"
+            }, {
+                "name": "color_35",
+                "value": "#E6E2C7",
+                "reference": "color-25"
+            }],
+            "textPresets": {
+                "Body-XS": {
+                    "editorKey": "font_10",
+                    "lineHeight": "1.4em",
+                    "size": "12px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "din-next-w01-light"
+                },
+                "Title": {
+                    "editorKey": "font_0",
+                    "lineHeight": "1.4em",
+                    "size": "85px",
+                    "style": "normal",
+                    "value": "font:normal normal bold 85px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;",
+                    "weight": "bold",
+                    "fontFamily": "futura-lt-w01-book"
+                },
+                "Menu": {
+                    "editorKey": "font_1",
+                    "lineHeight": "1.4em",
+                    "size": "16px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "din-next-w01-light"
+                },
+                "Heading-XL": {
+                    "editorKey": "font_3",
+                    "lineHeight": "1.4em",
+                    "size": "28px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 28px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-book"
+                },
+                "Page-title": {
+                    "editorKey": "font_2",
+                    "lineHeight": "1.4em",
+                    "size": "40px",
+                    "style": "normal",
+                    "value": "font:normal normal bold 40px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;",
+                    "weight": "bold",
+                    "fontFamily": "futura-lt-w01-book"
+                },
+                "Body-S": {
+                    "editorKey": "font_9",
+                    "lineHeight": "1.4em",
+                    "size": "14px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 14px/1.4em futura-lt-w01-light,futura-lt-w05-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-light"
+                },
+                "Heading-L": {
+                    "editorKey": "font_4",
+                    "lineHeight": "1.4em",
+                    "size": "28px",
+                    "style": "normal",
+                    "value": "font:normal normal bold 28px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;",
+                    "weight": "bold",
+                    "fontFamily": "futura-lt-w01-book"
+                },
+                "Body-L": {
+                    "editorKey": "font_7",
+                    "lineHeight": "1.4em",
+                    "size": "19px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 19px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-book"
+                },
+                "Heading-M": {
+                    "editorKey": "font_5",
+                    "lineHeight": "1.4em",
+                    "size": "24px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 24px/1.4em futura-lt-w01-light,futura-lt-w05-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-light"
+                },
+                "Heading-S": {
+                    "editorKey": "font_6",
+                    "lineHeight": "1.4em",
+                    "size": "19px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 19px/1.4em futura-lt-w01-light,futura-lt-w05-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-light"
+                },
+                "Body-M": {
+                    "editorKey": "font_8",
+                    "lineHeight": "1.4em",
+                    "size": "16px",
+                    "style": "normal",
+                    "value": "font:normal normal normal 16px/1.4em futura-lt-w01-light,futura-lt-w05-light,sans-serif;",
+                    "weight": "normal",
+                    "fontFamily": "futura-lt-w01-light"
+                }
+            },
+            "styleParams": {
+                "fonts": {
+                    "header": "futura-lt-w01-book",
+                    "messages": "futura-lt-w01-light"
+                },
+                "colors": {
+                    "backgroundColor": {
+                        "themeName": "color-2",
+                        "value": "rgba(14,46,71, 0.1)"
+                    },
+                    "channelsColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "minimizedChatTextColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "minimizedChatBackgroundColor": {
+                        "themeName": "color-5",
+                        "value": "rgb(255,255,255)"
+                    },
+                    "headerFontColor": {
+                        "themeName": "color-5",
+                        "value": "rgb(255,255,255)"
+                    },
+                    "headerBackgroundColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "borderColor": {
+                        "themeName": "color-2",
+                        "value": "#0E2E47"
+                    },
+                    "sendIconColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "yourMessageFontColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "yourMessageBackgroundColor": {
+                        "themeName": "color-5",
+                        "value": "#FFFFFF"
+                    },
+                    "otherMessageFontColor": {
+                        "themeName": "color-5",
+                        "value": "rgb(255,255,255)"
+                    },
+                    "otherMessageBackgroundColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    },
+                    "headerTextColor": {
+                        "themeName": "color-5",
+                        "value": "rgb(255,255,255)"
+                    },
+                    "textColor": {
+                        "themeName": "color-3",
+                        "value": "rgb(88,117,140)"
+                    },
+                    "primaryColor": {
+                        "themeName": "color-2",
+                        "value": "rgb(14,46,71)"
+                    }
+                },
+                "booleans": {}
+            },
+            "publicData": {
+                "general": {
+                    "firstTimeComplete": true,
+                    "widgetRedesign": true
+                },
+                "texts": {
+                    "onlineTitle": "Let's Chat!",
+                    "onlineMessage": "Ask us any question.",
+                    "offlineTitle": "Contact Us",
+                    "offlineMessage": "Ask us any question.",
+                    "offlineChatMessage": "Leave us a message and we’ll reply as soon as we can.",
+                    "businessName": "Skyline",
+                    "messageTextBox": "Type your message...",
+                    "responseTime": "We’ll reply as soon as we can"
+                },
+                "design": {
+                    "selectedImageOption": "4",
+                    "selectedRadiusOption": "0",
+                    "selectedBorderWidth": 0,
+                    "selectedBorderColor": "#EEEEEE",
+                    "selectedBackgroundPattern": "none",
+                    "selectedBackgroundPatternOpacity": 17,
+                    "minimizedChatLayout": "icon",
+                    "chatIcon": "circle-legacy",
+                    "chatThumbnailType": "icon",
+                    "customImg": [],
+                    "displayChatIcon": true,
+                    "headerDisplayLogo": false,
+                    "backgroundColor": {
+                        "themeName": "rgba(14,46,71,0.1)",
+                        "value": "rgba(14,46,71,0.1)"
+                    }
+                },
+                "layout": {
+                    "collapsedAsRounded": false,
+                    "position": "1"
+                },
+                "behaviour": {
+                    "onNewMessage": "expand",
+                    "responseTimeEnabled": true,
+                    "responseTimeSelected": "asap",
+                    "pagesWithChat": ["*"]
+                }
+            }
+        };
+        window.__CHAT_SETTINGS__ = {
+            "publicVisibility": true,
+            "editorVisibility": true,
+            "chatOnboarded": true,
+            "businessChatEnabled": true,
+            "socialChatEnabled": false,
+            "widgetSenderIdentity": "ANONYMOUS",
+            "widgetSenderData": null
+        };
+        window.__CHAT_INIT_RESULT__ = {
+            "options": {
+                "databaseURL": "https://wix-engage-visitors-prod-13.firebaseio.com/",
+                "apiKey": "AIzaSyCQ-J0GYelaW_7NhsmoX6VXDK1LTxp8yPc",
+                "authDomain": "wix-engage-visitors-prod-13.firebaseapp.com"
+            },
+            "authKey": "eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJ2aXNpdG9ySWQiOiI4ZDdkMTNjNS1kZmE4LTRjY2UtOGJhZS02Yjk5ZWVhNzdkNTkiLCJ2aXNpdG9ySW5zdGFuY2VJZCI6IjhkN2QxM2M1LWRmYTgtNGNjZS04YmFlLTZiOTllZWE3N2Q1OXxjZGZkZjZjNC01YjcwLTQ0ZGMtODM0MS0xMjhlMDcyNDAxZDkifSwiZXhwIjoxNjc1MTU0Mjg3LCJpYXQiOjE2NzUxNTA2ODcsImlzcyI6ImFjY291bnQtZm9yLWNoYXQtc2hhcmQtMTNAd2l4LWVuZ2FnZS12aXNpdG9ycy1wcm9kLTEzLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic3ViIjoiYWNjb3VudC1mb3ItY2hhdC1zaGFyZC0xM0B3aXgtZW5nYWdlLXZpc2l0b3JzLXByb2QtMTMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJ1aWQiOiJjZGZkZjZjNC01YjcwLTQ0ZGMtODM0MS0xMjhlMDcyNDAxZDkifQ.CDUYO6PzY5cfU6um_fpn8SPArRN7N4ThaBgZ7JqKR0LVHNSn7uNElu50svuPl0VvKdOPSCkc3DrkA3OAdV2r_SWyUpiah8GJQ_FUXgCz63HZpeKirqzMlEmeih62P3FP_YL9mUQok85PzCfUyufhm3e5e9x5_G9R2ZGMUycuxnzZj-4ZPpJcf1F7oUf1OpfdkRoPw40tAXSWaD_pfldCXWEOsPJZ6sGEKTaOZvJD500P01ju5Mr4ozwkNuRO6DxEqzzTr7Dhcy0J4wjlgw2iDOA4FzfL4wriJU9OdRMvB9iIjQE_De6aDdJIa7HIlB8d_X7-a0z81OBWJJAH56H30A",
+            "messagePath": "sites/09875991-48b2-437e-b387-b8e378590a0d/messages/8d7d13c5-dfa8-4cce-8bae-6b99eea77d59",
+            "presencePath": "sites/09875991-48b2-437e-b387-b8e378590a0d/visitor-presence/8d7d13c5-dfa8-4cce-8bae-6b99eea77d59|cdfdf6c4-5b70-44dc-8341-128e072401d9",
+            "timestamp": "2023-01-31T07:38:07.326141Z",
+            "visitorId": "8d7d13c5-dfa8-4cce-8bae-6b99eea77d59",
+            "visitorInstanceId": "8d7d13c5-dfa8-4cce-8bae-6b99eea77d59|cdfdf6c4-5b70-44dc-8341-128e072401d9",
+            "shardId": "wix-engage-visitors-prod-13",
+            "correlationId": "66732be7-0093-49c7-af3f-19abf0696ecf",
+            "coreChat": {
+                "chatroomId": "401c749e-7fc3-3f41-a8f8-fb8d927d2f04",
+                "coreChatToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI4ZDdkMTNjNS1kZmE4LTRjY2UtOGJhZS02Yjk5ZWVhNzdkNTkiLCJwYXJ0aWNpcGFudElkcyI6WyI4ZDdkMTNjNS1kZmE4LTRjY2UtOGJhZS02Yjk5ZWVhNzdkNTkiXSwidXNlclR5cGUiOiJjb250YWN0IiwiaGlzdG9yeURpc2FsbG93ZWQiOmZhbHNlLCJoaXN0b3J5U2luY2VUaW1lc3RhbXAiOm51bGwsImNoYXRyb29tRmlsdGVyIjpudWxsLCJ0ZW5hbnRJZCI6IkluYm94IiwiaXNzIjoiY2hhdC1zZXJ2ZXIiLCJleHAiOjE2NzUyMzcwODcsImlhdCI6MTY3NTE1MDY4N30.N1pkv3hnsEEFzVCRaj8QofzcnT7E9gWD2_qtB8X-g3U",
+                "realTimeToken": null,
+                "visitorDisplayData": null
+            },
+            "derivedChatroomId": "401c749e-7fc3-3f41-a8f8-fb8d927d2f04",
+            "coreChatToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI4ZDdkMTNjNS1kZmE4LTRjY2UtOGJhZS02Yjk5ZWVhNzdkNTkiLCJwYXJ0aWNpcGFudElkcyI6WyI4ZDdkMTNjNS1kZmE4LTRjY2UtOGJhZS02Yjk5ZWVhNzdkNTkiXSwidXNlclR5cGUiOiJjb250YWN0IiwiaGlzdG9yeURpc2FsbG93ZWQiOmZhbHNlLCJoaXN0b3J5U2luY2VUaW1lc3RhbXAiOm51bGwsImNoYXRyb29tRmlsdGVyIjpudWxsLCJ0ZW5hbnRJZCI6IkluYm94IiwiaXNzIjoiY2hhdC1zZXJ2ZXIiLCJleHAiOjE2NzUyMzcwODcsImlhdCI6MTY3NTE1MDY4N30.N1pkv3hnsEEFzVCRaj8QofzcnT7E9gWD2_qtB8X-g3U",
+            "chatroomId": "401c749e-7fc3-3f41-a8f8-fb8d927d2f04",
+            "location": "Bhubaneswar, OR, India",
+            "isBranded": false,
+            "availability": {
+                "onlinePeriods": [{
+                    "start": 0,
+                    "end": 9223372036854776000
+                }]
+            }
+        };
+        window.__EXPERIMENTS__ = {
+            "specs.chat.StandardTemplateItemAsAStringInEmail": "true",
+            "specs.media.MediaManager3": "true",
+            "specs.chat.OpenPlatformChannelPicker": "true",
+            "specs.chat.InboxRemovingAscend": "true",
+            "specs.gmail.RenewSubscriptionMigrationSpec": "false",
+            "specs.chat.InboxHeaderWidgetNewColor": "false",
+            "specs.chat.UnreadMessagesButtonDesktop": "true",
+            "specs.chat.widget.faqBot": "true",
+            "specs.ChatLimitNumberOfWatchersSpec": "100",
+            "specs.chat.ChatroomScreenFunctionComponent": "true",
+            "specs.chat.PresenceNewConvention": "true",
+            "specs.chat.ChatroomParticipants": "true",
+            "specs.chat.UseMembersNewApiCrmInboxSpec": "true",
+            "specs.chat.OpenStandardTemplateLinksInMemberView": "true",
+            "specs.crm.InboxChannelsWhatsApp": "true",
+            "specs.gmail.EnableAggregatePubSubNotification": "true",
+            "specs.chat.WidgetRedesignPhase1": "true",
+            "specs.chat.HideGmailIntegrationForPartners": "false",
+            "specs.chat.InboxDesktopSearch": "true",
+            "specs.chat.ShouldReportBIForTemplateMessagesSpec": "false",
+            "specs.chat.AddToBeforeUoUEmailOrPhone": "true",
+            "specs.chat.ToggleWixMenuInInbox": "true",
+            "specs.automessages.LCFMessageFieldSpec": "true",
+            "specs.GroupedUnreadChatroomsFromReadServer": "ReadServer",
+            "specs.crm.InboxChannelsInstagram": "true",
+            "specs.chat.UseExpandModeRefactor": "true",
+            "specs.chat.ValidateChatPermissionSpec": "true",
+            "specs.chat.PikachuEmptyStateCustomText": "true",
+            "specs.chat.produceWithMetaSiteIdAspectSpec": "true",
+            "specs.chat.InboxMobilePikachuIntegration": "true",
+            "specs.chat.WaitForTopBarInit": "true",
+            "specs.chat.SendContactInfoExplicitOnRenderFlow": "true",
+            "specs.chat.KillWidget": "false",
+            "specs.crm.InboxChannelsFacebook": "true",
+            "specs.chat.StopRenderWidgetForBots": "false",
+            "specs.chat.InboxSettingsImprovements": "true",
+            "specs.chat.InboxDisableBrandRegistration": "true",
+            "specs.chat.DeviceKeyboardDismiss": "true",
+            "specs.PresenceOverDuplexerMobile": "true",
+            "specs.chat.EmailFromFieldAdjustmentSpec": "true",
+            "specs.UnreadChatroomsFromReadServer": "ReadServer",
+            "specs.chat.NewBulkActions": "true",
+            "specs.chat.CheckChatPermissionForBroadcast": "true",
+            "com.wixpress.chat.projection.specs.ProjectionCheckViewValidBeforeViewCreationSpec": "true",
+            "specs.chat.SetOfflinePCF": "true",
+            "specs.crm.InboxChannelsMetaKillswitch": "false",
+            "specs.gmail.FetchExpiredAccountsByPagesSpec": "true",
+            "specs.chat.ShouldNotTruncatedMessageSpec": "true",
+            "specs.chat.LazyLoadEmojiPanel": "true",
+            "specs.chat.SpaceToOwnerAppBanner": "true",
+            "specs.automessages.AutoMessagesTranslationSpec": "true",
+            "specs.chat.InboxAssigneeDropdown": "true",
+            "specs.chat.SkipContactsLocatorOnRenderFlowSpec": "true",
+            "specs.chat.InboxAscendIosLearnMoreLabel": "true",
+            "specs.chat.usePcfService": "true",
+            "specs.chat.InboxFetchMessageErrorIndication": "true",
+            "specs.ChatSearchShardReindexingProductionEnabled": "false",
+            "specs.woa.NewProductLinkForInboxKeyboard": "true",
+            "specs.chat.endpointUseNewPiiSearchSpec": "true",
+            "specs.chat.MembersChatBm": "true",
+            "com.wixpress.specs.presence.DeleteAndGetPresenceSpec": "false",
+            "specs.chat.SearchMigrationKiller": "true",
+            "specs.chat.ReportInvalidPresence": "true",
+            "specs.chat.InboxSettingsCardFAQ": "true",
+            "specs.chat.PresenceViaChatSDK": "true",
+            "specs.crm.InboxChannelsWhatsAppTeaser": "true",
+            "specs.assignees.AssigneeNotifications": "true",
+            "specs.chat-server.ProduceWithMetaSiteIdAspectMigrationSpec": "true",
+            "specs.com.EngageName": "Inbox",
+            "specs.chat.ShowAvatarBadge": "true",
+            "specs.chat.useNewPiiSearchSpec": "true",
+            "specs.woa.ChatRequestsRetry": "true",
+            "specs.chat.PrivateChatsForNonPublicMembers": "true",
+            "specs.PresenceOverDuplexerSpec": "true",
+            "specs.chat.ShowInboxHeaderWidget": "true",
+            "specs.chat.ServicesKeyboard": "true",
+            "specs.chat.widget.faqBot.inbox.v2": "true",
+            "specs.thunderbolt.presenceWithoutChat": "false",
+            "specs.chat.MessagesListRefactor": "true",
+            "specs.chat.WSRNewColors": "false",
+            "specs.chat.ReadChatSettingsFromNewService": "true",
+            "specs.assignees.ContactsV4Api": "true"
+        };
+        window.__LCF_SETTINGS__ = {
+            "isMandatory": false,
+            "isOfflineMandatory": true,
+            "isContact": false
+        };
+        window.__SITE_LANGUAGE__ = 'en';
+        window.__INSTALLATION_DATE__ = 0;
+        window.__MESSAGES__ = {
+            "header.availability.online": "Online",
+            "template.auto-message": "Hi there! If you need help with your site, contact our Help Center - https://www.wix.com/contact/",
+            "preview.auto-message": "To preview your site’s chatbox, first Save your site.",
+            "lcf.field-email": "Email",
+            "lcf.field-name": "Name",
+            "lcf.field-phone": "Phone",
+            "lcf.field-message": "Message",
+            "lcf.field-required-email": "Make sure to add your email.",
+            "lcf.field-required-phone": "Make sure to add your phone.",
+            "lcf.field-required-name": "Make sure to add your name.",
+            "lcf.field-invalid-email": "Enter a valid email address.",
+            "lcf.submit": "Submit",
+            "lcf.submit-error": "An error occurred. Please try again later.",
+            "lcf.submit-error.network": "Please check your internet connection.",
+            "social.new-chat-button": "+ New Chat",
+            "social.create-chat-button": "Create",
+            "social.chatroom-list.title": "Members Chat",
+            "social.new-chat.title": "New Chat",
+            "social.new-chat.search-placeholder": "Search for a member...",
+            "social.new-chat.no-initial-members.primary-message": "No Other Members Yet.",
+            "social.new-chat.no-initial-members.secondary-message": "Once there are other site members, you can chat one-to-one right here.",
+            "social.new-chat.no-members.primary-message": "Can't find \"{{searchTerm}}\".",
+            "social.new-chat.no-members.secondary-message": "Try searching again.",
+            "social.group-chat.start-message": "New Group Chat",
+            "social.group-chat.new-title": "New Group Chat",
+            "social.group-chat.next-button": "Next",
+            "social.group-chat.done-button": "Done",
+            "social.group-chat.join-message": "{{user-name}} joined {{chatroom-name}}",
+            "social.group-chat.typing": "typing....",
+            "social.group-chat.seen-by": "Seen by {{user-name}}",
+            "social.group-chat.name-placeholder": "Name this group*",
+            "social.group-chat.number-members": "{{number}} Members",
+            "social.group-chat.number-selected": "{{number}} Selected",
+            "social.group-chat.menu.members-update": "Group Chat Members",
+            "social.group-chat.menu.group-update": "Change Image & Name",
+            "social.group-chat.menu.leave-group": "Leave Conversation",
+            "social.group-chat.leave-group.title": "Leave this group chat?",
+            "social.group-chat.leave-group.description": "You won’t be able to view or send messages in this group chat. The oldest member will be the new group admin.",
+            "social.group-chat.leave-group.button.cancel": "Cancel",
+            "social.group-chat.leave-group.button.leave": "Leave",
+            "social.group-chat.remove-member-from-group.title": "Remove {{name}} from this group chat?",
+            "social.group-chat.remove-member-from-group.description": "They won't be able to view and send messages in this group anymore.",
+            "social.group-chat.remove-member-from-group.primary-button.label": "Remove",
+            "social.group-chat.remove-member-from-group.secondary-button.label": "Cancel",
+            "chatroom-list.empty-state.primary-text": "Welcome to Members Chat!",
+            "chatroom-list.empty-state.secondary-text": "Chat one-to-one with other site members right here.",
+            "social.group-chat.member-list.title": "Group Chat Members",
+            "social.group-chat.member-list.subtitle": "{{membersCount}} Members",
+            "social.group-chat.add-members.title": "Add Members",
+            "chatroom-member-list.add-members-button.label": "Add Members",
+            "chatroom-member-list.remove-member-button.label": "Remove",
+            "chatroom-member-list.badges.admin": "Group Admin",
+            "chatroom-add-members.add-button.label": "Add",
+            "coupon.copy-code-button": "Copy Code",
+            "coupon.copy-code-button-clicked": "Code Copied!",
+            "branding.uou-branding-ascend": "{{logo}} Your All-in-One Business Solution",
+            "branding.user-branding-ascend": "{{upgrade}} Chat to remove {{logo}} ads",
+            "branding.logo-ascend": "Ascend by Wix",
+            "branding.upgrade": "Upgrade",
+            "branding.preview-branding-ascend": "Upgrade Chat to remove Ascend by Wix Branding.",
+            "branding.new-user-branding-ascend": "{{upgrade}} Chat to remove {{logo}} branding",
+            "branding.new-uou-branding-ascend": "Powered by {{logo}}",
+            "header.cancelButton": "Cancel",
+            "header.menu.button.aria-label": "Menu",
+            "image-preview.download": "Download",
+            "image-preview.close-button.aria-label": "Close image preview",
+            "channels.whatsapp.open": "Open WhatsApp",
+            "payment-request.title": "PAYMENT REQUEST",
+            "payment-request.successfully.paid": "Successfully Paid!",
+            "pay.button": "Pay",
+            "popup-message.alert-aria-label": "New message",
+            "popup-message.close-button.aria-label": "Close notification",
+            "popup-message.click-to-action": "Click To Reply",
+            "popup-message.editor-example.message-sender": "Sender Name",
+            "popup-message.editor-example.message-content": "This is what the bubble notification looks like.",
+            "popup-message.more-messages": "{{numberMessages}} more messages",
+            "header.close-button.aria-label": "Minimize Chat"
+        };
+        window.__BUSINESS_INFO__ = {
+            "name": "bookYOURticket"
+        };
+        window.__IS_BOT__ = false;
+        window.__CHANNELS__ = [];
+    </script>
+
+    <script src="//static.parastorage.com/unpkg/react@16.8.3/umd/react.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg/react-dom@16.8.3/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg/i18next@10.6.0/dist/umd/i18next.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg/moment@2.22.2/min/moment.min.js" crossorigin></script>
+
+
+    <script src="//static.parastorage.com/services/chat-widget/1.2382.0/chat-widget.bundle.min.js" crossorigin></script>
+
+
+</body>
+<!--
+     _       ___         ________          __
+    | |     / (_)  __   / ____/ /_  ____ _/ /_
+    | | /| / / / |/_/  / /   / __ \/ __ `/ __/
+    | |/ |/ / />  <   / /___/ / / / /_/ / /_
+    |__/|__/_/_/|_|   \____/_/ /_/\__,_/\__/
+    Interested to know how did we build it?
+    Join our AMAZING team to work with cutting-edge technologies
+    to make an impact on a world class business chat product
+    that's used by millions of users!
+    See open oppurtunities at https://www.wix.com/jobs/search?val=crm
+-->
+
+</html>

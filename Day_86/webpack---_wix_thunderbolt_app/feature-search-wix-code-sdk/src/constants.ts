@@ -1,0 +1,1 @@
+export const SEARCH_APP_DEF_ID = '1484cb44-49cd-5b39-9681-75188ab429de'

@@ -1,0 +1,12 @@
+var rt=require("@stylable/runtime/dist/css-runtime-stylesheet.js");
+module.exports=rt.create( "StylableButton2545352419", {
+    "classes": {
+        "root": "StylableButton2545352419__root", "label":"StylableButton2545352419__label", "link":"StylableButton2545352419__link", "container":"StylableButton2545352419__container", "icon":"StylableButton2545352419__icon"
+    }
+    , "vars": {}
+    , "stVars": {}
+    , "keyframes": {}
+    , "layers": {}
+}
+
+, "", -1, module.id);
